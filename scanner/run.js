@@ -71,10 +71,11 @@ async function get(url, headers = {}) {
 const BUNJANG_STATUS = { '0': '판매중', '1': '미확인', '2': '판매완료', '3': '판매완료' }; // 1=예약중으로 추정 → 판매 확인 필요
 const sources = {
   bunjang: {
-    label: '번개장터', enabled: () => true,
+    label: '번개장터', enabled: () => process.env.BUNJANG !== 'off',
     async search(q) {
       const url = `https://api.bunjang.co.kr/api/1/find_v2.json?q=${encodeURIComponent(q)}&order=date&page=0&n=60&stat_device=w&version=4`;
       const r = await get(url, { accept: 'application/json' });
+      if (r.status === 404 || r.status === 403) throw new Error(`HTTP ${r.status} — 해외 서버 IP 차단으로 보임(국내 IP 필요)`);
       if (!r.ok) throw new Error('HTTP ' + r.status);
       const j = await r.json();
       const list = Array.isArray(j.list) ? j.list : [];
@@ -123,23 +124,57 @@ const sources = {
     }
   }
 };
-/* 아직 어댑터가 없는 사이트: 해외 서버에서 접근되는지만 기록 */
-const probes = [
-  ['YES24', q => `https://www.yes24.com/Product/Search?domain=ALL&query=${encodeURIComponent(q)}`],
-  ['중고나라', q => `https://web.joongna.com/search/${encodeURIComponent(q)}`],
-  ['헬로마켓', q => `https://www.hellomarket.com/search?q=${encodeURIComponent(q)}`]
-];
+/* 중고나라: 검색 페이지에 서버 렌더링된 상품 목록(JSON)이 들어 있다. 기본 검색은 판매완료 제외. */
+const unq = x => { let v; try { v = JSON.parse('"' + x + '"'); } catch { v = x; } return String(v).replace(/\\+u([0-9a-fA-F]{4})/g, (_, h) => String.fromCharCode(parseInt(h, 16))); };
+sources.joongna = {
+  label: '중고나라', enabled: () => true,
+  async search(q) {
+    const r = await get(`https://web.joongna.com/search/${encodeURIComponent(q)}`, { accept: 'text/html' });
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    const s = (await r.text()).replace(/\\"/g, '"');
+    const i = s.indexOf('"items":[{"seq":'); if (i < 0) return [];
+    const chunks = s.slice(i).split('{"seq":').slice(1, 61);
+    const out = [];
+    for (const c of chunks) {
+      const f = k => { const m = c.match(new RegExp(`"${k}":("(?:[^"\\\\]|\\\\.)*"|-?\\d+|null|true|false)`)); return m ? (m[1][0] === '"' ? unq(m[1].slice(1, -1)) : m[1]) : null; };
+      const seq = (c.match(/^(\d+)/) || [])[1]; const title = f('title'); if (!seq || !title) continue;
+      const st = String(f('state'));
+      out.push({ sid: seq, title, price: Number(f('price')) || null, shipping: null,
+        status: st === '0' ? '판매중' : (st === '2' || st === '3') ? '판매완료' : '미확인',
+        region: f('mainLocationName') || '판매자 지역 미기재', shop: '중고나라 판매자', url: `https://web.joongna.com/product/${seq}`, kind: '중고',
+        raw: { state: st, parcelFee: f('parcelFee'), sortDate: f('sortDate') } });
+    }
+    return out;
+  }
+};
+/* 헬로마켓: __NEXT_DATA__ 안의 상품 객체(idx·title·price·sellState) */
+const HM_STATE = { ForSale: '판매중', Reserved: '미확인', Reservation: '미확인', SoldOut: '판매완료', Sold: '판매완료', Complete: '판매완료' };
+sources.hellomarket = {
+  label: '헬로마켓', enabled: () => true,
+  async search(q) {
+    const r = await get(`https://www.hellomarket.com/search?q=${encodeURIComponent(q)}`, { accept: 'text/html' });
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    const m = (await r.text()).match(/<script id="__NEXT_DATA__"[^>]*>([\s\S]*?)<\/script>/); if (!m) return [];
+    const found = new Map();
+    (function walk(o) { if (!o || typeof o !== 'object') return; if (Array.isArray(o)) return o.forEach(walk);
+      if (o.idx && o.title && o.price !== undefined && o.sellState) found.set(String(o.idx), o); else for (const k in o) walk(o[k]); })(JSON.parse(m[1]));
+    return [...found.values()].slice(0, 60).map(o => ({ sid: String(o.idx), title: String(o.title), price: Number(o.price) || null, shipping: null,
+      status: HM_STATE[o.sellState && o.sellState.code] || '미확인', region: (o.location && (o.location.name || o.location.fullName)) || '판매자 지역 미기재', shop: '헬로마켓 판매자',
+      url: `https://www.hellomarket.com/item/${o.idx}`, kind: '중고', raw: { sellState: o.sellState && o.sellState.code, keys: Object.keys(o).slice(0, 30) } }));
+  }
+};
+const probes = [];
 
 /* ---------- fetch ---------- */
 async function doFetch() {
   const db = readJSON(DB);
   const albums = db.albums.filter(a => db.editions.some(e => e.albumId === a.id && e.wanted && !e.ended));
-  const res = { at: Date.now(), found: [], checks: [], sources: {} };
+  const res = { at: Date.now(), found: [], checks: [], sources: {}, searched: [] };
   const seen = new Set();
   for (const [key, src] of Object.entries(sources)) {
     const st = res.sources[key] = { label: src.label, ok: 0, fail: 0, items: 0, matched: 0, errors: [], sample: null };
     if (!src.enabled()) { st.skipped = '설정 없음 (비밀 키 미등록)'; continue; }
-    for (const a of albums) for (const q of queries(a)) {
+    for (const a of albums) { let allOk = true; for (const q of queries(a)) {
       try {
         const items = await src.search(q); st.ok++; st.items += items.length;
         if (!st.sample && items[0]) st.sample = items[0];
@@ -148,9 +183,9 @@ async function doFetch() {
           const id = `${key}:${it.sid}`; if (seen.has(id)) continue; seen.add(id);
           st.matched++; res.found.push({ source: key, albumId: a.id, id, it });
         }
-      } catch (e) { st.fail++; if (st.errors.length < 5) st.errors.push(`${q}: ${e.message}`); }
+      } catch (e) { allOk = false; st.fail++; if (st.errors.length < 5) st.errors.push(`${q}: ${e.message}`); }
       await sleep(1200);
-    }
+    } if (allOk) res.searched.push(`${key}|${a.id}`); }
   }
   /* 추적 중인 매물 재확인: 이번 검색에 안 잡힌 판매 중/확인 필요 매물, 오래된 순 최대 20건 */
   const tracked = db.listings.filter(l => l.auto && !seen.has(l.id) && sources[l.sourceKey] && sources[l.sourceKey].check && !Engine.OUT.includes(Engine.last(l).status))
@@ -204,6 +239,16 @@ function doMerge() {
     if (v.price !== o.price || v.status !== o.status) pushObs(l, v, at);
     touched.add(l.id);
   }
+  /* 검색이 정상이었는데 2회 연속 결과에서 사라진 매물 → 판매 확인 필요 (판매완료로 단정하지 않음) */
+  const searched = new Set(res.searched || []);
+  for (const l of db.listings) {
+    if (!l.auto || touched.has(l.id)) continue;
+    const ed = db.editions.find(e => e.id === l.editionId); if (!ed || !searched.has(`${l.sourceKey}|${ed.albumId}`)) continue;
+    const o = Engine.last(l); if (o.status !== '판매중') continue;
+    l.missCount = (l.missCount || 0) + 1; l.checkedAt = at;
+    if (l.missCount >= 2) pushObs(l, { status: '미확인', memo: '검색 결과에서 사라짐 (2회 연속) — 판매완료 가능성' }, at);
+  }
+  for (const id of touched) { const l = db.listings.find(x => x.id === id); if (l) l.missCount = 0; }
   /* 알림 대상 */
   const alerts = [], sent = new Set(db.alerts.map(x => x.key));
   for (const id of touched) {
@@ -246,4 +291,4 @@ if (require.main === module) {
   const mode = process.argv[2];
   ({ fetch: doFetch, merge: doMerge, notify: doNotify }[mode] || (() => { console.log('usage: fetch|merge|notify'); process.exit(1); }))();
 }
-module.exports = { relevant, pickEdition, hints, norm };
+module.exports = { relevant, pickEdition, hints, norm, sources };

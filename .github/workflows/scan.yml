@@ -21,6 +21,7 @@ jobs:
         run: node scanner/run.js fetch
         env:
           ALADIN_TTB_KEY: ${{ secrets.ALADIN_TTB_KEY }}
+          BUNJANG: 'off'   # GitHub(해외) 서버에서는 번개장터가 차단됨 — 국내 PC 러너에서만 켬
       - name: 최신 데이터에 병합 후 커밋
         run: |
           git config user.name "cdfinder-bot"
