@@ -1,5 +1,5 @@
 {
- "at": 1795099415746,
+ "at": 1795099529334,
  "sources": {
   "bunjang": {
    "label": "번개장터",
@@ -26,7 +26,7 @@
    "ok": 13,
    "fail": 0,
    "items": 47,
-   "matched": 15,
+   "matched": 12,
    "errors": [],
    "sample": {
     "sid": "234149847",
@@ -49,10 +49,42 @@
    "label": "헬로마켓",
    "ok": 13,
    "fail": 0,
-   "items": 0,
+   "items": 1,
    "matched": 0,
    "errors": [],
-   "sample": null
+   "sample": {
+    "sid": "183124459",
+    "title": "비틀즈 애비로드 탑텐 티셔츠 블랙",
+    "price": 35000,
+    "shipping": null,
+    "status": "판매중",
+    "region": "판매자 지역 미기재",
+    "shop": "헬로마켓 판매자",
+    "url": "https://www.hellomarket.com/item/183124459",
+    "kind": "중고",
+    "raw": {
+     "sellState": "ForSale",
+     "keys": [
+      "itemIdx",
+      "title",
+      "categories",
+      "price",
+      "sellMethod",
+      "type",
+      "sellState",
+      "usedType",
+      "timestamp",
+      "linkUrl",
+      "imageUrl",
+      "count",
+      "brand",
+      "clothesSize",
+      "hasDeliveryFee",
+      "isFreeCharge",
+      "isWish"
+     ]
+    }
+   }
   }
  },
  "probes": [],

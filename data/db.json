@@ -1,7 +1,7 @@
 {
  "schema": 2,
  "meta": {
-  "lastScan": 1795099415746,
+  "lastScan": 1795099529334,
   "sources": {
    "bunjang": {
     "label": "번개장터",
@@ -26,7 +26,7 @@
     "ok": 13,
     "fail": 0,
     "items": 47,
-    "matched": 15,
+    "matched": 12,
     "skipped": null,
     "error": null
    },
@@ -34,7 +34,7 @@
     "label": "헬로마켓",
     "ok": 13,
     "fail": 0,
-    "items": 0,
+    "items": 1,
     "matched": 0,
     "skipped": null,
     "error": null
@@ -307,7 +307,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795099415746,
+   "checkedAt": 1795099529334,
    "obs": [
     {
      "auth": "미확인",
@@ -340,7 +340,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795099415746,
+   "checkedAt": 1795099529334,
    "obs": [
     {
      "auth": "미확인",
@@ -351,74 +351,6 @@
      "booklet": "미확인",
      "memo": "",
      "price": 25000,
-     "shipping": null,
-     "status": "판매중",
-     "at": 1795099415746,
-     "via": "자동"
-    }
-   ],
-   "missCount": 0
-  },
-  {
-   "id": "joongna:226999597",
-   "sourceKey": "joongna",
-   "editionId": "ed-abbey",
-   "source": "중고나라",
-   "shop": "중고나라 판매자",
-   "region": "미사1동",
-   "delivery": "배송",
-   "kind": "중고",
-   "url": "https://web.joongna.com/product/226999597",
-   "title": "[새상품] 비틀즈 애비로드 1000피스 퍼즐",
-   "hints": [
-    "미개봉 표기"
-   ],
-   "auto": true,
-   "firstSeen": 1795099415746,
-   "checkedAt": 1795099415746,
-   "obs": [
-    {
-     "auth": "미확인",
-     "authNote": "",
-     "match": "미확인",
-     "disc": "미확인",
-     "case": "미확인",
-     "booklet": "미확인",
-     "memo": "",
-     "price": 10000,
-     "shipping": null,
-     "status": "판매중",
-     "at": 1795099415746,
-     "via": "자동"
-    }
-   ],
-   "missCount": 0
-  },
-  {
-   "id": "joongna:228682329",
-   "sourceKey": "joongna",
-   "editionId": "ed-abbey",
-   "source": "중고나라",
-   "shop": "중고나라 판매자",
-   "region": "수성1가동",
-   "delivery": "배송",
-   "kind": "중고",
-   "url": "https://web.joongna.com/product/228682329",
-   "title": "스타워즈 비틀즈 애비로드 프린트 반팔 티셔츠 star wars abbey road t-shirts",
-   "hints": [],
-   "auto": true,
-   "firstSeen": 1795099415746,
-   "checkedAt": 1795099415746,
-   "obs": [
-    {
-     "auth": "미확인",
-     "authNote": "",
-     "match": "미확인",
-     "disc": "미확인",
-     "case": "미확인",
-     "booklet": "미확인",
-     "memo": "",
-     "price": 30000,
      "shipping": null,
      "status": "판매중",
      "at": 1795099415746,
@@ -441,7 +373,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795099415746,
+   "checkedAt": 1795099529334,
    "obs": [
     {
      "auth": "미확인",
@@ -476,7 +408,7 @@
    ],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795099415746,
+   "checkedAt": 1795099529334,
    "obs": [
     {
      "auth": "미확인",
@@ -511,7 +443,7 @@
    ],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795099415746,
+   "checkedAt": 1795099529334,
    "obs": [
     {
      "auth": "미확인",
@@ -522,39 +454,6 @@
      "booklet": "미확인",
      "memo": "",
      "price": 150000,
-     "shipping": null,
-     "status": "판매중",
-     "at": 1795099415746,
-     "via": "자동"
-    }
-   ],
-   "missCount": 0
-  },
-  {
-   "id": "joongna:224933774",
-   "sourceKey": "joongna",
-   "editionId": "ed-gift",
-   "source": "중고나라",
-   "shop": "중고나라 판매자",
-   "region": "판매자 지역 미기재",
-   "delivery": "배송",
-   "kind": "중고",
-   "url": "https://web.joongna.com/product/224933774",
-   "title": "백예린 선물앨범 구매합니다(제시 부탁드립니다)",
-   "hints": [],
-   "auto": true,
-   "firstSeen": 1795099415746,
-   "checkedAt": 1795099415746,
-   "obs": [
-    {
-     "auth": "미확인",
-     "authNote": "",
-     "match": "미확인",
-     "disc": "미확인",
-     "case": "미확인",
-     "booklet": "미확인",
-     "memo": "",
-     "price": 1000,
      "shipping": null,
      "status": "판매중",
      "at": 1795099415746,
@@ -577,7 +476,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795099415746,
+   "checkedAt": 1795099529334,
    "obs": [
     {
      "auth": "미확인",
@@ -610,7 +509,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795099415746,
+   "checkedAt": 1795099529334,
    "obs": [
     {
      "auth": "미확인",
@@ -643,7 +542,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795099415746,
+   "checkedAt": 1795099529334,
    "obs": [
     {
      "auth": "미확인",
@@ -678,7 +577,7 @@
    ],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795099415746,
+   "checkedAt": 1795099529334,
    "obs": [
     {
      "auth": "미확인",
@@ -711,7 +610,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795099415746,
+   "checkedAt": 1795099529334,
    "obs": [
     {
      "auth": "미확인",
@@ -744,7 +643,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795099415746,
+   "checkedAt": 1795099529334,
    "obs": [
     {
      "auth": "미확인",
@@ -779,7 +678,7 @@
    ],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795099415746,
+   "checkedAt": 1795099529334,
    "obs": [
     {
      "auth": "미확인",
