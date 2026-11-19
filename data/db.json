@@ -1,7 +1,7 @@
 {
  "schema": 2,
  "meta": {
-  "lastScan": 1795099529334,
+  "lastScan": 1795099624446,
   "sources": {
    "bunjang": {
     "label": "번개장터",
@@ -307,7 +307,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795099529334,
+   "checkedAt": 1795099624446,
    "obs": [
     {
      "auth": "미확인",
@@ -340,7 +340,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795099529334,
+   "checkedAt": 1795099624446,
    "obs": [
     {
      "auth": "미확인",
@@ -373,7 +373,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795099529334,
+   "checkedAt": 1795099624446,
    "obs": [
     {
      "auth": "미확인",
@@ -408,7 +408,7 @@
    ],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795099529334,
+   "checkedAt": 1795099624446,
    "obs": [
     {
      "auth": "미확인",
@@ -443,7 +443,7 @@
    ],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795099529334,
+   "checkedAt": 1795099624446,
    "obs": [
     {
      "auth": "미확인",
@@ -476,7 +476,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795099529334,
+   "checkedAt": 1795099624446,
    "obs": [
     {
      "auth": "미확인",
@@ -509,7 +509,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795099529334,
+   "checkedAt": 1795099624446,
    "obs": [
     {
      "auth": "미확인",
@@ -526,7 +526,8 @@
      "via": "자동"
     }
    ],
-   "missCount": 0
+   "missCount": 0,
+   "bundle": true
   },
   {
    "id": "joongna:224033566",
@@ -542,7 +543,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795099529334,
+   "checkedAt": 1795099624446,
    "obs": [
     {
      "auth": "미확인",
@@ -577,7 +578,7 @@
    ],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795099529334,
+   "checkedAt": 1795099624446,
    "obs": [
     {
      "auth": "미확인",
@@ -610,7 +611,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795099529334,
+   "checkedAt": 1795099624446,
    "obs": [
     {
      "auth": "미확인",
@@ -643,7 +644,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795099529334,
+   "checkedAt": 1795099624446,
    "obs": [
     {
      "auth": "미확인",
@@ -678,7 +679,7 @@
    ],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795099529334,
+   "checkedAt": 1795099624446,
    "obs": [
     {
      "auth": "미확인",
@@ -692,6 +693,20 @@
      "shipping": null,
      "status": "판매중",
      "at": 1795099415746,
+     "via": "자동"
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": null,
+     "shipping": null,
+     "status": "판매중",
+     "at": 1795099624446,
      "via": "자동"
     }
    ],
