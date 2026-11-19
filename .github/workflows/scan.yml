@@ -1,0 +1,42 @@
+name: scan
+on:
+  schedule:
+    - cron: '7-59/15 * * * *'   # 15분마다 (부하 시 지연될 수 있음)
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: scan
+  cancel-in-progress: false
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: 매물 읽기
+        run: node scanner/run.js fetch
+        env:
+          ALADIN_TTB_KEY: ${{ secrets.ALADIN_TTB_KEY }}
+      - name: 최신 데이터에 병합 후 커밋
+        run: |
+          git config user.name "cdfinder-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for i in 1 2 3 4; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            node scanner/run.js merge
+            git add data/
+            if git diff --cached --quiet; then echo "변경 없음"; exit 0; fi
+            git commit -q -m "scan $(date -u +%Y-%m-%dT%H:%MZ)"
+            if git push -q origin HEAD:main; then echo "push 완료"; exit 0; fi
+            echo "push 충돌 — 최신 데이터로 다시 병합 ($i)"; sleep 3
+          done
+          exit 1
+      - name: 알림 발송
+        run: node scanner/run.js notify
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}

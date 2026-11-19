@@ -1,0 +1,257 @@
+{
+ "schema": 2,
+ "meta": {},
+ "albums": [
+  {
+   "id": "al-abbey",
+   "title": "Abbey Road",
+   "artist": "The Beatles",
+   "priority": true,
+   "titleAliases": [
+    "애비로드",
+    "애비 로드"
+   ],
+   "artistAliases": [
+    "비틀즈",
+    "비틀스",
+    "Beatles"
+   ],
+   "queries": []
+  },
+  {
+   "id": "al-gift",
+   "title": "선물",
+   "artist": "백예린",
+   "priority": true,
+   "titleAliases": [],
+   "artistAliases": [
+    "Yerin Baek",
+    "Baek Yerin"
+   ],
+   "queries": []
+  },
+  {
+   "id": "al-letter",
+   "title": "Every letter I sent you.",
+   "artist": "백예린",
+   "priority": true,
+   "titleAliases": [
+    "Every letter I sent you",
+    "에브리 레터"
+   ],
+   "artistAliases": [
+    "Yerin Baek",
+    "Baek Yerin"
+   ],
+   "queries": []
+  },
+  {
+   "id": "al-sings",
+   "title": "Chet Baker Sings",
+   "artist": "Chet Baker",
+   "priority": true,
+   "titleAliases": [
+    "쳇 베이커 싱스"
+   ],
+   "artistAliases": [
+    "쳇베이커",
+    "쳇 베이커"
+   ],
+   "queries": []
+  },
+  {
+   "id": "al-could",
+   "title": "It Could Happen to You",
+   "artist": "Chet Baker",
+   "priority": true,
+   "titleAliases": [
+    "잇 쿠드 해픈 투 유"
+   ],
+   "artistAliases": [
+    "쳇베이커",
+    "쳇 베이커"
+   ],
+   "queries": []
+  },
+  {
+   "id": "al-freud",
+   "title": "Freudian",
+   "artist": "Daniel Caesar",
+   "priority": true,
+   "titleAliases": [
+    "프로이디안"
+   ],
+   "artistAliases": [
+    "다니엘 시저",
+    "다니엘시저"
+   ],
+   "queries": []
+  },
+  {
+   "id": "al-never",
+   "title": "NEVER ENOUGH",
+   "artist": "Daniel Caesar",
+   "priority": true,
+   "titleAliases": [
+    "네버 이너프"
+   ],
+   "artistAliases": [
+    "다니엘 시저",
+    "다니엘시저"
+   ],
+   "queries": []
+  }
+ ],
+ "editions": [
+  {
+   "id": "ed-abbey",
+   "albumId": "al-abbey",
+   "name": "CD (판본 미지정)",
+   "year": null,
+   "label": "",
+   "catalogNo": "",
+   "packaging": "미확인",
+   "release": "미확인",
+   "mastering": "미확인",
+   "keywords": [],
+   "wanted": true,
+   "ended": false,
+   "criteria": {
+    "kind": "중고",
+    "target": null,
+    "disc": "A",
+    "case": "B",
+    "booklet": "A"
+   }
+  },
+  {
+   "id": "ed-gift",
+   "albumId": "al-gift",
+   "name": "CD (판본 미지정)",
+   "year": null,
+   "label": "",
+   "catalogNo": "",
+   "packaging": "미확인",
+   "release": "미확인",
+   "mastering": "미확인",
+   "keywords": [],
+   "wanted": true,
+   "ended": false,
+   "criteria": {
+    "kind": "중고",
+    "target": null,
+    "disc": "A",
+    "case": "B",
+    "booklet": "A"
+   }
+  },
+  {
+   "id": "ed-letter",
+   "albumId": "al-letter",
+   "name": "CD (판본 미지정)",
+   "year": null,
+   "label": "",
+   "catalogNo": "",
+   "packaging": "미확인",
+   "release": "미확인",
+   "mastering": "미확인",
+   "keywords": [],
+   "wanted": true,
+   "ended": false,
+   "criteria": {
+    "kind": "중고",
+    "target": null,
+    "disc": "A",
+    "case": "B",
+    "booklet": "A"
+   }
+  },
+  {
+   "id": "ed-sings",
+   "albumId": "al-sings",
+   "name": "CD (판본 미지정)",
+   "year": null,
+   "label": "",
+   "catalogNo": "",
+   "packaging": "미확인",
+   "release": "미확인",
+   "mastering": "미확인",
+   "keywords": [],
+   "wanted": true,
+   "ended": false,
+   "criteria": {
+    "kind": "중고",
+    "target": null,
+    "disc": "A",
+    "case": "B",
+    "booklet": "A"
+   }
+  },
+  {
+   "id": "ed-could",
+   "albumId": "al-could",
+   "name": "CD (판본 미지정)",
+   "year": null,
+   "label": "",
+   "catalogNo": "",
+   "packaging": "미확인",
+   "release": "미확인",
+   "mastering": "미확인",
+   "keywords": [],
+   "wanted": true,
+   "ended": false,
+   "criteria": {
+    "kind": "중고",
+    "target": null,
+    "disc": "A",
+    "case": "B",
+    "booklet": "A"
+   }
+  },
+  {
+   "id": "ed-freud",
+   "albumId": "al-freud",
+   "name": "CD (판본 미지정)",
+   "year": null,
+   "label": "",
+   "catalogNo": "",
+   "packaging": "미확인",
+   "release": "미확인",
+   "mastering": "미확인",
+   "keywords": [],
+   "wanted": true,
+   "ended": false,
+   "criteria": {
+    "kind": "중고",
+    "target": null,
+    "disc": "A",
+    "case": "B",
+    "booklet": "A"
+   }
+  },
+  {
+   "id": "ed-never",
+   "albumId": "al-never",
+   "name": "CD (판본 미지정)",
+   "year": null,
+   "label": "",
+   "catalogNo": "",
+   "packaging": "미확인",
+   "release": "미확인",
+   "mastering": "미확인",
+   "keywords": [],
+   "wanted": true,
+   "ended": false,
+   "criteria": {
+    "kind": "중고",
+    "target": null,
+    "disc": "A",
+    "case": "B",
+    "booklet": "A"
+   }
+  }
+ ],
+ "listings": [],
+ "collection": [],
+ "alerts": []
+}
