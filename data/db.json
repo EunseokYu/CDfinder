@@ -1,7 +1,7 @@
 {
  "schema": 2,
  "meta": {
-  "lastScan": 1795099624446,
+  "lastScan": 1795127299688,
   "sources": {
    "bunjang": {
     "label": "번개장터",
@@ -307,7 +307,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795099624446,
+   "checkedAt": 1795127299688,
    "obs": [
     {
      "auth": "미확인",
@@ -340,7 +340,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795099624446,
+   "checkedAt": 1795127299688,
    "obs": [
     {
      "auth": "미확인",
@@ -373,7 +373,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795099624446,
+   "checkedAt": 1795127299688,
    "obs": [
     {
      "auth": "미확인",
@@ -408,7 +408,7 @@
    ],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795099624446,
+   "checkedAt": 1795127299688,
    "obs": [
     {
      "auth": "미확인",
@@ -443,7 +443,7 @@
    ],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795099624446,
+   "checkedAt": 1795127299688,
    "obs": [
     {
      "auth": "미확인",
@@ -476,7 +476,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795099624446,
+   "checkedAt": 1795127299688,
    "obs": [
     {
      "auth": "미확인",
@@ -509,7 +509,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795099624446,
+   "checkedAt": 1795127299688,
    "obs": [
     {
      "auth": "미확인",
@@ -543,7 +543,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795099624446,
+   "checkedAt": 1795127299688,
    "obs": [
     {
      "auth": "미확인",
@@ -578,7 +578,7 @@
    ],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795099624446,
+   "checkedAt": 1795127299688,
    "obs": [
     {
      "auth": "미확인",
@@ -611,7 +611,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795099624446,
+   "checkedAt": 1795127299688,
    "obs": [
     {
      "auth": "미확인",
@@ -644,7 +644,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795099624446,
+   "checkedAt": 1795127299688,
    "obs": [
     {
      "auth": "미확인",
@@ -679,7 +679,7 @@
    ],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795099624446,
+   "checkedAt": 1795127299688,
    "obs": [
     {
      "auth": "미확인",
