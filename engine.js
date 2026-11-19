@@ -79,7 +79,7 @@
   function ref(db, ed, kind, exceptId) {
     const v = [];
     for (const l of db.listings) {
-      if (l.editionId !== ed.id || l.kind !== kind || l.id === exceptId) continue;
+      if (l.editionId !== ed.id || l.kind !== kind || l.id === exceptId || l.bundle) continue;
       const o = last(l); if (o.status !== '판매중' || o.auth === '의심' || o.match === '불일치') continue;
       const t = total(l, o); if (t != null) v.push(t);
     }
@@ -89,6 +89,7 @@
   }
   /* 싼 매물 알림 조건: 목표가 이하, 또는 참고 시세(3건 이상) 중앙값의 80% 이하 */
   function cheap(db, l, ed) {
+    if (l.bundle) return null;
     const j = judge(l, ed); if (j.v !== '구매 추천' && j.v !== '관망') return null;
     const o = last(l); if (o.price == null) return null;
     const value = j.tot ?? o.price, why = [];

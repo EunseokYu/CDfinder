@@ -20,12 +20,16 @@ const writeJSON = (p, v) => { fs.mkdirSync(path.dirname(p), { recursive: true })
 const norm = s => String(s || '').toLowerCase().normalize('NFKC').replace(/[^\p{L}\p{N}]+/gu, '');
 const NOT_CD = /(lp|엘피|바이닐|vinyl|카세트|cassette|테이프|tape|블루레이|blu-?ray|dvd)/i;
 const IS_CD = /(cd|씨디|시디)/i;
+const MERCH = /(퍼즐|티셔츠|반팔|긴팔|후드|맨투맨|포스터|액자|스티커|키링|머그|에코백|엽서|토트백|양말|모자|피규어|그립톡|폰케이스|핸드폰\s*케이스|악보|책\b|도서|매거진|잡지)/i;
+const WANTED_POST = /(삽니다|구매합니다|구매해요|구합니다|구해요|구해봅니다|매입|사요\b|찾습니다)/;
+const BUNDLE = /(일괄|세트로|묶음|통째)/;
 function relevant(name, a) {
   const n = norm(name);
   const titleHit = [a.title, ...(a.titleAliases || [])].some(t => norm(t) && n.includes(norm(t)));
   const artistHit = [a.artist, ...(a.artistAliases || [])].some(t => norm(t) && n.includes(norm(t)));
   if (!titleHit || !artistHit) return false;            // 정확도 우선: 앨범명과 아티스트가 모두 있어야 함
   if (NOT_CD.test(name) && !IS_CD.test(name)) return false;
+  if (MERCH.test(name) || WANTED_POST.test(name)) return false;   // 굿즈·구매 희망 글 제외
   return true;
 }
 function queries(a) {
@@ -157,10 +161,10 @@ sources.hellomarket = {
     const m = (await r.text()).match(/<script id="__NEXT_DATA__"[^>]*>([\s\S]*?)<\/script>/); if (!m) return [];
     const found = new Map();
     (function walk(o) { if (!o || typeof o !== 'object') return; if (Array.isArray(o)) return o.forEach(walk);
-      if (o.idx && o.title && o.price !== undefined && o.sellState) found.set(String(o.idx), o); else for (const k in o) walk(o[k]); })(JSON.parse(m[1]));
-    return [...found.values()].slice(0, 60).map(o => ({ sid: String(o.idx), title: String(o.title), price: Number(o.price) || null, shipping: null,
+      const id = o.idx ?? o.itemIdx ?? o.itemId; if (id && typeof o.title === 'string' && o.price !== undefined) found.set(String(id), o); else for (const k in o) walk(o[k]); })(JSON.parse(m[1]));
+    return [...found.values()].slice(0, 60).map(o => ({ sid: String(o.idx ?? o.itemIdx ?? o.itemId), title: String(o.title), price: Number(o.price) || null, shipping: null,
       status: HM_STATE[o.sellState && o.sellState.code] || '미확인', region: (o.location && (o.location.name || o.location.fullName)) || '판매자 지역 미기재', shop: '헬로마켓 판매자',
-      url: `https://www.hellomarket.com/item/${o.idx}`, kind: '중고', raw: { sellState: o.sellState && o.sellState.code, keys: Object.keys(o).slice(0, 30) } }));
+      url: `https://www.hellomarket.com/item/${o.idx ?? o.itemIdx ?? o.itemId}`, kind: '중고', raw: { sellState: o.sellState && o.sellState.code, keys: Object.keys(o).slice(0, 30) } }));
   }
 };
 const probes = [];
@@ -214,19 +218,25 @@ function doMerge() {
   if (!res) { console.log('결과 없음'); return; }
   db.meta = db.meta || {}; db.alerts = db.alerts || [];
   const at = res.at, touched = new Set();
+  const cleanPrice = p => (p == null || p <= 1000 || /^9{5,}$/.test(String(p))) ? null : p;   // 0원·1000원(가격 제시)·999999 같은 자리값 제외
+  /* 규칙이 바뀌어 더 이상 관련 없는 자동 수집 매물은 정리 (소장 기록에 쓰인 것은 유지) */
+  db.listings = db.listings.filter(l => { if (!l.auto || db.collection.some(c => c.listingId === l.id)) return true;
+    const ed = db.editions.find(e => e.id === l.editionId), a = ed && db.albums.find(x => x.id === ed.albumId);
+    return a && relevant(l.title || '', a); });
   for (const f of res.found) {
     const a = db.albums.find(x => x.id === f.albumId); if (!a) continue;
     const it = f.it; let l = db.listings.find(x => x.id === f.id);
     if (!l) {
       const ed = pickEdition(db, a, it.title); if (!ed) continue;
-      l = { id: f.id, sourceKey: f.source, editionId: ed.id, source: sources[f.source].label, shop: it.shop, region: it.region, delivery: '배송', kind: it.kind || '중고', url: it.url, title: it.title, hints: hints(it.title), auto: true, firstSeen: at, checkedAt: at, obs: [] };
+      it.price = cleanPrice(it.price);
+      l = { id: f.id, sourceKey: f.source, bundle: BUNDLE.test(it.title) || undefined, editionId: ed.id, source: sources[f.source].label, shop: it.shop, region: it.region, delivery: '배송', kind: it.kind || '중고', url: it.url, title: it.title, hints: [...hints(it.title), ...(BUNDLE.test(it.title) ? ['일괄 판매 — 시세·알림에서 제외'] : []), ...(cleanPrice(it.price) == null ? ['가격 미기재 또는 자리값'] : [])], auto: true, firstSeen: at, checkedAt: at, obs: [] };
       db.listings.push(l);
       pushObs(l, { price: it.price, shipping: it.shipping, status: it.status, auth: '미확인', match: '미확인', disc: '미확인', case: '미확인', booklet: '미확인', authNote: '' }, at);
     } else {
       l.checkedAt = at; l.title = it.title; if (it.shop) l.shop = it.shop;
       const o = Engine.last(l);
       if (o.status === '숨김') { touched.add(l.id); continue; }       // 사용자가 숨긴 매물은 건드리지 않음
-      const v = { price: it.price ?? o.price, shipping: it.shipping ?? o.shipping, status: it.status };
+      const v = { price: cleanPrice(it.price) ?? o.price, shipping: it.shipping ?? o.shipping, status: it.status };
       if (v.price !== o.price || v.shipping !== o.shipping || v.status !== o.status) pushObs(l, v, at);
     }
     touched.add(l.id);
