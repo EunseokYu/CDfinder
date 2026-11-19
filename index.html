@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>음반 탐색 노트</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;700&display=swap">
+<style>
+/* VOICE: 조용한 작업 도구 — 가격표처럼 숫자가 먼저 보인다
+   IDEA: 음반점 가격표와 칸막이 카드
+   PICTURE: 앨범 카드 묶음 자체가 화면의 주인공
+   COLOUR and TYPE: 흰 바탕·짙은 잉크·폴리카보네이트 남색 하나, IBM Plex Sans KR
+   LAYOUT: 상단 탭 → 검색/필터 → 카드 격자, 360px에서는 한 줄 */
+:root{color-scheme:light dark;
+--bg:light-dark(#f5f5f2,#121316);--panel:light-dark(#ffffff,#1b1d22);--ink:light-dark(#17171a,#ececef);
+--mute:light-dark(#5b5d66,#a3a6b0);--line:light-dark(#dcdcd6,#30333b);--acc:light-dark(#2b36b8,#9aa4ff);--accbg:light-dark(#e8eafc,#252a52);
+--buy:light-dark(#17663a,#7ad49c);--buybg:light-dark(#e3f3e9,#173226);--wait:light-dark(#7a5200,#f0c36a);--waitbg:light-dark(#fbf0d9,#3a2f14);
+--no:light-dark(#a1281f,#ff8f86);--nobg:light-dark(#fbe5e2,#3f1c1a);--chk:light-dark(#5a3f91,#c7b2f5);--chkbg:light-dark(#efe8fb,#2d2442);--out:light-dark(#5b5d66,#a3a6b0);--outbg:light-dark(#ececea,#26282d)}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 "IBM Plex Sans KR",system-ui,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;overflow-x:clip;word-break:keep-all;overflow-wrap:anywhere}
+button,input,select,textarea{font:inherit;color:inherit}
+button{min-height:44px;padding:8px 14px;border:1px solid var(--line);background:var(--panel);border-radius:10px;cursor:pointer}
+button:hover{border-color:var(--acc)}button:disabled{opacity:.55;cursor:not-allowed}
+button.pri{background:var(--acc);color:light-dark(#fff,#10122a);border-color:var(--acc);font-weight:700}
+button.link{border:0;background:none;color:var(--acc);padding:8px 4px;text-decoration:underline}
+:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+input,select,textarea{width:100%;min-height:44px;padding:9px 11px;border:1px solid var(--line);border-radius:10px;background:var(--panel);font-size:16px}
+.wrap{max-width:1240px;margin:0 auto;padding:0 max(4vw,12px)}
+header.top{background:var(--panel);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+.hrow{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;padding-block:12px}
+h1{font-size:22px;line-height:1.1;margin:0;font-weight:700}
+.sample{font-size:13px;font-weight:700;padding:3px 9px;border-radius:99px;border:1.5px dashed var(--acc);color:var(--acc)}
+.tabs{display:flex;gap:6px;margin-left:auto}
+.tabs button[aria-selected=true]{background:var(--ink);color:var(--bg);border-color:var(--ink);font-weight:700}
+.note{font-size:13px;color:var(--mute);margin:12px 0 0}
+.warn{background:var(--nobg);color:var(--no);padding:10px 12px;border-radius:10px;margin-top:12px;font-size:14px}
+.tool{display:grid;gap:10px;margin:16px 0}
+.frow{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,150px),1fr));gap:8px}
+.frow label,.fld{display:grid;gap:4px;font-size:14px;color:var(--mute)}
+.acts{display:flex;flex-wrap:wrap;gap:8px}
+h2{font-size:20px;margin:24px 0 10px;line-height:1.2}
+h2 small{font-size:14px;color:var(--mute);font-weight:400}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:12px}
+.card,.lc,.box{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px}
+.card{display:grid;gap:10px;align-content:start}
+.ch{display:flex;justify-content:space-between;gap:8px;align-items:start}
+.ch h3{margin:0;font-size:18px;line-height:1.25}.artist{margin:0;color:var(--mute);font-size:14px}
+.pill{font-size:13px;padding:2px 8px;border-radius:99px;background:var(--accbg);color:var(--acc);white-space:nowrap;font-weight:700}
+.edl{font-size:14px;margin:0}.chips{display:flex;flex-wrap:wrap;gap:4px;margin-top:4px}
+.chip{font-size:13px;border:1px solid var(--line);border-radius:6px;padding:1px 6px;color:var(--mute)}
+dl.st{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 12px;margin:0}
+dl.st div{display:grid}dl.st dt{font-size:13px;color:var(--mute)}dl.st dd{margin:0;font-weight:700;white-space:nowrap;font-variant-numeric:tabular-nums}
+dd.big{font-size:20px}.sub{font-size:13px;color:var(--mute);font-weight:400;white-space:normal}
+.rec{border-radius:10px;padding:10px;font-size:14px}
+.rec.yes{background:var(--buybg)}.rec.none{background:var(--outbg);color:var(--mute)}
+.vb{display:inline-flex;gap:4px;align-items:center;font-size:14px;font-weight:700;padding:3px 9px;border-radius:8px;white-space:nowrap;border:1.5px solid currentColor}
+.v-buy{color:var(--buy);background:var(--buybg)}.v-wait{color:var(--wait);background:var(--waitbg)}.v-no{color:var(--no);background:var(--nobg)}.v-check{color:var(--chk);background:var(--chkbg)}.v-out{color:var(--out);background:var(--outbg)}
+.lc{display:grid;gap:8px;align-content:start}
+.lt{display:flex;justify-content:space-between;align-items:start;gap:8px;flex-wrap:wrap}
+.price strong{font-size:22px;white-space:nowrap;font-variant-numeric:tabular-nums}.price span{display:block;font-size:13px;color:var(--mute)}
+ul.rs{margin:0;padding-left:18px;font-size:14px}
+.meta{font-size:13px;color:var(--mute);margin:0}
+details{font-size:14px}summary{cursor:pointer;min-height:32px;color:var(--acc)}
+ol.hist{margin:6px 0 0;padding-left:18px;color:var(--mute)}
+.eds{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}
+.eds button[aria-pressed=true]{border:2px solid var(--acc);background:var(--accbg);font-weight:700}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:12px}
+.lgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,330px),1fr));gap:12px}
+.empty{color:var(--mute);padding:16px;border:1px dashed var(--line);border-radius:12px}
+.ov{position:fixed;inset:0;background:rgb(0 0 0/.45);display:grid;place-items:center;z-index:20;padding:12px}
+.sheet{background:var(--panel);border-radius:16px;width:min(560px,100%);max-height:calc(100dvh - 24px);display:grid;grid-template-rows:auto 1fr auto auto;overflow:hidden}
+.sheet h2{margin:0;padding:16px 16px 8px}.mb{overflow:auto;padding:0 16px 8px;display:grid;gap:10px}
+.mf{display:flex;justify-content:flex-end;gap:8px;padding:12px 16px;border-top:1px solid var(--line)}
+.err{color:var(--no);margin:0 16px;font-size:14px}.err:empty{display:none}
+fieldset{border:1px solid var(--line);border-radius:12px;display:grid;gap:10px;padding:10px}legend{font-weight:700;font-size:14px;padding:0 4px}
+.hint{font-size:13px;color:var(--mute)}.ck{display:flex;gap:8px;align-items:center;min-height:44px;color:var(--ink)}.ck input{width:22px;min-height:22px}
+#toast{position:fixed;left:50%;bottom:16px;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:10px;font-size:14px;max-width:calc(100% - 24px);opacity:0;transition:opacity .2s;pointer-events:none;z-index:30}
+#toast.on{opacity:1}
+footer{margin:32px 0;font-size:13px;color:var(--mute)}
+@media (prefers-reduced-motion:reduce){#toast{transition:none}}
+@media(max-width:600px){.tabs{margin-left:0;width:100%}.tabs button{flex:1}.mf button{flex:1}.ov{padding:0;place-items:end stretch}.sheet{width:100%;border-radius:16px 16px 0 0;max-height:100dvh}}
+.scanbar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:6px 12px;padding-bottom:10px;font-size:13px;color:var(--mute)}
+.scanbar button{min-height:36px;padding:4px 10px;font-size:14px}
+.alerts{margin-top:14px;border-color:var(--buy)}.alerts ul{margin:6px 0 0;padding-left:18px;font-size:14px}.alerts li{margin:4px 0}
+a.btn{display:inline-flex;align-items:center;min-height:44px;padding:8px 14px;border:1px solid var(--line);border-radius:10px;color:var(--acc);text-decoration:none;font-weight:700}
+.ltitle{margin:0;font-size:14px;font-weight:500}
+a{color:var(--acc)}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<div id="modal"></div>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="engine.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
