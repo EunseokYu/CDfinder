@@ -1,16 +1,16 @@
 {
  "schema": 2,
  "meta": {
-  "lastScan": 1795099034178,
+  "lastScan": 1795099415746,
   "sources": {
    "bunjang": {
     "label": "번개장터",
     "ok": 0,
-    "fail": 13,
+    "fail": 0,
     "items": 0,
     "matched": 0,
-    "skipped": null,
-    "error": "The Beatles Abbey Road: HTTP 404"
+    "skipped": "설정 없음 (비밀 키 미등록)",
+    "error": null
    },
    "aladin": {
     "label": "알라딘",
@@ -20,28 +20,27 @@
     "matched": 0,
     "skipped": "설정 없음 (비밀 키 미등록)",
     "error": null
+   },
+   "joongna": {
+    "label": "중고나라",
+    "ok": 13,
+    "fail": 0,
+    "items": 47,
+    "matched": 15,
+    "skipped": null,
+    "error": null
+   },
+   "hellomarket": {
+    "label": "헬로마켓",
+    "ok": 13,
+    "fail": 0,
+    "items": 0,
+    "matched": 0,
+    "skipped": null,
+    "error": null
    }
   },
-  "probes": [
-   {
-    "name": "YES24",
-    "status": 200,
-    "bytes": 508953,
-    "hasKeyword": false
-   },
-   {
-    "name": "중고나라",
-    "status": 200,
-    "bytes": 224745,
-    "hasKeyword": true
-   },
-   {
-    "name": "헬로마켓",
-    "status": 200,
-    "bytes": 59430,
-    "hasKeyword": true
-   }
-  ]
+  "probes": []
  },
  "albums": [
   {
@@ -293,7 +292,513 @@
    }
   }
  ],
- "listings": [],
+ "listings": [
+  {
+   "id": "joongna:233981060",
+   "sourceKey": "joongna",
+   "editionId": "ed-abbey",
+   "source": "중고나라",
+   "shop": "중고나라 판매자",
+   "region": "판매자 지역 미기재",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://web.joongna.com/product/233981060",
+   "title": "비틀즈 THE BEATLES Abbey Road 애비로드 CD 음반 미국반 앨범",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795099415746,
+   "checkedAt": 1795099415746,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 29000,
+     "shipping": null,
+     "status": "판매중",
+     "at": 1795099415746,
+     "via": "자동"
+    }
+   ],
+   "missCount": 0
+  },
+  {
+   "id": "joongna:225806254",
+   "sourceKey": "joongna",
+   "editionId": "ed-abbey",
+   "source": "중고나라",
+   "shop": "중고나라 판매자",
+   "region": "송도2동",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://web.joongna.com/product/225806254",
+   "title": "The Beatles - Abbey Road CD 앨범",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795099415746,
+   "checkedAt": 1795099415746,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 25000,
+     "shipping": null,
+     "status": "판매중",
+     "at": 1795099415746,
+     "via": "자동"
+    }
+   ],
+   "missCount": 0
+  },
+  {
+   "id": "joongna:226999597",
+   "sourceKey": "joongna",
+   "editionId": "ed-abbey",
+   "source": "중고나라",
+   "shop": "중고나라 판매자",
+   "region": "미사1동",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://web.joongna.com/product/226999597",
+   "title": "[새상품] 비틀즈 애비로드 1000피스 퍼즐",
+   "hints": [
+    "미개봉 표기"
+   ],
+   "auto": true,
+   "firstSeen": 1795099415746,
+   "checkedAt": 1795099415746,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 10000,
+     "shipping": null,
+     "status": "판매중",
+     "at": 1795099415746,
+     "via": "자동"
+    }
+   ],
+   "missCount": 0
+  },
+  {
+   "id": "joongna:228682329",
+   "sourceKey": "joongna",
+   "editionId": "ed-abbey",
+   "source": "중고나라",
+   "shop": "중고나라 판매자",
+   "region": "수성1가동",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://web.joongna.com/product/228682329",
+   "title": "스타워즈 비틀즈 애비로드 프린트 반팔 티셔츠 star wars abbey road t-shirts",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795099415746,
+   "checkedAt": 1795099415746,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 30000,
+     "shipping": null,
+     "status": "판매중",
+     "at": 1795099415746,
+     "via": "자동"
+    }
+   ],
+   "missCount": 0
+  },
+  {
+   "id": "joongna:199920503",
+   "sourceKey": "joongna",
+   "editionId": "ed-abbey",
+   "source": "중고나라",
+   "shop": "중고나라 판매자",
+   "region": "다사읍",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://web.joongna.com/product/199920503",
+   "title": "비틀즈 애비로드 발매 50주년 기념 앨범 판매 합니다",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795099415746,
+   "checkedAt": 1795099415746,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 30000,
+     "shipping": null,
+     "status": "판매중",
+     "at": 1795099415746,
+     "via": "자동"
+    }
+   ],
+   "missCount": 0
+  },
+  {
+   "id": "joongna:233725073",
+   "sourceKey": "joongna",
+   "editionId": "ed-gift",
+   "source": "중고나라",
+   "shop": "중고나라 판매자",
+   "region": "판매자 지역 미기재",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://web.joongna.com/product/233725073",
+   "title": "백예린 선물 미개봉 CD",
+   "hints": [
+    "미개봉 표기"
+   ],
+   "auto": true,
+   "firstSeen": 1795099415746,
+   "checkedAt": 1795099415746,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 93000,
+     "shipping": null,
+     "status": "판매중",
+     "at": 1795099415746,
+     "via": "자동"
+    }
+   ],
+   "missCount": 0
+  },
+  {
+   "id": "joongna:230777283",
+   "sourceKey": "joongna",
+   "editionId": "ed-gift",
+   "source": "중고나라",
+   "shop": "중고나라 판매자",
+   "region": "용전동",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://web.joongna.com/product/230777283",
+   "title": "[절판] 백예린 - 선물 (CD) 미개봉 신품",
+   "hints": [
+    "미개봉 표기"
+   ],
+   "auto": true,
+   "firstSeen": 1795099415746,
+   "checkedAt": 1795099415746,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 150000,
+     "shipping": null,
+     "status": "판매중",
+     "at": 1795099415746,
+     "via": "자동"
+    }
+   ],
+   "missCount": 0
+  },
+  {
+   "id": "joongna:224933774",
+   "sourceKey": "joongna",
+   "editionId": "ed-gift",
+   "source": "중고나라",
+   "shop": "중고나라 판매자",
+   "region": "판매자 지역 미기재",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://web.joongna.com/product/224933774",
+   "title": "백예린 선물앨범 구매합니다(제시 부탁드립니다)",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795099415746,
+   "checkedAt": 1795099415746,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 1000,
+     "shipping": null,
+     "status": "판매중",
+     "at": 1795099415746,
+     "via": "자동"
+    }
+   ],
+   "missCount": 0
+  },
+  {
+   "id": "joongna:207285162",
+   "sourceKey": "joongna",
+   "editionId": "ed-letter",
+   "source": "중고나라",
+   "shop": "중고나라 판매자",
+   "region": "구미1동",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://web.joongna.com/product/207285162",
+   "title": "백예린 Every letter i sent you CD",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795099415746,
+   "checkedAt": 1795099415746,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 149000,
+     "shipping": null,
+     "status": "판매중",
+     "at": 1795099415746,
+     "via": "자동"
+    }
+   ],
+   "missCount": 0
+  },
+  {
+   "id": "joongna:231847509",
+   "sourceKey": "joongna",
+   "editionId": "ed-letter",
+   "source": "중고나라",
+   "shop": "중고나라 판매자",
+   "region": "판매자 지역 미기재",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://web.joongna.com/product/231847509",
+   "title": "백예린 앨범 및 굿즈 / Every letter I sent you CD 포함 일괄 판매",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795099415746,
+   "checkedAt": 1795099415746,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 270000,
+     "shipping": null,
+     "status": "판매중",
+     "at": 1795099415746,
+     "via": "자동"
+    }
+   ],
+   "missCount": 0
+  },
+  {
+   "id": "joongna:224033566",
+   "sourceKey": "joongna",
+   "editionId": "ed-letter",
+   "source": "중고나라",
+   "shop": "중고나라 판매자",
+   "region": "판매자 지역 미기재",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://web.joongna.com/product/224033566",
+   "title": "백예린 Every letter I sent you 앨범",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795099415746,
+   "checkedAt": 1795099415746,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 100000,
+     "shipping": null,
+     "status": "판매중",
+     "at": 1795099415746,
+     "via": "자동"
+    }
+   ],
+   "missCount": 0
+  },
+  {
+   "id": "joongna:231479831",
+   "sourceKey": "joongna",
+   "editionId": "ed-letter",
+   "source": "중고나라",
+   "shop": "중고나라 판매자",
+   "region": "판매자 지역 미기재",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://web.joongna.com/product/231479831",
+   "title": "백예린 앨범 Every letter I sent you 미개봉 CD",
+   "hints": [
+    "미개봉 표기"
+   ],
+   "auto": true,
+   "firstSeen": 1795099415746,
+   "checkedAt": 1795099415746,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 185000,
+     "shipping": null,
+     "status": "판매중",
+     "at": 1795099415746,
+     "via": "자동"
+    }
+   ],
+   "missCount": 0
+  },
+  {
+   "id": "joongna:231291911",
+   "sourceKey": "joongna",
+   "editionId": "ed-sings",
+   "source": "중고나라",
+   "shop": "중고나라 판매자",
+   "region": "판매자 지역 미기재",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://web.joongna.com/product/231291911",
+   "title": "Chet Baker (쳇베이커) - Chet Baker Sings (CD)",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795099415746,
+   "checkedAt": 1795099415746,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 22000,
+     "shipping": null,
+     "status": "판매중",
+     "at": 1795099415746,
+     "via": "자동"
+    }
+   ],
+   "missCount": 0
+  },
+  {
+   "id": "joongna:225698336",
+   "sourceKey": "joongna",
+   "editionId": "ed-sings",
+   "source": "중고나라",
+   "shop": "중고나라 판매자",
+   "region": "판매자 지역 미기재",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://web.joongna.com/product/225698336",
+   "title": "CD) Chet Baker (챗 베이커) - The Complete Original Chet Baker Sings",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795099415746,
+   "checkedAt": 1795099415746,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 22750,
+     "shipping": null,
+     "status": "판매중",
+     "at": 1795099415746,
+     "via": "자동"
+    }
+   ],
+   "missCount": 0
+  },
+  {
+   "id": "joongna:223467210",
+   "sourceKey": "joongna",
+   "editionId": "ed-freud",
+   "source": "중고나라",
+   "shop": "중고나라 판매자",
+   "region": "판매자 지역 미기재",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://web.joongna.com/product/223467210",
+   "title": "daniel caesar freudian 미개봉, case study 개봉 판매",
+   "hints": [
+    "미개봉 표기"
+   ],
+   "auto": true,
+   "firstSeen": 1795099415746,
+   "checkedAt": 1795099415746,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 999999,
+     "shipping": null,
+     "status": "판매중",
+     "at": 1795099415746,
+     "via": "자동"
+    }
+   ],
+   "missCount": 0
+  }
+ ],
  "collection": [],
  "alerts": []
 }
