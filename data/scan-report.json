@@ -1,0 +1,51 @@
+{
+ "at": 1795099034178,
+ "sources": {
+  "bunjang": {
+   "label": "번개장터",
+   "ok": 0,
+   "fail": 13,
+   "items": 0,
+   "matched": 0,
+   "errors": [
+    "The Beatles Abbey Road: HTTP 404",
+    "비틀즈 애비로드: HTTP 404",
+    "백예린 선물: HTTP 404",
+    "백예린 Every letter I sent you.: HTTP 404",
+    "Yerin Baek Every letter I sent you: HTTP 404"
+   ],
+   "sample": null
+  },
+  "aladin": {
+   "label": "알라딘",
+   "ok": 0,
+   "fail": 0,
+   "items": 0,
+   "matched": 0,
+   "errors": [],
+   "sample": null,
+   "skipped": "설정 없음 (비밀 키 미등록)"
+  }
+ },
+ "probes": [
+  {
+   "name": "YES24",
+   "status": 200,
+   "bytes": 508953,
+   "hasKeyword": false
+  },
+  {
+   "name": "중고나라",
+   "status": 200,
+   "bytes": 224745,
+   "hasKeyword": true
+  },
+  {
+   "name": "헬로마켓",
+   "status": 200,
+   "bytes": 59430,
+   "hasKeyword": true
+  }
+ ],
+ "checks": []
+}

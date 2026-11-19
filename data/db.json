@@ -1,6 +1,48 @@
 {
  "schema": 2,
- "meta": {},
+ "meta": {
+  "lastScan": 1795099034178,
+  "sources": {
+   "bunjang": {
+    "label": "번개장터",
+    "ok": 0,
+    "fail": 13,
+    "items": 0,
+    "matched": 0,
+    "skipped": null,
+    "error": "The Beatles Abbey Road: HTTP 404"
+   },
+   "aladin": {
+    "label": "알라딘",
+    "ok": 0,
+    "fail": 0,
+    "items": 0,
+    "matched": 0,
+    "skipped": "설정 없음 (비밀 키 미등록)",
+    "error": null
+   }
+  },
+  "probes": [
+   {
+    "name": "YES24",
+    "status": 200,
+    "bytes": 508953,
+    "hasKeyword": false
+   },
+   {
+    "name": "중고나라",
+    "status": 200,
+    "bytes": 224745,
+    "hasKeyword": true
+   },
+   {
+    "name": "헬로마켓",
+    "status": 200,
+    "bytes": 59430,
+    "hasKeyword": true
+   }
+  ]
+ },
  "albums": [
   {
    "id": "al-abbey",
