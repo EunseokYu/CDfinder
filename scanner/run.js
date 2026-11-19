@@ -233,10 +233,10 @@ function doMerge() {
       db.listings.push(l);
       pushObs(l, { price: it.price, shipping: it.shipping, status: it.status, auth: '미확인', match: '미확인', disc: '미확인', case: '미확인', booklet: '미확인', authNote: '' }, at);
     } else {
-      l.checkedAt = at; l.title = it.title; if (it.shop) l.shop = it.shop;
+      l.checkedAt = at; l.title = it.title; if (it.shop) l.shop = it.shop; l.bundle = BUNDLE.test(it.title) || undefined;
       const o = Engine.last(l);
       if (o.status === '숨김') { touched.add(l.id); continue; }       // 사용자가 숨긴 매물은 건드리지 않음
-      const v = { price: cleanPrice(it.price) ?? o.price, shipping: it.shipping ?? o.shipping, status: it.status };
+      const v = { price: cleanPrice(it.price), shipping: it.shipping ?? o.shipping, status: it.status };
       if (v.price !== o.price || v.shipping !== o.shipping || v.status !== o.status) pushObs(l, v, at);
     }
     touched.add(l.id);
