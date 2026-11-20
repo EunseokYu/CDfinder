@@ -2,7 +2,7 @@
    node scanner/run.js fetch   : 발견(검색) → 개별 원본 검증 → tmp/results.json (data는 건드리지 않음)
    node scanner/run.js merge   : 최신 data/db.json에 결과 병합·알림 대상 계산 → tmp/alerts.json
    node scanner/run.js notify  : 텔레그램(설정된 경우만)
-   주기: 외부 호출 15분마다(빠른 회차) + 마지막 1시간 회차로부터 55분이 지나면 1시간 회차 작업을 함께 수행.
+   주기: 외부 호출 30분마다(빠른 회차) + 마지막 1시간 회차로부터 55분이 지나면 1시간 회차 작업을 함께 수행.
    원칙: 검색 결과·요약값은 ‘발견’에만 쓴다. 추천·통계에는 개별 상품 원본에서 확인한 가격·재고만 쓴다. */
 'use strict';
 const fs = require('fs');
