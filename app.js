@@ -27,7 +27,8 @@ const safeUrl=u=>/^https?:\/\//i.test(u||'')?u:null;
 const ls={get(k){try{return localStorage.getItem(k)}catch{return null}},set(k,v){try{localStorage.setItem(k,v)}catch{}}};
 
 /* ========== GitHub 저장소 (입력부) ========== */
-const cfg=Object.assign({owner:'EunseokYu',repo:'CDfinder',branch:'main',token:''},JSON.parse(ls.get('cdfinder.cfg')||'{}'));
+const cfg=Object.assign({owner:'EunseokYu',repo:'CDfinder',branch:'main',token:'',remember:true},JSON.parse(ls.get('cdfinder.cfg')||'{}'));
+const persistCfg=()=>ls.set('cdfinder.cfg',JSON.stringify({...cfg,token:cfg.remember?cfg.token:''}));
 const b64dec=b=>new TextDecoder().decode(Uint8Array.from(atob(b.replace(/\s/g,'')),c=>c.charCodeAt(0)));
 const b64enc=s=>{const u=new TextEncoder().encode(s);let x='';for(let i=0;i<u.length;i+=0x8000)x+=String.fromCharCode(...u.subarray(i,i+0x8000));return btoa(x)};
 const Remote={
@@ -45,6 +46,10 @@ const Remote={
     if(!r.ok)throw new Error(`데이터 파일 응답 ${r.status}`);
     return{db:await r.json(),sha:null};
   },
+  async fileSha(path){const r=await fetch(Remote.api(`contents/${path}?ref=${cfg.branch}&t=${Date.now()}`),{headers:Remote.hd(),cache:'no-store'});if(r.status===404)return null;if(!r.ok)throw new Error(`GitHub 응답 ${r.status}`);return(await r.json()).sha},
+  async putFile(path,obj,msg){const sha=await Remote.fileSha(path);const r=await fetch(Remote.api(`contents/${path}`),{method:'PUT',headers:Remote.hd(),body:JSON.stringify({message:'app: '+msg,content:b64enc(JSON.stringify(obj,null,1)+'\n'),branch:cfg.branch,...(sha?{sha}:{})})});if(!r.ok)throw new Error(`GitHub 응답 ${r.status}`)},
+  async delFile(path,msg){const sha=await Remote.fileSha(path);if(!sha)return;const r=await fetch(Remote.api(`contents/${path}`),{method:'DELETE',headers:Remote.hd(),body:JSON.stringify({message:'app: '+msg,sha,branch:cfg.branch})});if(!r.ok)throw new Error(`GitHub 응답 ${r.status}`)},
+  async getLock(){const r=await fetch(`https://raw.githubusercontent.com/${cfg.owner}/${cfg.repo}/${cfg.branch}/data/lock.json?t=${Date.now()}`,{cache:'no-store'});if(r.status===404)return null;if(!r.ok)throw new Error(`잠금 파일 응답 ${r.status}`);return r.json()},
   async put(db,sha,msg){
     const r=await fetch(Remote.api('contents/data/db.json'),{method:'PUT',headers:Remote.hd(),body:JSON.stringify({message:'app: '+msg,content:b64enc(JSON.stringify(db,null,1)+'\n'),sha,branch:cfg.branch})});
     if(r.status===409||r.status===422)return false;
@@ -52,6 +57,17 @@ const Remote={
     return true;
   }
 };
+/* 사지방용 암호 잠금: 토큰을 암호로 암호화해 data/lock.json에 보관 (PBKDF2-SHA256 60만 회 → AES-GCM 256) */
+const LOCK_ITER=600000,MIN_PASS=16;
+const u8b64=u=>{let x='';for(const c of u)x+=String.fromCharCode(c);return btoa(x)},b64u8=s=>Uint8Array.from(atob(s),c=>c.charCodeAt(0));
+async function lockKey(pass,salt,iter){const base=await crypto.subtle.importKey('raw',new TextEncoder().encode(pass.normalize('NFC')),'PBKDF2',false,['deriveKey']);
+  return crypto.subtle.deriveKey({name:'PBKDF2',salt,iterations:iter,hash:'SHA-256'},base,{name:'AES-GCM',length:256},false,['encrypt','decrypt'])}
+async function makeLock(token,pass){const salt=crypto.getRandomValues(new Uint8Array(16)),iv=crypto.getRandomValues(new Uint8Array(12));
+  const ct=new Uint8Array(await crypto.subtle.encrypt({name:'AES-GCM',iv},await lockKey(pass,salt,LOCK_ITER),new TextEncoder().encode(token)));
+  return{v:1,kdf:'PBKDF2-SHA256',iter:LOCK_ITER,cipher:'AES-GCM-256',salt:u8b64(salt),iv:u8b64(iv),ct:u8b64(ct),createdAt:Date.now()}}
+async function openLock(lock,pass){try{const pt=await crypto.subtle.decrypt({name:'AES-GCM',iv:b64u8(lock.iv)},await lockKey(pass,b64u8(lock.salt),lock.iter),b64u8(lock.ct));return new TextDecoder().decode(pt)}catch{return null}}
+let lockInfo=undefined;
+async function checkLock(){try{lockInfo=await Remote.getLock()}catch{lockInfo=undefined}renderHeaderOnly()}
 let S=null,loadErr='',saving=false;
 try{S=JSON.parse(ls.get('cdfinder.cache')||'null')}catch{}
 async function refresh(quiet){
@@ -98,13 +114,13 @@ function head(){
   return`<header class="top" id="hdr"><div class="wrap hrow"><h1>음반 탐색 노트</h1>
   <nav class="tabs" role="tablist" aria-label="화면 전환"><button role="tab" data-act="tab" data-v="wish" aria-selected="${UI.tab==='wish'}">사고 싶은 음반</button><button role="tab" data-act="tab" data-v="owned" aria-selected="${UI.tab==='owned'}">보유 음반 (${S?S.collection.length:0})</button></nav></div>
   <div class="wrap scanbar"><span>마지막 자동 스캔 <b>${m.lastScan?ago(m.lastScan):'아직 없음'}</b>${src?` · ${src}`:''}</span>
-  <span class="acts"><button data-act="refresh">새로고침</button><button data-act="cfg">${cfg.token?'GitHub 연결됨':'GitHub 연결'}</button></span></div></header>`;
+  <span class="acts"><button data-act="refresh">새로고침</button>${!cfg.token&&lockInfo?'<button class="pri" data-act="unlock">암호로 잠금 해제</button>':''}<button data-act="cfg">${cfg.token?'GitHub 연결됨':'GitHub 연결'}</button></span></div></header>`;
 }
 function renderHeaderOnly(){const h=$('#hdr');if(h)h.outerHTML=head()}
 function render(){
   if(!S){$('#app').innerHTML=head()+`<main class="wrap"><p class="${loadErr?'warn':'note'}">${esc(loadErr||'데이터를 불러오는 중…')}</p></main>`;return}
   $('#app').innerHTML=head()+`<main class="wrap">${loadErr?`<p class="warn">${esc(loadErr)} — 마지막으로 받은 데이터를 보여줍니다.</p>`:''}
-  ${cfg.token?'':'<p class="warn">읽기 전용입니다. 앨범 추가·조건 수정·소장 등록을 저장하려면 ‘GitHub 연결’에서 토큰을 설정하세요.</p>'}
+  ${cfg.token?'':`<p class="warn">읽기 전용입니다. 저장하려면 ${lockInfo?'‘암호로 잠금 해제’를 누르고 암호를 입력하세요.':'‘GitHub 연결’에서 토큰을 설정하세요.'}</p>`}
   <p class="note">자동 수집 매물은 정품·판본·상태가 모두 ‘미확인’으로 들어옵니다. 원문을 보고 ‘매물 갱신’에서 확인한 값으로 바꿔야 ‘구매 추천’이 될 수 있습니다.</p>
   ${UI.tab==='owned'?ownedView():UI.view==='detail'?detailView():listView()}</main>`;
 }
@@ -237,13 +253,34 @@ function toast(t,stay){const el=$('#toast');el.textContent=t;el.classList.add('o
 const newEdition=(albumId,id,name)=>({id,albumId,name:name||'CD (판본 미지정)',year:null,label:'',catalogNo:'',packaging:'미확인',release:'미확인',mastering:'미확인',keywords:[],wanted:true,ended:false,criteria:CRIT0()});
 
 function cfgForm(){
-  modal('GitHub 연결',`<p class="hint">수정 사항은 저장소의 data/db.json에 커밋됩니다. 토큰은 이 브라우저에만 저장됩니다.</p>
+  modal('GitHub 연결',`<p class="hint">수정 사항은 저장소의 data/db.json에 커밋됩니다.</p>
    <div class="frow">${fi('owner','계정',cfg.owner)}${fi('repo','저장소',cfg.repo)}</div>
-   ${fi('token','Fine-grained 토큰',cfg.token,'type="password" autocomplete="off" placeholder="github_pat_…"')}
-   <p class="hint">GitHub → Settings → Developer settings → Fine-grained tokens에서 이 저장소만 선택하고 권한 Contents: Read and write로 만드세요. 비워 두고 저장하면 연결이 해제됩니다.</p>`,'저장',
-   async d=>{Object.assign(cfg,{owner:d.owner.trim(),repo:d.repo.trim(),token:d.token.trim()});ls.set('cdfinder.cfg',JSON.stringify(cfg));
-     try{await Remote.load()}catch(e){return'연결 확인 실패: '+e.message}
-     await refresh();toast(cfg.token?'GitHub에 연결했습니다.':'읽기 전용으로 전환했습니다.')});
+   ${fi('token','Fine-grained 토큰 (Contents: Read and write)',cfg.token,'type="password" autocomplete="off" placeholder="github_pat_…"')}
+   ${fc('remember','이 기기에 토큰 기억 (공용 PC에서는 끄기)',cfg.remember)}
+   <fieldset><legend>사지방·공용 PC용 암호 잠금 ${lockInfo?'(현재 설정됨)':'(선택)'}</legend>
+    <p class="hint">토큰을 암호로 잠가 저장소에 올려 둡니다. 다른 PC에서는 ‘암호로 잠금 해제’에 암호만 입력하면 됩니다. 저장소가 공개라 <b>${MIN_PASS}자 이상</b>, 단어 4개 이상을 이어 붙인 암호를 쓰세요 (예: 파란기타-겨울역-세번째-라디오).</p>
+    ${fi('pass','새 암호 (바꾸지 않으려면 비워 두기)','','type="password" autocomplete="new-password"')}${fi('pass2','새 암호 확인','','type="password" autocomplete="new-password"')}
+    ${lockInfo?fc('dellock','저장소에서 암호 잠금 삭제',false):''}</fieldset>
+   <p class="hint">비워 두고 저장하면 이 기기의 연결이 해제됩니다. 토큰 만드는 곳: GitHub → Settings → Developer settings → Fine-grained tokens (CDfinder만 선택).</p>`,'저장',
+   async d=>{
+     if(d.pass||d.pass2){if(d.pass!==d.pass2)return'새 암호 두 칸이 서로 다릅니다.';if([...d.pass].length<MIN_PASS)return`암호는 ${MIN_PASS}자 이상이어야 합니다.`;if(!d.token.trim())return'암호 잠금을 만들려면 토큰도 입력해야 합니다.'}
+     Object.assign(cfg,{owner:d.owner.trim(),repo:d.repo.trim(),token:d.token.trim(),remember:d.remember});persistCfg();
+     if(cfg.token){try{await Remote.load()}catch(e){return'연결 확인 실패: '+e.message}}
+     try{
+       if(d.pass){toast('암호 잠금 만드는 중…',true);await Remote.putFile('data/lock.json',await makeLock(cfg.token,d.pass),'암호 잠금 설정');lockInfo=true}
+       else if(d.dellock){await Remote.delFile('data/lock.json','암호 잠금 삭제');lockInfo=null}
+     }catch(e){return'암호 잠금 저장 실패: '+e.message}
+     await refresh();checkLock();toast(d.pass?'연결했고 암호 잠금을 저장했습니다.':cfg.token?'GitHub에 연결했습니다.':'읽기 전용으로 전환했습니다.')});
+}
+function unlockForm(){
+  modal('암호로 잠금 해제',`<p class="hint">‘GitHub 연결’에서 만들어 둔 암호를 입력하세요.</p>${fi('pass','암호','','type="password" autocomplete="current-password"')}
+   ${fc('remember','이 기기에 기억 (사지방에서는 끄기)',false)}`,'잠금 해제',
+   async d=>{toast('확인 중…',true);let lock;try{lock=await Remote.getLock()}catch(e){return'잠금 파일을 불러오지 못했습니다: '+e.message}
+     if(!lock)return'저장소에 암호 잠금이 없습니다. ‘GitHub 연결’에서 토큰으로 연결하세요.';
+     const t=await openLock(lock,d.pass);if(!t){toast('암호가 맞지 않습니다.');return'암호가 맞지 않습니다.'}
+     cfg.token=t;cfg.remember=d.remember;persistCfg();
+     try{await Remote.load()}catch(e){cfg.token='';persistCfg();return'잠금은 풀렸지만 토큰이 작동하지 않습니다(만료 가능): '+e.message}
+     await refresh();toast('잠금 해제 — 이제 저장할 수 있습니다.')});
 }
 function albumForm(a){
   const newId=uid('al'),edId=uid('ed');
@@ -335,7 +372,7 @@ async function quick(fn,msg){const r=await save(fn,msg);if(typeof r==='string')t
 document.addEventListener('click',e=>{
   const b=e.target.closest('[data-act]');if(!b)return;const act=b.dataset.act,id=b.dataset.id;
   if(act==='ovclose'&&e.target!==b)return;
-  if(!S&&!['cfg','refresh','close','ovclose','tab'].includes(act))return;
+  if(!S&&!['cfg','unlock','refresh','close','ovclose','tab'].includes(act))return;
   const a=S&&S.albums.find(x=>x.id===UI.albumId),ed=S&&S.editions.find(x=>x.id===UI.editionId),l=S&&S.listings.find(x=>x.id===id);
   switch(act){
     case'tab':UI.tab=b.dataset.v;render();scrollTo(0,0);break;
@@ -344,7 +381,7 @@ document.addEventListener('click',e=>{
     case'ed':UI.editionId=id;render();break;
     case'clearf':UI.q='';UI.f={source:'',region:'',kind:'',verdict:''};render();break;
     case'refresh':toast('불러오는 중…',true);refresh().then(()=>toast('최신 데이터를 불러왔습니다.'));break;
-    case'cfg':cfgForm();break;
+    case'cfg':cfgForm();break;case'unlock':unlockForm();break;
     case'addAlbum':albumForm();break;case'editAlbum':albumForm(a);break;
     case'togglePri':quick(db=>{const x=db.albums.find(y=>y.id===a.id);x.priority=!x.priority},a.priority?'우선 탐색 해제':'우선 탐색 지정');break;
     case'addEd':edForm(null,a.id);break;case'editEd':edForm(ed);break;
@@ -364,6 +401,6 @@ document.addEventListener('change',e=>{if(e.target.dataset.f){UI.f[e.target.data
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&$('#modal').innerHTML)close()});
 document.addEventListener('visibilitychange',()=>{if(!document.hidden)refresh(true)});
 setInterval(()=>{if(!document.hidden)refresh(true)},120000);
-render();refresh();
+render();refresh();checkLock();
 window.__cd={get S(){return S},cfg,Engine};
 }
