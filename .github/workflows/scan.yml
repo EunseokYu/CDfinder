@@ -1,7 +1,7 @@
 name: scan
 on:
   schedule:
-    - cron: '7-59/15 * * * *'   # 15분마다 (부하 시 지연될 수 있음)
+    - cron: '41 * * * *'   # 예비용 1시간 간격 — 주 예약은 cron-job.org가 15분마다 workflow_dispatch로 실행
   workflow_dispatch:
 permissions:
   contents: write
