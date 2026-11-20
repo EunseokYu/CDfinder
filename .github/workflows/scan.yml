@@ -3,6 +3,11 @@ on:
   schedule:
     - cron: '7 * * * *'   # 매시 7분: 1시간 회차(전체 판매처). 외부 호출(cron-job.org)이 15분마다 빠른 회차를 실행
   workflow_dispatch:
+    inputs:
+      hourly:
+        description: '1시간 회차(전체 판매처)로 실행'
+        required: false
+        default: ''
 permissions:
   contents: write
 concurrency:
@@ -20,7 +25,7 @@ jobs:
       - name: 매물 읽기
         run: node scanner/run.js fetch
         env:
-          FORCE_HOURLY: ${{ github.event_name == 'schedule' && '1' || '' }}
+          FORCE_HOURLY: ${{ (github.event_name == 'schedule' || inputs.hourly == '1') && '1' || '' }}
           BUNJANG: 'off'   # GitHub(해외) 서버에서는 번개장터가 차단됨 — 국내 IP 실행기에서만 'on'
       - name: 최신 데이터에 병합 후 커밋
         run: |
