@@ -1,0 +1,13 @@
+{
+ "name": "음반 탐색 노트",
+ "short_name": "CD 탐색",
+ "start_url": "./",
+ "scope": "./",
+ "display": "standalone",
+ "background_color": "#f5f5f2",
+ "theme_color": "#2b36b8",
+ "icons": [
+  {"src": "icon-192.png", "sizes": "192x192", "type": "image/png"},
+  {"src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}
+ ]
+}
