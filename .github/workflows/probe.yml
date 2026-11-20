@@ -5,6 +5,8 @@ on:
       targets:
         description: '[["이름","URL"],...]'
         required: true
+permissions:
+  contents: write
 jobs:
   probe:
     runs-on: ubuntu-latest
@@ -15,5 +17,8 @@ jobs:
       - run: node scanner/probe.js
         env:
           TARGETS: ${{ inputs.targets }}
-      - uses: actions/upload-artifact@v4
-        with: {name: probe, path: out/, retention-days: 3}
+      - name: 결과를 임시 브랜치에 올림
+        run: |
+          cd out && git init -q -b probe-out && git add -A
+          git -c user.name=probe -c user.email=probe@users.noreply.github.com commit -q -m probe
+          git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" probe-out
