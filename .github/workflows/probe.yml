@@ -1,5 +1,10 @@
 name: probe
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+    inputs:
+      targets:
+        description: '[["이름","URL"],...]'
+        required: true
 jobs:
   probe:
     runs-on: ubuntu-latest
@@ -8,3 +13,7 @@ jobs:
       - uses: actions/setup-node@v4
         with: {node-version: 22}
       - run: node scanner/probe.js
+        env:
+          TARGETS: ${{ inputs.targets }}
+      - uses: actions/upload-artifact@v4
+        with: {name: probe, path: out/, retention-days: 3}
