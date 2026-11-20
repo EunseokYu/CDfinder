@@ -86,6 +86,16 @@ async function get(url) {
 const ldProduct = html => { for (const m of html.matchAll(/<script type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)) { try { const j = JSON.parse(m[1]); const arr = j['@graph'] || [j]; const p = arr.find(x => x && x['@type'] === 'Product'); if (p) return p; } catch { } } return null; };
 const avail = a => /InStock/i.test(a || '') ? '판매중' : /OutOfStock|SoldOut|Discontinued/i.test(a || '') ? '품절' : /PreOrder|BackOrder/i.test(a || '') ? '입고 예정' : null;
 
+/* 알라딘 배송료 문구 해석: ‘N원 미만 구매시 택배 M원’ / ‘택배 M원’ / ‘무료’ / ‘유료 (N만원 이상 무료)’ */
+function aladinShipping(tt, price) {
+  let m;
+  if ((m = tt.match(/배송료\s*([\d,]+)원 미만 구매시 택배 ([\d,]+)원/))) { const thr = won(m[1]), fee = won(m[2]); return { shipping: price != null && price >= thr ? 0 : fee, ev: `${m[1]}원 미만 택배 ${m[2]}원` }; }
+  if ((m = tt.match(/배송료\s*택배\s*([\d,]+)원/))) return { shipping: won(m[1]), ev: `택배 ${m[1]}원` };
+  if (/배송료\s*무료/.test(tt)) return { shipping: 0, ev: '배송료 무료' };
+  if ((m = tt.match(/배송료 유료 \((\d+)만원 이상 무료/))) { const thr = Number(m[1]) * 10000; return price != null && price >= thr ? { shipping: 0, ev: `${m[1]}만원 이상 무료배송 기준 충족` } : { shipping: null, ev: `${m[1]}만원 미만 — 배송료 금액이 페이지에 없어 총액 미확인` }; }
+  return { shipping: null, ev: '배송료 표기 없음' };
+}
+const cleanPrice = p => (p == null || p <= 1000 || /^9{5,}$/.test(String(p))) ? null : p;   // 1,000원 이하·999999 같은 자리값은 가격으로 쓰지 않음
 /* ---------- 출처 어댑터 ----------
    search(album, q) → 후보 [{sid, url, title, price, shipping, kind, delivery, region, shop, needsBody}]
    verify(target)   → {ok:true, status, price, shipping, delivery, isCD, title, text, evidence[], grades, region, bundle, irrelevant} | {ok:false, error} */
@@ -129,18 +139,18 @@ const aladin = {
     if (String(t.sid || t.id).includes('used:')) {
       if (!/^\[중고\]/.test(title)) return { ok: false, error: '중고 개별 상품 페이지가 아님' };
       const tt = text(h), canBuy = /AddBook=U\d+/.test(h) && /바로구매/.test(h), sold = /판매완료|품절되었습니다/.test(tt);
-      const ship = tt.match(/배송료\s*(?:택배\s*)?([\d,]+)원/); const free = /배송료\s*무료/.test(tt);
+      const uprice = won((h.match(/og:price" content="(\d+)"/) || [])[1]), sh = aladinShipping(tt, uprice);
       const grade = (tt.match(/상품 상태\s*(최상|상|중|하)/) || [])[1];
-      return { ok: true, status: canBuy && !sold ? '판매중' : sold ? '판매완료' : '미확인', price: won((h.match(/og:price" content="(\d+)"/) || [])[1]),
-        shipping: free ? 0 : ship ? won(ship[1]) : null, isCD, title, text: title + ' ' + catno,
+      return { ok: true, status: canBuy && !sold ? '판매중' : sold ? '판매완료' : '미확인', price: uprice,
+        shipping: sh.shipping, isCD, title, text: title + ' ' + catno,
         grades: { disc: grade ? gradeOf(grade) : '미확인' }, seller: (tt.match(/판매자\s+(\S+)\s+출고/) || [])[1] || null,
-        evidence: [`개별 중고 상품 ${t.url}`, canBuy ? '바로구매·장바구니 버튼 있음' : '구매 버튼 없음', ship ? `판매자 배송료 ${ship[1]}원` : free ? '배송료 무료' : '배송료 표기 없음', grade ? `상태 ${grade}` : '상태 표기 없음'] };
+        evidence: [`개별 중고 상품 ${t.url}`, canBuy ? '바로구매·장바구니 버튼 있음' : '구매 버튼 없음', `판매자 배송료: ${sh.ev}`, grade ? `상태 ${grade}` : '상태 표기 없음'] };
     }
     const p = ldProduct(h); if (!p || !p.offers) return { ok: false, error: '상품 구조화 정보 없음' };
     const price = Number(p.offers.price) || null, st = avail(p.offers.availability) || '미확인';
-    const th = text(h).match(/배송료 유료 \((\d+)만원 이상 무료/); const thr = th ? Number(th[1]) * 10000 : null;
-    return { ok: true, status: st, price, shipping: price != null && thr != null && price >= thr ? 0 : null, isCD, title: p.name || title, text: (p.name || '') + ' ' + catno,
-      evidence: [`상품 페이지 JSON-LD availability=${String(p.offers.availability).split('/').pop()}`, `판매가 ${price}원`, thr != null ? (price >= thr ? `${thr / 10000}만원 이상 무료배송 기준 충족` : `${thr / 10000}만원 미만 — 배송료 금액이 페이지에 없어 총액 미확인`) : '배송 조건 표기 없음', disc ? `Disc ${disc}장` : '디스크 수 표기 없음'] };
+    const tt = text(h), sh = aladinShipping(tt, price), vendor = (tt.match(/판매 업체\s+(\S+)/) || [])[1];
+    return { ok: true, status: st, price, shipping: sh.shipping, isCD, title: p.name || title, text: (p.name || '') + ' ' + catno, seller: vendor ? `입점 ${vendor}` : null,
+      evidence: [`상품 페이지 JSON-LD availability=${String(p.offers.availability).split('/').pop()}`, `판매가 ${price}원`, `배송료: ${sh.ev}`, vendor ? `판매 업체 ${vendor}` : '알라딘 직접 판매', disc ? `Disc ${disc}장` : '디스크 수 표기 없음'] };
   }
 };
 
@@ -178,7 +188,7 @@ const joongna = {
     const shipping = parcelIncl === 1 ? 0 : dinfo.length ? Math.min(...dinfo.map(d => d.price)) : null;
     const disc = (desc.match(/(?:음반|디스크|CD)\s*[：:]\s*([SABC][+-]?|최상|상|중|하)/i) || [])[1];
     const book = (desc.match(/(?:부클릿|북클릿|속지|가사집)\s*[：:]\s*([SABC][+-]?|최상|상|중|하)/i) || [])[1];
-    return { ok: true, status, price: Number(p.offers.price) || null, shipping: post ? shipping : null, delivery: !post && meet ? '현장' : '배송', isCD, bundle, title, text: title + ' ' + desc,
+    return { ok: true, status, price: cleanPrice(Number(p.offers.price) || null), shipping: post ? shipping : null, delivery: !post && meet ? '현장' : '배송', isCD, bundle, title, text: title + ' ' + desc,
       irrelevant: t.needsBody ? !(body.title && body.artist) : false, grades: { disc: disc ? gradeOf(disc) : '미확인', booklet: book ? gradeOf(book) : (/(부클릿|북클릿|속지)\s*(없|x|누락)/i.test(desc) ? '누락' : '미확인') },
       evidence: [`상품 페이지 JSON-LD availability=${String(p.offers.availability).split('/').pop()}, productStatus=${ps}`, parcelIncl === 1 ? '배송비 포함' : dinfo.length ? `배송 옵션 ${dinfo.map(d => d.price + '원').join('/')} 중 최저 적용` : '배송비 표기 없음', `카테고리 ${cat || '미상'}`] };
   }
@@ -252,6 +262,7 @@ function cafe24(store) {
     }
   };
 }
+function storeQueries(a) { return [...new Set([a.title, ...(a.titleAliases || []).filter(t => /^[\x00-\x7F]+$/.test(t)), ...queries(a)])].slice(0, 3); }
 function adapters() {
   const st = readJSON(STORES, { stores: [] }).stores.filter(s => s.status === 'active' && s.platform === 'cafe24');
   return [joongna, bunjang, aladin, yes24, ...st.map(cafe24)];
@@ -271,7 +282,7 @@ async function doFetch() {
     if (ad.tier === 'hourly' && !hourly) { st.state = 'waiting'; st.reason = '1시간 회차에만 조회'; continue; }
     for (const a of albums) {
       let ok = true;
-      for (const q of queries(a)) {
+      for (const q of (ad.store ? storeQueries(a) : queries(a))) {
         try { const items = await ad.search(a, q); st.searched++;
           for (const it of items) { const id = `${ad.key}:${it.sid}`; if (!cand.has(id)) { cand.set(id, { id, sourceKey: ad.key, albumId: a.id, it }); st.candidates++; } } }
         catch (e) { ok = false; st.failed++; if (st.errors.length < 4) st.errors.push(`${q}: ${e.message}`); }
@@ -350,7 +361,7 @@ function doMerge() {
     if (!v.ok) continue;                                                                // 실패한 조회로 성공 시각을 갱신하지 않음
     if (v.irrelevant && !keep(l)) { db.listings = db.listings.filter(x => x !== l); continue; }
     l.notCD = v.isCD ? undefined : true; l.bundle = v.bundle || BUNDLE.test(v.title || l.title) || undefined;
-    if (v.title) l.title = v.title; if (v.delivery) l.delivery = v.delivery; if (v.seller && l.sourceKey === 'aladin') l.shop = `알라딘 판매자 ${v.seller}`;
+    if (v.title) l.title = v.title; if (v.delivery) l.delivery = v.delivery; if (v.seller && l.sourceKey === 'aladin') l.shop = /^입점/.test(v.seller) ? `알라딘 신품 (${v.seller})` : `알라딘 판매자 ${v.seller}`;
     l.hints = [...new Set([...(l.hints || []), ...hints(v.text || '')])];
     const ed = db.editions.find(e => e.id === l.editionId), o = Engine.last(l);
     let match = o.match || '미확인';

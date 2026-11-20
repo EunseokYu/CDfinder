@@ -41,6 +41,14 @@ const mkL = (id, ed, price, shipping, extra = {}) => ({ id, sourceKey: 'test', e
   const cd4 = S.cafe24({ id: 'cd4love', name: 'CD4LOVE', region: '울산', url: 'https://cd4love.co.kr', search: '/product/search.html?keyword=' });
   v = await (routes = { 'cd4love': () => ({ body: fx('cd4love_1741.html') }) }, cd4.verify({ url: 'https://cd4love.co.kr/product/detail.html?product_no=1741' }));
   ok('음반점(CD4LOVE) 원본: 판매중·16,500원·배송비 3,000원·CD', v.ok && v.status === '판매중' && v.price === 16500 && v.shipping === 3000 && v.isCD, JSON.stringify(v));
+  /* 알라딘 배송료 문구: 기준금액을 배송비로 잘못 읽지 않음 */
+  {
+    const page = (title, price, ship) => `<meta property="og:title" content="${title}"/><meta property="og:price" content="${price}" /><a href="/shop/wbasket.aspx?AddBook=U123">장바구니</a> 바로구매 상품 상태 중 ${ship} 판매자 X 출고예상일 Disc : 1장`;
+    routes = { 'ItemId=1$': () => ({ body: page('[중고] Chet Baker - Sings', 13000, '배송료 80,000원 미만 구매시 택배 3,700원, 도서/산간 6,200원') }), 'ItemId=2$': () => ({ body: page('[중고] Chet Baker - Sings', 90000, '배송료 80,000원 미만 구매시 택배 3,700원') }) };
+    const v1 = await S.aladin.verify({ sid: 'used:1', url: 'https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=1' });
+    const v2 = await S.aladin.verify({ sid: 'used:2', url: 'https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=2' });
+    ok('알라딘 ‘80,000원 미만 구매시 택배 3,700원’ → 13,000원 상품 배송비 3,700원, 90,000원 상품 0원', v1.shipping === 3700 && v2.shipping === 0, JSON.stringify([v1.shipping, v2.shipping]));
+  }
   /* ⑤ 과거 입고 공지만 있는 경우 */
   v = await (routes = { 'cdloft': () => ({ body: '<html><title>공지</title><body>[입고 안내] Chet Baker - Chet Baker Sings CD 입고되었습니다! 판매가 15,000원</body></html>' }) }, cdloft.verify({ url: 'https://cdloft.co.kr/board/notice/read.html?no=1' }));
   ok('음반점 입고 공지 페이지 → 상품 페이지 아님, 재고로 인정 안 함', !v.ok && /상품 페이지가 아님/.test(v.error), JSON.stringify(v));
@@ -87,6 +95,7 @@ const mkL = (id, ed, price, shipping, extra = {}) => ({ id, sourceKey: 'test', e
   const abbey = db0.albums.find(a => a.title === 'Abbey Road');
   const edAb = db0.editions.find(e => e.albumId === abbey.id);
   edAb.criteria.target = 40000;
+  db0.listings = db0.listings.filter(l => !(l.auto && l.editionId === edAb.id));   // 시나리오 격리: 이 앨범의 실조회 매물만 비움 (다른 데이터는 그대로)
   // 보존 확인용: 수동 매물을 숨김, 소장 기록 추가, 헬로마켓 과거 매물 추가
   const hidden = { id: 'manual-hidden', editionId: edAb.id, source: '번개장터', shop: '직접', region: '서울', delivery: '배송', kind: '중고', auto: false, obs: [{ at: Date.now() - HOUR, price: 10000, shipping: 0, status: '숨김', auth: '미확인', match: '미확인', disc: '미확인', case: '미확인', booklet: '미확인' }] };
   const hm = { id: 'hellomarket:999', sourceKey: 'hellomarket', editionId: edAb.id, source: '헬로마켓', shop: '헬로마켓 판매자', region: '서울', delivery: '배송', kind: '중고', auto: true, url: 'https://www.hellomarket.com/item/999', title: '비틀즈 애비로드 CD', verify: { at: Date.now(), ok: true, okAt: Date.now() }, obs: [{ at: Date.now() - 100, price: 5000, shipping: 0, status: '판매중', ver: true, auth: '미확인', match: '미확인', disc: '미확인', case: '미확인', booklet: '미확인' }] };
