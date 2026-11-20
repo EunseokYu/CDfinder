@@ -1,46 +1,349 @@
 {
- "schema": 2,
+ "schema": 3,
  "meta": {
-  "lastScan": 1795142015135,
+  "lastScan": 1795143914706,
   "sources": {
    "bunjang": {
     "label": "번개장터",
-    "ok": 0,
-    "fail": 0,
-    "items": 0,
-    "matched": 0,
-    "skipped": "설정 없음 (비밀 키 미등록)",
-    "error": null
+    "state": "skipped",
+    "reason": "GitHub 서버(해외 IP)에서 번개장터 검색 API가 404, 상품 페이지는 빈 화면만 응답 — 국내 IP 실행기가 필요해 꺼 둠",
+    "searched": 0,
+    "failed": 0,
+    "candidates": 0,
+    "verified": 0,
+    "verifyFailed": 0,
+    "at": 1795143914706
    },
    "aladin": {
     "label": "알라딘",
-    "ok": 0,
-    "fail": 0,
-    "items": 0,
-    "matched": 0,
-    "skipped": "설정 없음 (비밀 키 미등록)",
-    "error": null
+    "state": "ok",
+    "reason": null,
+    "searched": 13,
+    "failed": 0,
+    "candidates": 125,
+    "verified": 42,
+    "verifyFailed": 0,
+    "at": 1795143914706
    },
    "joongna": {
     "label": "중고나라",
-    "ok": 13,
-    "fail": 0,
-    "items": 47,
-    "matched": 12,
-    "skipped": null,
-    "error": null
+    "state": "ok",
+    "reason": null,
+    "searched": 13,
+    "failed": 0,
+    "candidates": 12,
+    "verified": 4,
+    "verifyFailed": 0,
+    "at": 1795143914706
    },
-   "hellomarket": {
-    "label": "헬로마켓",
-    "ok": 13,
-    "fail": 0,
-    "items": 1,
-    "matched": 0,
-    "skipped": null,
-    "error": null
+   "yes24": {
+    "label": "YES24",
+    "state": "failed",
+    "reason": "The Beatles Abbey Road: 검색·모바일 검색 요청이 모두 메인 페이지로 리다이렉트됨(해외 서버 차단으로 보임) — 상품 발견 불가",
+    "searched": 0,
+    "failed": 13,
+    "candidates": 0,
+    "verified": 0,
+    "verifyFailed": 0,
+    "at": 1795143914706
+   },
+   "store:cdloft": {
+    "label": "시디로프트",
+    "state": "ok",
+    "reason": null,
+    "searched": 13,
+    "failed": 0,
+    "candidates": 0,
+    "verified": 0,
+    "verifyFailed": 0,
+    "at": 1795143914706
+   },
+   "store:soriah": {
+    "label": "소리아",
+    "state": "ok",
+    "reason": null,
+    "searched": 13,
+    "failed": 0,
+    "candidates": 0,
+    "verified": 0,
+    "verifyFailed": 0,
+    "at": 1795143914706
+   },
+   "store:cd4love": {
+    "label": "CD4LOVE",
+    "state": "ok",
+    "reason": null,
+    "searched": 13,
+    "failed": 0,
+    "candidates": 1,
+    "verified": 1,
+    "verifyFailed": 0,
+    "at": 1795143914706
+   },
+   "store:mosaicseoul": {
+    "label": "모자이크서울",
+    "state": "ok",
+    "reason": null,
+    "searched": 13,
+    "failed": 0,
+    "candidates": 3,
+    "verified": 1,
+    "verifyFailed": 0,
+    "at": 1795143914706
+   },
+   "store:lpland": {
+    "label": "엘피랜드",
+    "state": "ok",
+    "reason": null,
+    "searched": 13,
+    "failed": 0,
+    "candidates": 1,
+    "verified": 0,
+    "verifyFailed": 0,
+    "at": 1795143914706
    }
   },
-  "probes": []
+  "coverage": {
+   "al-abbey": {
+    "joongna": {
+     "ok": true,
+     "at": 1795143914706
+    },
+    "aladin": {
+     "ok": true,
+     "at": 1795143914706
+    },
+    "yes24": {
+     "ok": false,
+     "at": 1795143914706
+    },
+    "store:cdloft": {
+     "ok": true,
+     "at": 1795143914706
+    },
+    "store:soriah": {
+     "ok": true,
+     "at": 1795143914706
+    },
+    "store:cd4love": {
+     "ok": true,
+     "at": 1795143914706
+    },
+    "store:mosaicseoul": {
+     "ok": true,
+     "at": 1795143914706
+    },
+    "store:lpland": {
+     "ok": true,
+     "at": 1795143914706
+    }
+   },
+   "al-gift": {
+    "joongna": {
+     "ok": true,
+     "at": 1795143914706
+    },
+    "aladin": {
+     "ok": true,
+     "at": 1795143914706
+    },
+    "yes24": {
+     "ok": false,
+     "at": 1795143914706
+    },
+    "store:cdloft": {
+     "ok": true,
+     "at": 1795143914706
+    },
+    "store:soriah": {
+     "ok": true,
+     "at": 1795143914706
+    },
+    "store:cd4love": {
+     "ok": true,
+     "at": 1795143914706
+    },
+    "store:mosaicseoul": {
+     "ok": true,
+     "at": 1795143914706
+    },
+    "store:lpland": {
+     "ok": true,
+     "at": 1795143914706
+    }
+   },
+   "al-letter": {
+    "joongna": {
+     "ok": true,
+     "at": 1795143914706
+    },
+    "aladin": {
+     "ok": true,
+     "at": 1795143914706
+    },
+    "yes24": {
+     "ok": false,
+     "at": 1795143914706
+    },
+    "store:cdloft": {
+     "ok": true,
+     "at": 1795143914706
+    },
+    "store:soriah": {
+     "ok": true,
+     "at": 1795143914706
+    },
+    "store:cd4love": {
+     "ok": true,
+     "at": 1795143914706
+    },
+    "store:mosaicseoul": {
+     "ok": true,
+     "at": 1795143914706
+    },
+    "store:lpland": {
+     "ok": true,
+     "at": 1795143914706
+    }
+   },
+   "al-sings": {
+    "joongna": {
+     "ok": true,
+     "at": 1795143914706
+    },
+    "aladin": {
+     "ok": true,
+     "at": 1795143914706
+    },
+    "yes24": {
+     "ok": false,
+     "at": 1795143914706
+    },
+    "store:cdloft": {
+     "ok": true,
+     "at": 1795143914706
+    },
+    "store:soriah": {
+     "ok": true,
+     "at": 1795143914706
+    },
+    "store:cd4love": {
+     "ok": true,
+     "at": 1795143914706
+    },
+    "store:mosaicseoul": {
+     "ok": true,
+     "at": 1795143914706
+    },
+    "store:lpland": {
+     "ok": true,
+     "at": 1795143914706
+    }
+   },
+   "al-could": {
+    "joongna": {
+     "ok": true,
+     "at": 1795143914706
+    },
+    "aladin": {
+     "ok": true,
+     "at": 1795143914706
+    },
+    "yes24": {
+     "ok": false,
+     "at": 1795143914706
+    },
+    "store:cdloft": {
+     "ok": true,
+     "at": 1795143914706
+    },
+    "store:soriah": {
+     "ok": true,
+     "at": 1795143914706
+    },
+    "store:cd4love": {
+     "ok": true,
+     "at": 1795143914706
+    },
+    "store:mosaicseoul": {
+     "ok": true,
+     "at": 1795143914706
+    },
+    "store:lpland": {
+     "ok": true,
+     "at": 1795143914706
+    }
+   },
+   "al-freud": {
+    "joongna": {
+     "ok": true,
+     "at": 1795143914706
+    },
+    "aladin": {
+     "ok": true,
+     "at": 1795143914706
+    },
+    "yes24": {
+     "ok": false,
+     "at": 1795143914706
+    },
+    "store:cdloft": {
+     "ok": true,
+     "at": 1795143914706
+    },
+    "store:soriah": {
+     "ok": true,
+     "at": 1795143914706
+    },
+    "store:cd4love": {
+     "ok": true,
+     "at": 1795143914706
+    },
+    "store:mosaicseoul": {
+     "ok": true,
+     "at": 1795143914706
+    },
+    "store:lpland": {
+     "ok": true,
+     "at": 1795143914706
+    }
+   },
+   "al-never": {
+    "joongna": {
+     "ok": true,
+     "at": 1795143914706
+    },
+    "aladin": {
+     "ok": true,
+     "at": 1795143914706
+    },
+    "yes24": {
+     "ok": false,
+     "at": 1795143914706
+    },
+    "store:cdloft": {
+     "ok": true,
+     "at": 1795143914706
+    },
+    "store:soriah": {
+     "ok": true,
+     "at": 1795143914706
+    },
+    "store:cd4love": {
+     "ok": true,
+     "at": 1795143914706
+    },
+    "store:mosaicseoul": {
+     "ok": true,
+     "at": 1795143914706
+    },
+    "store:lpland": {
+     "ok": true,
+     "at": 1795143914706
+    }
+   }
+  },
+  "lastHourly": 1795143914706
  },
  "albums": [
   {
@@ -160,9 +463,9 @@
    "criteria": {
     "kind": "중고",
     "target": null,
-    "disc": "A",
-    "case": "B",
-    "booklet": "A"
+    "disc": "ANY",
+    "case": "ANY",
+    "booklet": "ANY"
    }
   },
   {
@@ -181,9 +484,9 @@
    "criteria": {
     "kind": "중고",
     "target": null,
-    "disc": "A",
-    "case": "B",
-    "booklet": "A"
+    "disc": "ANY",
+    "case": "ANY",
+    "booklet": "ANY"
    }
   },
   {
@@ -202,9 +505,9 @@
    "criteria": {
     "kind": "중고",
     "target": null,
-    "disc": "A",
-    "case": "B",
-    "booklet": "A"
+    "disc": "ANY",
+    "case": "ANY",
+    "booklet": "ANY"
    }
   },
   {
@@ -223,9 +526,9 @@
    "criteria": {
     "kind": "중고",
     "target": null,
-    "disc": "A",
-    "case": "B",
-    "booklet": "A"
+    "disc": "ANY",
+    "case": "ANY",
+    "booklet": "ANY"
    }
   },
   {
@@ -244,9 +547,9 @@
    "criteria": {
     "kind": "중고",
     "target": null,
-    "disc": "A",
-    "case": "B",
-    "booklet": "A"
+    "disc": "ANY",
+    "case": "ANY",
+    "booklet": "ANY"
    }
   },
   {
@@ -265,9 +568,9 @@
    "criteria": {
     "kind": "중고",
     "target": null,
-    "disc": "A",
-    "case": "B",
-    "booklet": "A"
+    "disc": "ANY",
+    "case": "ANY",
+    "booklet": "ANY"
    }
   },
   {
@@ -286,9 +589,9 @@
    "criteria": {
     "kind": "중고",
     "target": null,
-    "disc": "A",
-    "case": "B",
-    "booklet": "A"
+    "disc": "ANY",
+    "case": "ANY",
+    "booklet": "ANY"
    }
   }
  ],
@@ -307,7 +610,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795142015135,
+   "checkedAt": 1795143914706,
    "obs": [
     {
      "auth": "미확인",
@@ -340,7 +643,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795142015135,
+   "checkedAt": 1795143914706,
    "obs": [
     {
      "auth": "미확인",
@@ -355,9 +658,35 @@
      "status": "판매중",
      "at": 1795099415746,
      "via": "자동"
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 25000,
+     "shipping": 4000,
+     "status": "판매중",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": true
     }
    ],
-   "missCount": 0
+   "missCount": 0,
+   "verify": {
+    "at": 1795143914706,
+    "ok": true,
+    "okAt": 1795143914706,
+    "error": null,
+    "evidence": [
+     "상품 페이지 JSON-LD availability=InStock, productStatus=0",
+     "배송 옵션 4000원 중 최저 적용",
+     "카테고리 노트북/PC"
+    ]
+   }
   },
   {
    "id": "joongna:199920503",
@@ -373,7 +702,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795142015135,
+   "checkedAt": 1795143914706,
    "obs": [
     {
      "auth": "미확인",
@@ -408,7 +737,7 @@
    ],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795142015135,
+   "checkedAt": 1795143914706,
    "obs": [
     {
      "auth": "미확인",
@@ -443,7 +772,7 @@
    ],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795142015135,
+   "checkedAt": 1795143914706,
    "obs": [
     {
      "auth": "미확인",
@@ -476,7 +805,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795142015135,
+   "checkedAt": 1795143914706,
    "obs": [
     {
      "auth": "미확인",
@@ -509,7 +838,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795142015135,
+   "checkedAt": 1795143914706,
    "obs": [
     {
      "auth": "미확인",
@@ -543,7 +872,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795142015135,
+   "checkedAt": 1795143914706,
    "obs": [
     {
      "auth": "미확인",
@@ -578,7 +907,7 @@
    ],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795142015135,
+   "checkedAt": 1795143914706,
    "obs": [
     {
      "auth": "미확인",
@@ -611,7 +940,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795142015135,
+   "checkedAt": 1795143914706,
    "obs": [
     {
      "auth": "미확인",
@@ -626,9 +955,35 @@
      "status": "판매중",
      "at": 1795099415746,
      "via": "자동"
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 22000,
+     "shipping": 5000,
+     "status": "판매중",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": true
     }
    ],
-   "missCount": 0
+   "missCount": 0,
+   "verify": {
+    "at": 1795143914706,
+    "ok": true,
+    "okAt": 1795143914706,
+    "error": null,
+    "evidence": [
+     "상품 페이지 JSON-LD availability=InStock, productStatus=0",
+     "배송 옵션 5000원 중 최저 적용",
+     "카테고리 노트북/PC"
+    ]
+   }
   },
   {
    "id": "joongna:225698336",
@@ -644,7 +999,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795142015135,
+   "checkedAt": 1795143914706,
    "obs": [
     {
      "auth": "미확인",
@@ -659,9 +1014,35 @@
      "status": "판매중",
      "at": 1795099415746,
      "via": "자동"
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 22750,
+     "shipping": 0,
+     "status": "판매중",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": true
     }
    ],
-   "missCount": 0
+   "missCount": 0,
+   "verify": {
+    "at": 1795143914706,
+    "ok": true,
+    "okAt": 1795143914706,
+    "error": null,
+    "evidence": [
+     "상품 페이지 JSON-LD availability=InStock, productStatus=0",
+     "배송비 포함",
+     "카테고리 노트북/PC"
+    ]
+   }
   },
   {
    "id": "joongna:223467210",
@@ -679,7 +1060,7 @@
    ],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795142015135,
+   "checkedAt": 1795143914706,
    "obs": [
     {
      "auth": "미확인",
@@ -708,9 +1089,5534 @@
      "status": "판매중",
      "at": 1795099624446,
      "via": "자동"
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 999999,
+     "shipping": 2500,
+     "status": "판매중",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": true
     }
    ],
-   "missCount": 0
+   "missCount": 0,
+   "verify": {
+    "at": 1795143914706,
+    "ok": true,
+    "okAt": 1795143914706,
+    "error": null,
+    "evidence": [
+     "상품 페이지 JSON-LD availability=InStock, productStatus=0",
+     "배송 옵션 3000원/2500원/2500원 중 최저 적용",
+     "카테고리 노트북/PC"
+    ]
+   },
+   "notCD": true
+  },
+  {
+   "id": "aladin:new:209013939",
+   "sourceKey": "aladin",
+   "editionId": "ed-abbey",
+   "source": "알라딘",
+   "shop": "알라딘 (신품)",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "신품",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=209013939",
+   "title": "[수입] Beatles - Abbey Road : Anniversary Edition",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 29600,
+     "shipping": null,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 29600,
+     "shipping": null,
+     "status": "판매중",
+     "at": 1795143914707,
+     "via": "자동",
+     "ver": true
+    }
+   ],
+   "verify": {
+    "at": 1795143914706,
+    "ok": true,
+    "okAt": 1795143914706,
+    "error": null,
+    "evidence": [
+     "상품 페이지 JSON-LD availability=InStock",
+     "판매가 29600원",
+     "배송 조건 표기 없음",
+     "Disc 1장"
+    ]
+   }
+  },
+  {
+   "id": "aladin:new:359439",
+   "sourceKey": "aladin",
+   "editionId": "ed-abbey",
+   "source": "알라딘",
+   "shop": "알라딘 (신품)",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "신품",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=359439",
+   "title": "The Beatles - Abbey Road",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 13600,
+     "shipping": null,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 13600,
+     "shipping": null,
+     "status": "품절",
+     "at": 1795143914707,
+     "via": "자동",
+     "ver": true
+    }
+   ],
+   "verify": {
+    "at": 1795143914706,
+    "ok": true,
+    "okAt": 1795143914706,
+    "error": null,
+    "evidence": [
+     "상품 페이지 JSON-LD availability=OutOfStock",
+     "판매가 13600원",
+     "2만원 미만 — 배송료 금액이 페이지에 없어 총액 미확인",
+     "Disc 1장"
+    ]
+   }
+  },
+  {
+   "id": "aladin:new:3712323",
+   "sourceKey": "aladin",
+   "editionId": "ed-abbey",
+   "source": "알라딘",
+   "shop": "알라딘 (신품)",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "신품",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=3712323",
+   "title": "[수입] Beatles - Abbey Road [Beatles 2009 리마스터] [한정 수입반, 디지팩]",
+   "hints": [
+    "리마스터 표기"
+   ],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 25000,
+     "shipping": null,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 25000,
+     "shipping": null,
+     "status": "품절",
+     "at": 1795143914707,
+     "via": "자동",
+     "ver": true
+    }
+   ],
+   "verify": {
+    "at": 1795143914706,
+    "ok": true,
+    "okAt": 1795143914706,
+    "error": null,
+    "evidence": [
+     "상품 페이지 JSON-LD availability=OutOfStock",
+     "판매가 25000원",
+     "배송 조건 표기 없음",
+     "Disc 1장"
+    ]
+   }
+  },
+  {
+   "id": "aladin:used:385941713",
+   "sourceKey": "aladin",
+   "editionId": "ed-abbey",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 상품설명필독부탁",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=385941713",
+   "title": "[수입] Beatles - Abbey Road [Beatles 2009 리마스터] [한정 수입반, 디지팩]",
+   "hints": [
+    "리마스터 표기"
+   ],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 25000,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:new:209713649",
+   "sourceKey": "aladin",
+   "editionId": "ed-abbey",
+   "source": "알라딘",
+   "shop": "알라딘 (신품)",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "신품",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=209713649",
+   "title": "[수입] Beatles - Abbey Road [Anniversary Edition] [Digipack 2CD]",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 41200,
+     "shipping": null,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:394435385",
+   "sourceKey": "aladin",
+   "editionId": "ed-abbey",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 마지막 수업",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=394435385",
+   "title": "[수입] Beatles - Abbey Road [Anniversary Edition] [Digipack 2CD]",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 35000,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:361040465",
+   "sourceKey": "aladin",
+   "editionId": "ed-abbey",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 Treasure Hunt",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=361040465",
+   "title": "[수입] Beatles - Abbey Road [Anniversary Edition] [Digipack 2CD]",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 36700,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:349414397",
+   "sourceKey": "aladin",
+   "editionId": "ed-abbey",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 Treasure Hunt",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=349414397",
+   "title": "[수입] Beatles - Abbey Road [Anniversary Edition] [Digipack 2CD]",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 37800,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:364236686",
+   "sourceKey": "aladin",
+   "editionId": "ed-abbey",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 VADER",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=364236686",
+   "title": "[수입] Beatles - Abbey Road [Anniversary Edition] [Digipack 2CD]",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 42000,
+     "shipping": 3900,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:335124586",
+   "sourceKey": "aladin",
+   "editionId": "ed-abbey",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 heddy7203",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=335124586",
+   "title": "[수입] Beatles - Abbey Road [Anniversary Edition] [Digipack 2CD]",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 42000,
+     "shipping": 3300,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:new:212363144",
+   "sourceKey": "aladin",
+   "editionId": "ed-abbey",
+   "source": "알라딘",
+   "shop": "알라딘 (신품)",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "신품",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=212363144",
+   "title": "[수입] Beatles - Abbey Road [Anniversary Edition] (3CD+BD-Audio)",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 125100,
+     "shipping": null,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:391577331",
+   "sourceKey": "aladin",
+   "editionId": "ed-abbey",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 마지막 수업",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=391577331",
+   "title": "[수입] Beatles - Abbey Road [Anniversary Edition] (3CD+BD-Audio)",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 250000,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:new:33675374",
+   "sourceKey": "aladin",
+   "editionId": "ed-abbey",
+   "source": "알라딘",
+   "shop": "알라딘 (신품)",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "신품",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=33675374",
+   "title": "[수입] Al Di Meola - All Your Life: A Tribute To The Beatles Recorded At Abbey Road Studios, London",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 21700,
+     "shipping": null,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 21700,
+     "shipping": null,
+     "status": "품절",
+     "at": 1795143914707,
+     "via": "자동",
+     "ver": true
+    }
+   ],
+   "verify": {
+    "at": 1795143914706,
+    "ok": true,
+    "okAt": 1795143914706,
+    "error": null,
+    "evidence": [
+     "상품 페이지 JSON-LD availability=OutOfStock",
+     "판매가 21700원",
+     "배송 조건 표기 없음",
+     "Disc 1장"
+    ]
+   }
+  },
+  {
+   "id": "aladin:used:360765353",
+   "sourceKey": "aladin",
+   "editionId": "ed-abbey",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 임계점",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=360765353",
+   "title": "[수입] Al Di Meola - All Your Life: A Tribute To The Beatles Recorded At Abbey Road Studios, London",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 67000,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:285050980",
+   "sourceKey": "aladin",
+   "editionId": "ed-abbey",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 DISC OFF",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=285050980",
+   "title": "[수입] Al Di Meola - All Your Life: A Tribute To The Beatles Recorded At Abbey Road Studios, London",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 67000,
+     "shipping": 4000,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:284239145",
+   "sourceKey": "aladin",
+   "editionId": "ed-abbey",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 매버릭",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=284239145",
+   "title": "[수입] Al Di Meola - All Your Life: A Tribute To The Beatles Recorded At Abbey Road Studios, London",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 70000,
+     "shipping": 4000,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:new:7729893",
+   "sourceKey": "aladin",
+   "editionId": "ed-abbey",
+   "source": "알라딘",
+   "shop": "알라딘 (신품)",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "신품",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=7729893",
+   "title": "[수입] 아트리움 앙상블 : 애비 로드",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 19000,
+     "shipping": null,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 19000,
+     "shipping": null,
+     "status": "품절",
+     "at": 1795143914707,
+     "via": "자동",
+     "ver": true
+    }
+   ],
+   "verify": {
+    "at": 1795143914706,
+    "ok": true,
+    "okAt": 1795143914706,
+    "error": null,
+    "evidence": [
+     "상품 페이지 JSON-LD availability=OutOfStock",
+     "판매가 19000원",
+     "2만원 미만 — 배송료 금액이 페이지에 없어 총액 미확인",
+     "Disc 1장"
+    ]
+   }
+  },
+  {
+   "id": "aladin:used:342373453",
+   "sourceKey": "aladin",
+   "editionId": "ed-abbey",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 corollajewel",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=342373453",
+   "title": "[중고] [수입] 아트리움 앙상블 : 애비 로드",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 20000,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "S",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 20000,
+     "shipping": 3500,
+     "status": "판매중",
+     "at": 1795143914707,
+     "via": "자동",
+     "ver": true
+    }
+   ],
+   "verify": {
+    "at": 1795143914706,
+    "ok": true,
+    "okAt": 1795143914706,
+    "error": null,
+    "evidence": [
+     "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=342373453",
+     "바로구매·장바구니 버튼 있음",
+     "판매자 배송료 3,500원",
+     "상태 최상"
+    ]
+   }
+  },
+  {
+   "id": "aladin:new:400976476",
+   "sourceKey": "aladin",
+   "editionId": "ed-abbey",
+   "source": "알라딘",
+   "shop": "알라딘 (신품)",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "신품",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=400976476",
+   "title": "[수입] Tribute To The Beatles - Abbey Road Reimagined (Digipack)(CD)",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 31900,
+     "shipping": null,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:new:352228501",
+   "sourceKey": "aladin",
+   "editionId": "ed-abbey",
+   "source": "알라딘",
+   "shop": "알라딘 (신품)",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "신품",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=352228501",
+   "title": "[수입] Lucinda Williams - Lucinda Williams Sings The Beatles From Abbey Road (CD)",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 27700,
+     "shipping": null,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 27700,
+     "shipping": null,
+     "status": "판매중",
+     "at": 1795143914707,
+     "via": "자동",
+     "ver": true
+    }
+   ],
+   "verify": {
+    "at": 1795143914706,
+    "ok": true,
+    "okAt": 1795143914706,
+    "error": null,
+    "evidence": [
+     "상품 페이지 JSON-LD availability=InStock",
+     "판매가 27700원",
+     "배송 조건 표기 없음",
+     "Disc 1장"
+    ]
+   }
+  },
+  {
+   "id": "aladin:new:363529621",
+   "sourceKey": "aladin",
+   "editionId": "ed-abbey",
+   "source": "알라딘",
+   "shop": "알라딘 (신품)",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "신품",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=363529621",
+   "title": "[수입] Tribute To The Beatles - Anarchy On Abbey Road - A Punk Tribute To The Beatles (Digipack)(CD)",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 27500,
+     "shipping": null,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 27500,
+     "shipping": null,
+     "status": "판매중",
+     "at": 1795143914707,
+     "via": "자동",
+     "ver": true
+    }
+   ],
+   "verify": {
+    "at": 1795143914706,
+    "ok": true,
+    "okAt": 1795143914706,
+    "error": null,
+    "evidence": [
+     "상품 페이지 JSON-LD availability=InStock",
+     "판매가 27500원",
+     "배송 조건 표기 없음",
+     "Disc 1장"
+    ]
+   }
+  },
+  {
+   "id": "aladin:used:400539467",
+   "sourceKey": "aladin",
+   "editionId": "ed-abbey",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 azabu10",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=400539467",
+   "title": "The Beatles - Abbey Road (HMV Box Set CD)",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 150000,
+     "shipping": 4000,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:406685386",
+   "sourceKey": "aladin",
+   "editionId": "ed-abbey",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 리오사운드",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=406685386",
+   "title": "[중고] 비틀즈 (The Beatles) - Abbey Road (Italy발매) | 비틀즈 (The Beatles)",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 13000,
+     "shipping": 3700,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "B",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 13000,
+     "shipping": 80000,
+     "status": "판매중",
+     "at": 1795143914707,
+     "via": "자동",
+     "ver": true
+    }
+   ],
+   "verify": {
+    "at": 1795143914706,
+    "ok": true,
+    "okAt": 1795143914706,
+    "error": null,
+    "evidence": [
+     "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=406685386",
+     "바로구매·장바구니 버튼 있음",
+     "판매자 배송료 80,000원",
+     "상태 중"
+    ]
+   }
+  },
+  {
+   "id": "aladin:used:403019062",
+   "sourceKey": "aladin",
+   "editionId": "ed-abbey",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 딱지",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=403019062",
+   "title": "The Complete Beatles Recording Sessions : The Official Story of the Abbey Road years 1962-1970 (Paperback)",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 50000,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:378751276",
+   "sourceKey": "aladin",
+   "editionId": "ed-abbey",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 하드락스토어",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=378751276",
+   "title": "[영국반CD] The Beatles – Abbey Road (2009 Digital Remaster Digipack)",
+   "hints": [
+    "리마스터 표기"
+   ],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 25000,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:334356301",
+   "sourceKey": "aladin",
+   "editionId": "ed-abbey",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 azabu10",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=334356301",
+   "title": "The Beatles ‎/ Abbey Road (미개봉, SHM-CD, Paper Sleeve CD)",
+   "hints": [
+    "미개봉 표기"
+   ],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 300000,
+     "shipping": 4000,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:new:279215663",
+   "sourceKey": "aladin",
+   "editionId": "ed-gift",
+   "source": "알라딘",
+   "shop": "알라딘 (신품)",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "신품",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=279215663",
+   "title": "백예린 - 리메이크앨범 선물",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 22300,
+     "shipping": null,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 22300,
+     "shipping": null,
+     "status": "품절",
+     "at": 1795143914707,
+     "via": "자동",
+     "ver": true
+    }
+   ],
+   "verify": {
+    "at": 1795143914706,
+    "ok": true,
+    "okAt": 1795143914706,
+    "error": null,
+    "evidence": [
+     "상품 페이지 JSON-LD availability=OutOfStock",
+     "판매가 22300원",
+     "배송 조건 표기 없음",
+     "Disc 1장"
+    ]
+   }
+  },
+  {
+   "id": "aladin:used:397881336",
+   "sourceKey": "aladin",
+   "editionId": "ed-gift",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 Cheese",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=397881336",
+   "title": "[중고] 백예린 - 리메이크앨범 선물",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 60000,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "A",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 60000,
+     "shipping": 3500,
+     "status": "판매중",
+     "at": 1795143914707,
+     "via": "자동",
+     "ver": true
+    }
+   ],
+   "verify": {
+    "at": 1795143914706,
+    "ok": true,
+    "okAt": 1795143914706,
+    "error": null,
+    "evidence": [
+     "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=397881336",
+     "바로구매·장바구니 버튼 있음",
+     "판매자 배송료 3,500원",
+     "상태 상"
+    ]
+   }
+  },
+  {
+   "id": "aladin:used:405197399",
+   "sourceKey": "aladin",
+   "editionId": "ed-gift",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 귀한소장책",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=405197399",
+   "title": "[중고] 백예린 - 리메이크앨범 선물",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 70000,
+     "shipping": 2800,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "S",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 70000,
+     "shipping": 2800,
+     "status": "판매중",
+     "at": 1795143914707,
+     "via": "자동",
+     "ver": true
+    }
+   ],
+   "verify": {
+    "at": 1795143914706,
+    "ok": true,
+    "okAt": 1795143914706,
+    "error": null,
+    "evidence": [
+     "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=405197399",
+     "바로구매·장바구니 버튼 있음",
+     "판매자 배송료 2,800원",
+     "상태 최상"
+    ]
+   }
+  },
+  {
+   "id": "aladin:used:400589768",
+   "sourceKey": "aladin",
+   "editionId": "ed-gift",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 bemkei",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=400589768",
+   "title": "[중고] 백예린 - 리메이크앨범 선물",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 75000,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "S",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 75000,
+     "shipping": 3500,
+     "status": "판매중",
+     "at": 1795143914707,
+     "via": "자동",
+     "ver": true
+    }
+   ],
+   "verify": {
+    "at": 1795143914706,
+    "ok": true,
+    "okAt": 1795143914706,
+    "error": null,
+    "evidence": [
+     "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=400589768",
+     "바로구매·장바구니 버튼 있음",
+     "판매자 배송료 3,500원",
+     "상태 최상"
+    ]
+   }
+  },
+  {
+   "id": "aladin:used:384936709",
+   "sourceKey": "aladin",
+   "editionId": "ed-gift",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 eocmusic",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=384936709",
+   "title": "백예린 - 리메이크앨범 선물",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 80000,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:396107455",
+   "sourceKey": "aladin",
+   "editionId": "ed-gift",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 파스텔",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=396107455",
+   "title": "백예린 - 리메이크앨범 선물",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 80000,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:381547801",
+   "sourceKey": "aladin",
+   "editionId": "ed-gift",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 양택리서가",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=381547801",
+   "title": "백예린 - 리메이크앨범 선물",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 88000,
+     "shipping": 3200,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:391281877",
+   "sourceKey": "aladin",
+   "editionId": "ed-gift",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 마뇨닷컴",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=391281877",
+   "title": "백예린 - 리메이크앨범 선물",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 88900,
+     "shipping": 5000,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:333511096",
+   "sourceKey": "aladin",
+   "editionId": "ed-gift",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 Revolvo",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=333511096",
+   "title": "백예린 - 리메이크앨범 선물",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 89000,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:new:344037425",
+   "sourceKey": "aladin",
+   "editionId": "ed-gift",
+   "source": "알라딘",
+   "shop": "알라딘 (신품)",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "신품",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=344037425",
+   "title": "백예린 - 리메이크앨범 선물 (재발매)",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 22300,
+     "shipping": null,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 22300,
+     "shipping": null,
+     "status": "품절",
+     "at": 1795143914707,
+     "via": "자동",
+     "ver": true
+    }
+   ],
+   "verify": {
+    "at": 1795143914706,
+    "ok": true,
+    "okAt": 1795143914706,
+    "error": null,
+    "evidence": [
+     "상품 페이지 JSON-LD availability=OutOfStock",
+     "판매가 22300원",
+     "배송 조건 표기 없음",
+     "Disc 1장"
+    ]
+   }
+  },
+  {
+   "id": "aladin:new:222095862",
+   "sourceKey": "aladin",
+   "editionId": "ed-letter",
+   "source": "알라딘",
+   "shop": "알라딘 (신품)",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "신품",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=222095862",
+   "title": "백예린 - Every letter I sent you. [2CD]",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 22300,
+     "shipping": null,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 22300,
+     "shipping": null,
+     "status": "품절",
+     "at": 1795143914707,
+     "via": "자동",
+     "ver": true
+    }
+   ],
+   "verify": {
+    "at": 1795143914706,
+    "ok": true,
+    "okAt": 1795143914706,
+    "error": null,
+    "evidence": [
+     "상품 페이지 JSON-LD availability=OutOfStock",
+     "판매가 22300원",
+     "배송 조건 표기 없음",
+     "Disc 2장"
+    ]
+   }
+  },
+  {
+   "id": "aladin:used:401736776",
+   "sourceKey": "aladin",
+   "editionId": "ed-letter",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 귀한소장책",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=401736776",
+   "title": "[중고] 백예린 - Every letter I sent you. [2CD] | 백예린 노래",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 70000,
+     "shipping": 2800,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "A",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 70000,
+     "shipping": 2800,
+     "status": "판매중",
+     "at": 1795143914707,
+     "via": "자동",
+     "ver": true
+    }
+   ],
+   "verify": {
+    "at": 1795143914706,
+    "ok": true,
+    "okAt": 1795143914706,
+    "error": null,
+    "evidence": [
+     "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=401736776",
+     "바로구매·장바구니 버튼 있음",
+     "판매자 배송료 2,800원",
+     "상태 상"
+    ]
+   }
+  },
+  {
+   "id": "aladin:used:396765787",
+   "sourceKey": "aladin",
+   "editionId": "ed-letter",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 다섯시",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=396765787",
+   "title": "[중고] 백예린 - Every letter I sent you. [2CD]",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 80000,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "S",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 80000,
+     "shipping": 100000,
+     "status": "판매중",
+     "at": 1795143914707,
+     "via": "자동",
+     "ver": true
+    }
+   ],
+   "verify": {
+    "at": 1795143914706,
+    "ok": true,
+    "okAt": 1795143914706,
+    "error": null,
+    "evidence": [
+     "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=396765787",
+     "바로구매·장바구니 버튼 있음",
+     "판매자 배송료 100,000원",
+     "상태 최상"
+    ]
+   }
+  },
+  {
+   "id": "aladin:used:333310670",
+   "sourceKey": "aladin",
+   "editionId": "ed-letter",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 choiys2254",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=333310670",
+   "title": "[중고] 백예린 - Every letter I sent you. [2CD]",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 90000,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "S",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 90000,
+     "shipping": 3500,
+     "status": "판매중",
+     "at": 1795143914707,
+     "via": "자동",
+     "ver": true
+    }
+   ],
+   "verify": {
+    "at": 1795143914706,
+    "ok": true,
+    "okAt": 1795143914706,
+    "error": null,
+    "evidence": [
+     "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=333310670",
+     "바로구매·장바구니 버튼 있음",
+     "판매자 배송료 3,500원",
+     "상태 최상"
+    ]
+   }
+  },
+  {
+   "id": "aladin:used:401344315",
+   "sourceKey": "aladin",
+   "editionId": "ed-letter",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 마뇨닷컴",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=401344315",
+   "title": "백예린 - Every letter I sent you. [2CD]",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 99900,
+     "shipping": 5000,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:289672477",
+   "sourceKey": "aladin",
+   "editionId": "ed-letter",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 이장님",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=289672477",
+   "title": "백예린 - Every letter I sent you. [2CD]",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 100000,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:339353100",
+   "sourceKey": "aladin",
+   "editionId": "ed-letter",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 빅톤",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=339353100",
+   "title": "백예린 - Every letter I sent you. [2CD]",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 100000,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:375380867",
+   "sourceKey": "aladin",
+   "editionId": "ed-letter",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 뽀로로",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=375380867",
+   "title": "백예린 - Every letter I sent you. [2CD]",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 120000,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:401343485",
+   "sourceKey": "aladin",
+   "editionId": "ed-letter",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 RadioStar",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=401343485",
+   "title": "백예린 - Every letter I sent you. [2CD]",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 132000,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:new:344036095",
+   "sourceKey": "aladin",
+   "editionId": "ed-letter",
+   "source": "알라딘",
+   "shop": "알라딘 (신품)",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "신품",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=344036095",
+   "title": "백예린 - Every letter I sent you. [2CD](재발매)",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 22300,
+     "shipping": null,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 22300,
+     "shipping": null,
+     "status": "품절",
+     "at": 1795143914707,
+     "via": "자동",
+     "ver": true
+    }
+   ],
+   "verify": {
+    "at": 1795143914706,
+    "ok": true,
+    "okAt": 1795143914706,
+    "error": null,
+    "evidence": [
+     "상품 페이지 JSON-LD availability=OutOfStock",
+     "판매가 22300원",
+     "배송 조건 표기 없음",
+     "Disc 2장"
+    ]
+   }
+  },
+  {
+   "id": "aladin:used:368717444",
+   "sourceKey": "aladin",
+   "editionId": "ed-letter",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 midme0",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=368717444",
+   "title": "백예린 - Every letter I sent you. [2CD](재발매)",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 94500,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:366274594",
+   "sourceKey": "aladin",
+   "editionId": "ed-letter",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 모모",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=366274594",
+   "title": "백예린 - Every letter I sent you. [2CD](재발매)",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 95000,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:390874934",
+   "sourceKey": "aladin",
+   "editionId": "ed-letter",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 마뇨닷컴",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=390874934",
+   "title": "백예린 - Every letter I sent you. [2CD](재발매)",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 99900,
+     "shipping": 5000,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:364116783",
+   "sourceKey": "aladin",
+   "editionId": "ed-letter",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 이승훈",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=364116783",
+   "title": "백예린 - Every letter I sent you. [2CD](재발매)",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 100000,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:371955833",
+   "sourceKey": "aladin",
+   "editionId": "ed-letter",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 굿뮤직",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=371955833",
+   "title": "백예린 - Every letter I sent you. [2CD](재발매)",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 110000,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:new:711925",
+   "sourceKey": "aladin",
+   "editionId": "ed-sings",
+   "source": "알라딘",
+   "shop": "알라딘 (신품)",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "신품",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=711925",
+   "title": "[수입] Chet Baker - The Best Of Chet Baker Sings",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 16400,
+     "shipping": null,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 16400,
+     "shipping": null,
+     "status": "판매중",
+     "at": 1795143914707,
+     "via": "자동",
+     "ver": true
+    }
+   ],
+   "verify": {
+    "at": 1795143914706,
+    "ok": true,
+    "okAt": 1795143914706,
+    "error": null,
+    "evidence": [
+     "상품 페이지 JSON-LD availability=InStock",
+     "판매가 16400원",
+     "2만원 미만 — 배송료 금액이 페이지에 없어 총액 미확인",
+     "Disc 1장"
+    ]
+   }
+  },
+  {
+   "id": "aladin:used:369778611",
+   "sourceKey": "aladin",
+   "editionId": "ed-sings",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 젠틀맨 _ D ,정",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=369778611",
+   "title": "[수입] Chet Baker - The Best Of Chet Baker Sings",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 24500,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:new:303764908",
+   "sourceKey": "aladin",
+   "editionId": "ed-sings",
+   "source": "알라딘",
+   "shop": "알라딘 (신품)",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "신품",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=303764908",
+   "title": "[수입] Chet Baker - Chet Baker Sings And Plays [SHM-CD]",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 27500,
+     "shipping": null,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 27500,
+     "shipping": null,
+     "status": "판매중",
+     "at": 1795143914707,
+     "via": "자동",
+     "ver": true
+    }
+   ],
+   "verify": {
+    "at": 1795143914706,
+    "ok": true,
+    "okAt": 1795143914706,
+    "error": null,
+    "evidence": [
+     "상품 페이지 JSON-LD availability=InStock",
+     "판매가 27500원",
+     "배송 조건 표기 없음",
+     "Disc 1장"
+    ]
+   }
+  },
+  {
+   "id": "aladin:used:404220180",
+   "sourceKey": "aladin",
+   "editionId": "ed-sings",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 Profundere",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=404220180",
+   "title": "[수입] Chet Baker - Chet Baker Sings And Plays [SHM-CD]",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 28000,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:322882503",
+   "sourceKey": "aladin",
+   "editionId": "ed-sings",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 spitz_recs 2",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=322882503",
+   "title": "[수입] Chet Baker - Chet Baker Sings And Plays [SHM-CD]",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 29500,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:309592014",
+   "sourceKey": "aladin",
+   "editionId": "ed-sings",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 sykes",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=309592014",
+   "title": "[수입] Chet Baker - Chet Baker Sings And Plays [SHM-CD]",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 35800,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:new:299529222",
+   "sourceKey": "aladin",
+   "editionId": "ed-sings",
+   "source": "알라딘",
+   "shop": "알라딘 (신품)",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "신품",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=299529222",
+   "title": "[수입] Chet Baker - Sings Again",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 23500,
+     "shipping": null,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 23500,
+     "shipping": null,
+     "status": "판매중",
+     "at": 1795143914707,
+     "via": "자동",
+     "ver": true
+    }
+   ],
+   "verify": {
+    "at": 1795143914706,
+    "ok": true,
+    "okAt": 1795143914706,
+    "error": null,
+    "evidence": [
+     "상품 페이지 JSON-LD availability=InStock",
+     "판매가 23500원",
+     "배송 조건 표기 없음",
+     "Disc 1장"
+    ]
+   }
+  },
+  {
+   "id": "aladin:used:400566879",
+   "sourceKey": "aladin",
+   "editionId": "ed-sings",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 mu.A",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=400566879",
+   "title": "[수입] Chet Baker - Sings Again",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 28000,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:399302549",
+   "sourceKey": "aladin",
+   "editionId": "ed-sings",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 mu.A",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=399302549",
+   "title": "[수입] Chet Baker - Sings Again",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 34000,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:388493538",
+   "sourceKey": "aladin",
+   "editionId": "ed-sings",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 젠틀맨 _ D ,정",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=388493538",
+   "title": "[수입] Chet Baker - Sings Again",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 34500,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:388493156",
+   "sourceKey": "aladin",
+   "editionId": "ed-sings",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 젠틀맨 _ D ,정",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=388493156",
+   "title": "[수입] Chet Baker - Sings Again",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 34500,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:370586960",
+   "sourceKey": "aladin",
+   "editionId": "ed-sings",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 Revolvo",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=370586960",
+   "title": "[수입] Chet Baker - Sings Again",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 38600,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:370586953",
+   "sourceKey": "aladin",
+   "editionId": "ed-sings",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 Revolvo",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=370586953",
+   "title": "[수입] Chet Baker - Sings Again",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 38600,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:368465057",
+   "sourceKey": "aladin",
+   "editionId": "ed-sings",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 Revolvo",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=368465057",
+   "title": "[수입] Chet Baker - Sings Again",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 38600,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:new:292208368",
+   "sourceKey": "aladin",
+   "editionId": "ed-sings",
+   "source": "알라딘",
+   "shop": "알라딘 (신품)",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "신품",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=292208368",
+   "title": "[수입] Chet Baker - Chet Baker Sings",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 15600,
+     "shipping": null,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 15600,
+     "shipping": null,
+     "status": "품절",
+     "at": 1795143914707,
+     "via": "자동",
+     "ver": true
+    }
+   ],
+   "verify": {
+    "at": 1795143914706,
+    "ok": true,
+    "okAt": 1795143914706,
+    "error": null,
+    "evidence": [
+     "상품 페이지 JSON-LD availability=OutOfStock",
+     "판매가 15600원",
+     "2만원 미만 — 배송료 금액이 페이지에 없어 총액 미확인",
+     "Disc 1장"
+    ]
+   }
+  },
+  {
+   "id": "aladin:used:380891794",
+   "sourceKey": "aladin",
+   "editionId": "ed-sings",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 유우키",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=380891794",
+   "title": "[수입] Chet Baker - Chet Baker Sings",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 20000,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:338286894",
+   "sourceKey": "aladin",
+   "editionId": "ed-sings",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 Revolvo",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=338286894",
+   "title": "[수입] Chet Baker - Chet Baker Sings",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 21800,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:399417603",
+   "sourceKey": "aladin",
+   "editionId": "ed-sings",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 mu.A",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=399417603",
+   "title": "[수입] Chet Baker - Chet Baker Sings",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 25000,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:399244496",
+   "sourceKey": "aladin",
+   "editionId": "ed-sings",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 mu.A",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=399244496",
+   "title": "[수입] Chet Baker - Chet Baker Sings",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 25000,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:337881784",
+   "sourceKey": "aladin",
+   "editionId": "ed-sings",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 Revolvo",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=337881784",
+   "title": "[수입] Chet Baker - Chet Baker Sings",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 28600,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:361905178",
+   "sourceKey": "aladin",
+   "editionId": "ed-sings",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 Revolvo",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=361905178",
+   "title": "[수입] Chet Baker - Chet Baker Sings",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 32000,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:358832255",
+   "sourceKey": "aladin",
+   "editionId": "ed-sings",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 Revolvo",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=358832255",
+   "title": "[수입] Chet Baker - Chet Baker Sings",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 32000,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:new:411198",
+   "sourceKey": "aladin",
+   "editionId": "ed-sings",
+   "source": "알라딘",
+   "shop": "알라딘 (신품)",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "신품",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=411198",
+   "title": "Chet Baker - Chet Baker Sings",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 9600,
+     "shipping": null,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 9600,
+     "shipping": null,
+     "status": "품절",
+     "at": 1795143914707,
+     "via": "자동",
+     "ver": true
+    }
+   ],
+   "verify": {
+    "at": 1795143914706,
+    "ok": true,
+    "okAt": 1795143914706,
+    "error": null,
+    "evidence": [
+     "상품 페이지 JSON-LD availability=OutOfStock",
+     "판매가 9600원",
+     "2만원 미만 — 배송료 금액이 페이지에 없어 총액 미확인",
+     "Disc 1장"
+    ]
+   }
+  },
+  {
+   "id": "aladin:used:325265442",
+   "sourceKey": "aladin",
+   "editionId": "ed-sings",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 Revolvo",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=325265442",
+   "title": "Chet Baker - Chet Baker Sings",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 26800,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:new:314077617",
+   "sourceKey": "aladin",
+   "editionId": "ed-sings",
+   "source": "알라딘",
+   "shop": "알라딘 (신품)",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "신품",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=314077617",
+   "title": "Chet Baker - Chet Baker Sings",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 13400,
+     "shipping": null,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 13400,
+     "shipping": null,
+     "status": "품절",
+     "at": 1795143914707,
+     "via": "자동",
+     "ver": true
+    }
+   ],
+   "verify": {
+    "at": 1795143914706,
+    "ok": true,
+    "okAt": 1795143914706,
+    "error": null,
+    "evidence": [
+     "상품 페이지 JSON-LD availability=OutOfStock",
+     "판매가 13400원",
+     "2만원 미만 — 배송료 금액이 페이지에 없어 총액 미확인",
+     "Disc 1장"
+    ]
+   }
+  },
+  {
+   "id": "aladin:new:370133631",
+   "sourceKey": "aladin",
+   "editionId": "ed-sings",
+   "source": "알라딘",
+   "shop": "알라딘 (신품)",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "신품",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=370133631",
+   "title": "[수입] Chet Baker - Chet Baker Sings [UHQ-CD]",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 44700,
+     "shipping": null,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:378966317",
+   "sourceKey": "aladin",
+   "editionId": "ed-sings",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 spitz_recs 2",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=378966317",
+   "title": "[수입] Chet Baker - Chet Baker Sings [UHQ-CD]",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 44500,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:new:275241833",
+   "sourceKey": "aladin",
+   "editionId": "ed-sings",
+   "source": "알라딘",
+   "shop": "알라딘 (신품)",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "신품",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=275241833",
+   "title": "[수입] Chet Baker - Sings: The Making of Chet Baker Sings",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 26600,
+     "shipping": null,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 26600,
+     "shipping": null,
+     "status": "품절",
+     "at": 1795143914707,
+     "via": "자동",
+     "ver": true
+    }
+   ],
+   "verify": {
+    "at": 1795143914706,
+    "ok": true,
+    "okAt": 1795143914706,
+    "error": null,
+    "evidence": [
+     "상품 페이지 JSON-LD availability=OutOfStock",
+     "판매가 26600원",
+     "배송 조건 표기 없음",
+     "Disc 1장"
+    ]
+   }
+  },
+  {
+   "id": "aladin:used:374988621",
+   "sourceKey": "aladin",
+   "editionId": "ed-sings",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 제발_공지_확인",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=374988621",
+   "title": "[수입] Chet Baker - Sings: The Making of Chet Baker Sings",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 88000,
+     "shipping": null,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:new:703384",
+   "sourceKey": "aladin",
+   "editionId": "ed-sings",
+   "source": "알라딘",
+   "shop": "알라딘 (신품)",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "신품",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=703384",
+   "title": "[수입] Chet Baker - Sings",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 16400,
+     "shipping": null,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 16400,
+     "shipping": null,
+     "status": "품절",
+     "at": 1795143914707,
+     "via": "자동",
+     "ver": true
+    }
+   ],
+   "verify": {
+    "at": 1795143914706,
+    "ok": true,
+    "okAt": 1795143914706,
+    "error": null,
+    "evidence": [
+     "상품 페이지 JSON-LD availability=OutOfStock",
+     "판매가 16400원",
+     "2만원 미만 — 배송료 금액이 페이지에 없어 총액 미확인",
+     "Disc 1장"
+    ]
+   }
+  },
+  {
+   "id": "aladin:used:400766131",
+   "sourceKey": "aladin",
+   "editionId": "ed-sings",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 Archiv",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=400766131",
+   "title": "[수입] Chet Baker - Sings",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 20000,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:345959675",
+   "sourceKey": "aladin",
+   "editionId": "ed-sings",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 토토로71",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=345959675",
+   "title": "[수입] Chet Baker - Sings",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 30000,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:384395154",
+   "sourceKey": "aladin",
+   "editionId": "ed-sings",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 Revolvo",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=384395154",
+   "title": "[수입] Chet Baker - Sings",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 32000,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:348846491",
+   "sourceKey": "aladin",
+   "editionId": "ed-sings",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 Revolvo",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=348846491",
+   "title": "[수입] Chet Baker - Sings",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 32000,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:348371338",
+   "sourceKey": "aladin",
+   "editionId": "ed-sings",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 Revolvo",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=348371338",
+   "title": "[수입] Chet Baker - Sings",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 32000,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:318837982",
+   "sourceKey": "aladin",
+   "editionId": "ed-sings",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 Revolvo",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=318837982",
+   "title": "[수입] Chet Baker - Sings",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 38600,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:343432162",
+   "sourceKey": "aladin",
+   "editionId": "ed-sings",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 Revolvo",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=343432162",
+   "title": "[수입] Chet Baker - Sings",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 39800,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:new:341822033",
+   "sourceKey": "aladin",
+   "editionId": "ed-sings",
+   "source": "알라딘",
+   "shop": "알라딘 (신품)",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "신품",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=341822033",
+   "title": "[수입] Chet Baker - Chet Baker Sings [SHM-CD]",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 27500,
+     "shipping": null,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:399498874",
+   "sourceKey": "aladin",
+   "editionId": "ed-sings",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 Archiv",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=399498874",
+   "title": "[수입] Chet Baker - Chet Baker Sings [SHM-CD]",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 22000,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:372645013",
+   "sourceKey": "aladin",
+   "editionId": "ed-sings",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 Revolvo",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=372645013",
+   "title": "[수입] Chet Baker - Chet Baker Sings [SHM-CD]",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 32000,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:358825191",
+   "sourceKey": "aladin",
+   "editionId": "ed-sings",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 Revolvo",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=358825191",
+   "title": "[수입] Chet Baker - Chet Baker Sings [SHM-CD]",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 39800,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:358825190",
+   "sourceKey": "aladin",
+   "editionId": "ed-sings",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 Revolvo",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=358825190",
+   "title": "[수입] Chet Baker - Chet Baker Sings [SHM-CD]",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 39800,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:402413353",
+   "sourceKey": "aladin",
+   "editionId": "ed-sings",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 풍경소리",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=402413353",
+   "title": "[수입] Chet Baker - Sings [3CD]",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 19500,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:364215705",
+   "sourceKey": "aladin",
+   "editionId": "ed-sings",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 Treasure Hunt",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=364215705",
+   "title": "[중고] [수입] Chet Baker Sings And Plays From The Film ‘Let‘s Get Lost‘",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 17800,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "A",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 17800,
+     "shipping": 70000,
+     "status": "판매중",
+     "at": 1795143914707,
+     "via": "자동",
+     "ver": true
+    }
+   ],
+   "verify": {
+    "at": 1795143914706,
+    "ok": true,
+    "okAt": 1795143914706,
+    "error": null,
+    "evidence": [
+     "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=364215705",
+     "바로구매·장바구니 버튼 있음",
+     "판매자 배송료 70,000원",
+     "상태 상"
+    ]
+   }
+  },
+  {
+   "id": "aladin:new:8446473",
+   "sourceKey": "aladin",
+   "editionId": "ed-could",
+   "source": "알라딘",
+   "shop": "알라딘 (신품)",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "신품",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=8446473",
+   "title": "[수입] Chet Baker - It Could Happen To You",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 16400,
+     "shipping": null,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 16400,
+     "shipping": null,
+     "status": "품절",
+     "at": 1795143914707,
+     "via": "자동",
+     "ver": true
+    }
+   ],
+   "verify": {
+    "at": 1795143914706,
+    "ok": true,
+    "okAt": 1795143914706,
+    "error": null,
+    "evidence": [
+     "상품 페이지 JSON-LD availability=OutOfStock",
+     "판매가 16400원",
+     "2만원 미만 — 배송료 금액이 페이지에 없어 총액 미확인",
+     "Disc 1장"
+    ]
+   }
+  },
+  {
+   "id": "aladin:used:339123048",
+   "sourceKey": "aladin",
+   "editionId": "ed-could",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 Yonna",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=339123048",
+   "title": "[수입] Chet Baker - It Could Happen To You",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 32000,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:318835727",
+   "sourceKey": "aladin",
+   "editionId": "ed-could",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 Revolvo",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=318835727",
+   "title": "[수입] Chet Baker - It Could Happen To You",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 39800,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:316488504",
+   "sourceKey": "aladin",
+   "editionId": "ed-could",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 Revolvo",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=316488504",
+   "title": "[수입] Chet Baker - It Could Happen To You",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 39800,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:299549981",
+   "sourceKey": "aladin",
+   "editionId": "ed-could",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 Revolvo",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=299549981",
+   "title": "[수입] Chet Baker - It Could Happen To You",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 39800,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:new:317726876",
+   "sourceKey": "aladin",
+   "editionId": "ed-could",
+   "source": "알라딘",
+   "shop": "알라딘 (신품)",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "신품",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=317726876",
+   "title": "[수입] Chet Baker - It Could Happen To You [SHM-CD]",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 28600,
+     "shipping": null,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 28600,
+     "shipping": null,
+     "status": "품절",
+     "at": 1795143914707,
+     "via": "자동",
+     "ver": true
+    }
+   ],
+   "verify": {
+    "at": 1795143914706,
+    "ok": true,
+    "okAt": 1795143914706,
+    "error": null,
+    "evidence": [
+     "상품 페이지 JSON-LD availability=OutOfStock",
+     "판매가 28600원",
+     "배송 조건 표기 없음",
+     "Disc 1장"
+    ]
+   }
+  },
+  {
+   "id": "aladin:used:388653535",
+   "sourceKey": "aladin",
+   "editionId": "ed-could",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 Archiv",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=388653535",
+   "title": "[수입] Chet Baker - It Could Happen To You [SHM-CD]",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 26000,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:380475146",
+   "sourceKey": "aladin",
+   "editionId": "ed-could",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 젠틀맨 _ D ,정",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=380475146",
+   "title": "[수입] Chet Baker - It Could Happen To You [SHM-CD]",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 37500,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:401183619",
+   "sourceKey": "aladin",
+   "editionId": "ed-could",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 mu.A",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=401183619",
+   "title": "[수입] Chet Baker - It Could Happen To You [SHM-CD]",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 39000,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:369894829",
+   "sourceKey": "aladin",
+   "editionId": "ed-could",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 Revolvo",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=369894829",
+   "title": "[수입] Chet Baker - It Could Happen To You [SHM-CD]",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 39800,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:337198729",
+   "sourceKey": "aladin",
+   "editionId": "ed-could",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 Revolvo",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=337198729",
+   "title": "[수입] Chet Baker - It Could Happen To You [SHM-CD]",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 39800,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:337097393",
+   "sourceKey": "aladin",
+   "editionId": "ed-could",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 Revolvo",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=337097393",
+   "title": "[수입] Chet Baker - It Could Happen To You [SHM-CD]",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 39800,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:337097392",
+   "sourceKey": "aladin",
+   "editionId": "ed-could",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 Revolvo",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=337097392",
+   "title": "[수입] Chet Baker - It Could Happen To You [SHM-CD]",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 39800,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:337097390",
+   "sourceKey": "aladin",
+   "editionId": "ed-could",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 Revolvo",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=337097390",
+   "title": "[수입] Chet Baker - It Could Happen To You [SHM-CD]",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 39800,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:new:703771",
+   "sourceKey": "aladin",
+   "editionId": "ed-could",
+   "source": "알라딘",
+   "shop": "알라딘 (신품)",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "신품",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=703771",
+   "title": "[수입] It Could Happen To You",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 16400,
+     "shipping": null,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 16400,
+     "shipping": null,
+     "status": "품절",
+     "at": 1795143914707,
+     "via": "자동",
+     "ver": true
+    }
+   ],
+   "verify": {
+    "at": 1795143914706,
+    "ok": true,
+    "okAt": 1795143914706,
+    "error": null,
+    "evidence": [
+     "상품 페이지 JSON-LD availability=OutOfStock",
+     "판매가 16400원",
+     "2만원 미만 — 배송료 금액이 페이지에 없어 총액 미확인",
+     "Disc 1장"
+    ]
+   }
+  },
+  {
+   "id": "aladin:used:386773006",
+   "sourceKey": "aladin",
+   "editionId": "ed-could",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 Archiv",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=386773006",
+   "title": "[중고] [수입] It Could Happen To You",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 16000,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "A",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 16000,
+     "shipping": 3500,
+     "status": "판매중",
+     "at": 1795143914707,
+     "via": "자동",
+     "ver": true
+    }
+   ],
+   "verify": {
+    "at": 1795143914706,
+    "ok": true,
+    "okAt": 1795143914706,
+    "error": null,
+    "evidence": [
+     "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=386773006",
+     "바로구매·장바구니 버튼 있음",
+     "판매자 배송료 3,500원",
+     "상태 상"
+    ]
+   }
+  },
+  {
+   "id": "aladin:used:302101947",
+   "sourceKey": "aladin",
+   "editionId": "ed-could",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 Treasure Hunt",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=302101947",
+   "title": "[중고] [수입] It Could Happen To You",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 19800,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "S",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 19800,
+     "shipping": 70000,
+     "status": "판매중",
+     "at": 1795143914707,
+     "via": "자동",
+     "ver": true
+    }
+   ],
+   "verify": {
+    "at": 1795143914706,
+    "ok": true,
+    "okAt": 1795143914706,
+    "error": null,
+    "evidence": [
+     "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=302101947",
+     "바로구매·장바구니 버튼 있음",
+     "판매자 배송료 70,000원",
+     "상태 최상"
+    ]
+   }
+  },
+  {
+   "id": "aladin:used:316109256",
+   "sourceKey": "aladin",
+   "editionId": "ed-could",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 Revolvo",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=316109256",
+   "title": "[수입] It Could Happen To You",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 38600,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:new:354411",
+   "sourceKey": "aladin",
+   "editionId": "ed-could",
+   "source": "알라딘",
+   "shop": "알라딘 (신품)",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "신품",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=354411",
+   "title": "It Could Happen To You",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 11200,
+     "shipping": null,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 11200,
+     "shipping": null,
+     "status": "품절",
+     "at": 1795143914707,
+     "via": "자동",
+     "ver": true
+    }
+   ],
+   "verify": {
+    "at": 1795143914706,
+    "ok": true,
+    "okAt": 1795143914706,
+    "error": null,
+    "evidence": [
+     "상품 페이지 JSON-LD availability=OutOfStock",
+     "판매가 11200원",
+     "2만원 미만 — 배송료 금액이 페이지에 없어 총액 미확인",
+     "Disc 1장"
+    ]
+   }
+  },
+  {
+   "id": "aladin:used:400187558",
+   "sourceKey": "aladin",
+   "editionId": "ed-could",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 라플라타",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=400187558",
+   "title": "[중고] It Could Happen To You",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 12000,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "A",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 12000,
+     "shipping": 3500,
+     "status": "판매중",
+     "at": 1795143914707,
+     "via": "자동",
+     "ver": true
+    }
+   ],
+   "verify": {
+    "at": 1795143914706,
+    "ok": true,
+    "okAt": 1795143914706,
+    "error": null,
+    "evidence": [
+     "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=400187558",
+     "바로구매·장바구니 버튼 있음",
+     "판매자 배송료 3,500원",
+     "상태 상"
+    ]
+   }
+  },
+  {
+   "id": "aladin:new:706583",
+   "sourceKey": "aladin",
+   "editionId": "ed-could",
+   "source": "알라딘",
+   "shop": "알라딘 (신품)",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "신품",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=706583",
+   "title": "[수입] It Could Happen To You (XRCD2)",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 38100,
+     "shipping": null,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 38100,
+     "shipping": null,
+     "status": "품절",
+     "at": 1795143914707,
+     "via": "자동",
+     "ver": true
+    }
+   ],
+   "verify": {
+    "at": 1795143914706,
+    "ok": true,
+    "okAt": 1795143914706,
+    "error": null,
+    "evidence": [
+     "상품 페이지 JSON-LD availability=OutOfStock",
+     "판매가 38100원",
+     "배송 조건 표기 없음",
+     "Disc 1장"
+    ]
+   }
+  },
+  {
+   "id": "aladin:new:707013",
+   "sourceKey": "aladin",
+   "editionId": "ed-could",
+   "source": "알라딘",
+   "shop": "알라딘 (신품)",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "신품",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=707013",
+   "title": "[수입] It Could Happen To You (20 Bit)",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 16300,
+     "shipping": null,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 16300,
+     "shipping": null,
+     "status": "품절",
+     "at": 1795143914707,
+     "via": "자동",
+     "ver": true
+    }
+   ],
+   "verify": {
+    "at": 1795143914706,
+    "ok": true,
+    "okAt": 1795143914706,
+    "error": null,
+    "evidence": [
+     "상품 페이지 JSON-LD availability=OutOfStock",
+     "판매가 16300원",
+     "2만원 미만 — 배송료 금액이 페이지에 없어 총액 미확인",
+     "Disc 1장"
+    ]
+   }
+  },
+  {
+   "id": "aladin:used:294773274",
+   "sourceKey": "aladin",
+   "editionId": "ed-could",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 rossete",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=294773274",
+   "title": "[수입] It Could Happen To You (20 Bit)",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 22000,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:used:272445310",
+   "sourceKey": "aladin",
+   "editionId": "ed-could",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 lbs6786",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=272445310",
+   "title": "[수입] It Could Happen To You (20 Bit)",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 30000,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:new:798802",
+   "sourceKey": "aladin",
+   "editionId": "ed-could",
+   "source": "알라딘",
+   "shop": "알라딘 (신품)",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "신품",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=798802",
+   "title": "[수입] It Could Happen To You(20 Bit Remastered)",
+   "hints": [
+    "리마스터 표기"
+   ],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 12700,
+     "shipping": null,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 12700,
+     "shipping": null,
+     "status": "품절",
+     "at": 1795143914707,
+     "via": "자동",
+     "ver": true
+    }
+   ],
+   "verify": {
+    "at": 1795143914706,
+    "ok": true,
+    "okAt": 1795143914706,
+    "error": null,
+    "evidence": [
+     "상품 페이지 JSON-LD availability=OutOfStock",
+     "판매가 12700원",
+     "2만원 미만 — 배송료 금액이 페이지에 없어 총액 미확인",
+     "Disc 1장"
+    ]
+   }
+  },
+  {
+   "id": "aladin:used:390544206",
+   "sourceKey": "aladin",
+   "editionId": "ed-could",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 JPBoost",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=390544206",
+   "title": "미개봉 [수입] Chet Baker - It Could Happen To You-쳇 베이커 (Chet Baker)-고음질[SHM-CD](Universal Music Japan)",
+   "hints": [
+    "미개봉 표기",
+    "일본반 표기"
+   ],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 39000,
+     "shipping": 4000,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "aladin:new:319150512",
+   "sourceKey": "aladin",
+   "editionId": "ed-never",
+   "source": "알라딘",
+   "shop": "알라딘 (신품)",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "신품",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=319150512",
+   "title": "[수입] Daniel Caesar - Never Enough",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 23400,
+     "shipping": null,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 23400,
+     "shipping": null,
+     "status": "판매중",
+     "at": 1795143914707,
+     "via": "자동",
+     "ver": true
+    }
+   ],
+   "verify": {
+    "at": 1795143914706,
+    "ok": true,
+    "okAt": 1795143914706,
+    "error": null,
+    "evidence": [
+     "상품 페이지 JSON-LD availability=InStock",
+     "판매가 23400원",
+     "배송 조건 표기 없음",
+     "Disc 1장"
+    ]
+   }
+  },
+  {
+   "id": "aladin:used:388210906",
+   "sourceKey": "aladin",
+   "editionId": "ed-never",
+   "source": "알라딘",
+   "shop": "알라딘 판매자 ACADEMY8888",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=388210906",
+   "title": "[중고] [수입] Daniel Caesar - Never Enough",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 32000,
+     "shipping": 3500,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "S",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 32000,
+     "shipping": 3500,
+     "status": "판매중",
+     "at": 1795143914707,
+     "via": "자동",
+     "ver": true
+    }
+   ],
+   "verify": {
+    "at": 1795143914706,
+    "ok": true,
+    "okAt": 1795143914706,
+    "error": null,
+    "evidence": [
+     "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=388210906",
+     "바로구매·장바구니 버튼 있음",
+     "판매자 배송료 3,500원",
+     "상태 최상"
+    ]
+   }
+  },
+  {
+   "id": "aladin:new:386321408",
+   "sourceKey": "aladin",
+   "editionId": "ed-never",
+   "source": "알라딘",
+   "shop": "알라딘 (신품)",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "신품",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=386321408",
+   "title": "[수입] Daniel Caesar - Never Enough (CD)",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 34600,
+     "shipping": null,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 34600,
+     "shipping": null,
+     "status": "판매중",
+     "at": 1795143914707,
+     "via": "자동",
+     "ver": true
+    }
+   ],
+   "verify": {
+    "at": 1795143914706,
+    "ok": true,
+    "okAt": 1795143914706,
+    "error": null,
+    "evidence": [
+     "상품 페이지 JSON-LD availability=InStock",
+     "판매가 34600원",
+     "배송 조건 표기 없음",
+     "Disc 1장"
+    ]
+   }
+  },
+  {
+   "id": "aladin:new:321432722",
+   "sourceKey": "aladin",
+   "editionId": "ed-never",
+   "source": "알라딘",
+   "shop": "알라딘 (신품)",
+   "region": "온라인",
+   "delivery": "배송",
+   "kind": "신품",
+   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=321432722",
+   "title": "[수입] Daniel Caesar - Never Enough (CD)",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 34500,
+     "shipping": null,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 34500,
+     "shipping": null,
+     "status": "판매중",
+     "at": 1795143914707,
+     "via": "자동",
+     "ver": true
+    }
+   ],
+   "verify": {
+    "at": 1795143914706,
+    "ok": true,
+    "okAt": 1795143914706,
+    "error": null,
+    "evidence": [
+     "상품 페이지 JSON-LD availability=InStock",
+     "판매가 34500원",
+     "배송 조건 표기 없음",
+     "Disc 1장"
+    ]
+   }
+  },
+  {
+   "id": "store:cd4love:17",
+   "sourceKey": "store:cd4love",
+   "editionId": "ed-abbey",
+   "source": "CD4LOVE",
+   "shop": "CD4LOVE",
+   "region": "울산 남구",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://cd4love.co.kr/product/detail.html?product_no=17",
+   "title": "[일본반] The Beatles - Abbey Road (데뷔 30주년 기념 리마스터) 상품요약정보 중고CD / 일본반 / OBI포함",
+   "hints": [
+    "일본반 표기",
+    "리마스터 표기",
+    "미개봉 표기"
+   ],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 15600,
+     "shipping": null,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 15600,
+     "shipping": 3000,
+     "status": "품절",
+     "at": 1795143914707,
+     "via": "자동",
+     "ver": true
+    }
+   ],
+   "verify": {
+    "at": 1795143914706,
+    "ok": true,
+    "okAt": 1795143914706,
+    "error": null,
+    "evidence": [
+     "상품 페이지 productId=17",
+     "품절 아이콘=T, 재고=0, 구매 버튼 있음",
+     "배송비 3,000원 (50,000원 이상 무료)",
+     "형식 근거: ﻿"
+    ]
+   }
+  },
+  {
+   "id": "store:mosaicseoul:83257",
+   "sourceKey": "store:mosaicseoul",
+   "editionId": "ed-abbey",
+   "source": "모자이크서울",
+   "shop": "모자이크서울",
+   "region": "서울 중구(신당점·상수점)",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://mosaicseoul.kr/product/detail.html?product_no=83257",
+   "title": "The Beatles - Abbey Road(실사진 아님)",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 47000,
+     "shipping": null,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "store:mosaicseoul:65439",
+   "sourceKey": "store:mosaicseoul",
+   "editionId": "ed-abbey",
+   "source": "모자이크서울",
+   "shop": "모자이크서울",
+   "region": "서울 중구(신당점·상수점)",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://mosaicseoul.kr/product/detail.html?product_no=65439",
+   "title": "The Beatles - Abbey Road(실사진 아님)",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 66800,
+     "shipping": null,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
+  },
+  {
+   "id": "store:mosaicseoul:65178",
+   "sourceKey": "store:mosaicseoul",
+   "editionId": "ed-freud",
+   "source": "모자이크서울",
+   "shop": "모자이크서울",
+   "region": "서울 중구(신당점·상수점)",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://mosaicseoul.kr/product/detail.html?product_no=65178",
+   "title": "Daniel Caesar - Freudian(실사진 아님)",
+   "hints": [
+    "일본반 표기"
+   ],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 230600,
+     "shipping": null,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 230600,
+     "shipping": null,
+     "status": "품절",
+     "at": 1795143914707,
+     "via": "자동",
+     "ver": true
+    }
+   ],
+   "verify": {
+    "at": 1795143914706,
+    "ok": true,
+    "okAt": 1795143914706,
+    "error": null,
+    "evidence": [
+     "상품 페이지 productId=65178",
+     "품절 아이콘=T, 재고=0, 구매 버튼 있음",
+     "배송비 표기 없음",
+     "형식 근거: Ref : W60301-100Cover : Very Good Plus (VG+) Media : Very Good Plus (VG+) Genre : Hip-Hop18 US PRESSING / LIMITED EDITION, REISSUE"
+    ]
+   },
+   "notCD": true
+  },
+  {
+   "id": "store:lpland:13469",
+   "sourceKey": "store:lpland",
+   "editionId": "ed-abbey",
+   "source": "엘피랜드",
+   "shop": "엘피랜드",
+   "region": "경기 고양시",
+   "delivery": "배송",
+   "kind": "중고",
+   "url": "https://lpland.co.kr/product/detail.html?product_no=13469",
+   "title": "The Beatles 12집 – Abbey Road(미국반)",
+   "hints": [],
+   "auto": true,
+   "firstSeen": 1795143914706,
+   "checkedAt": 1795143914706,
+   "obs": [
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "검색 결과에서 발견 (원본 검증 전)",
+     "price": 85000,
+     "shipping": null,
+     "status": "미확인",
+     "at": 1795143914706,
+     "via": "자동",
+     "ver": false
+    }
+   ]
   }
  ],
  "collection": [],
