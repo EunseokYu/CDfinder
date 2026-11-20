@@ -1,0 +1,26 @@
+[
+ {
+  "name": "al_used_odd",
+  "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=406685386",
+  "status": 200,
+  "final": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=406685386",
+  "type": "text/html; charset=utf-8",
+  "bytes": 289504
+ },
+ {
+  "name": "al_new_instock",
+  "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=363529621",
+  "status": 200,
+  "final": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=363529621",
+  "type": "text/html; charset=utf-8",
+  "bytes": 285913
+ },
+ {
+  "name": "cdloft_title",
+  "url": "https://cdloft.co.kr/product/search.html?keyword=abbey%20road",
+  "status": 200,
+  "final": "https://cdloft.co.kr/product/search.html?keyword=abbey%20road",
+  "type": "text/html; charset=utf-8",
+  "bytes": 98246
+ }
+]
