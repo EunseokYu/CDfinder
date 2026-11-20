@@ -1,7 +1,7 @@
 {
  "schema": 3,
  "meta": {
-  "lastScan": 1795161443047,
+  "lastScan": 1795161890552,
   "sources": {
    "bunjang": {
     "label": "번개장터",
@@ -12,7 +12,7 @@
     "candidates": 0,
     "verified": 0,
     "verifyFailed": 0,
-    "at": 1795161443047
+    "at": 1795161890552
    },
    "aladin": {
     "label": "알라딘",
@@ -23,7 +23,7 @@
     "candidates": 125,
     "verified": 42,
     "verifyFailed": 0,
-    "at": 1795161443047
+    "at": 1795161890552
    },
    "joongna": {
     "label": "중고나라",
@@ -34,7 +34,7 @@
     "candidates": 12,
     "verified": 4,
     "verifyFailed": 0,
-    "at": 1795161443047
+    "at": 1795161890552
    },
    "yes24": {
     "label": "YES24",
@@ -45,7 +45,7 @@
     "candidates": 0,
     "verified": 0,
     "verifyFailed": 0,
-    "at": 1795161443047
+    "at": 1795161890552
    },
    "store:cdloft": {
     "label": "시디로프트",
@@ -56,7 +56,7 @@
     "candidates": 0,
     "verified": 0,
     "verifyFailed": 0,
-    "at": 1795161443047
+    "at": 1795161890552
    },
    "store:soriah": {
     "label": "소리아",
@@ -67,7 +67,7 @@
     "candidates": 1,
     "verified": 1,
     "verifyFailed": 0,
-    "at": 1795161443047
+    "at": 1795161890552
    },
    "store:cd4love": {
     "label": "CD4LOVE",
@@ -78,7 +78,7 @@
     "candidates": 1,
     "verified": 1,
     "verifyFailed": 0,
-    "at": 1795161443047
+    "at": 1795161890552
    },
    "store:mosaicseoul": {
     "label": "모자이크서울",
@@ -89,7 +89,7 @@
     "candidates": 3,
     "verified": 1,
     "verifyFailed": 0,
-    "at": 1795161443047
+    "at": 1795161890552
    },
    "store:lpland": {
     "label": "엘피랜드",
@@ -100,250 +100,250 @@
     "candidates": 3,
     "verified": 0,
     "verifyFailed": 0,
-    "at": 1795161443047
+    "at": 1795161890552
    }
   },
   "coverage": {
    "al-abbey": {
     "joongna": {
      "ok": true,
-     "at": 1795161443047
+     "at": 1795161890552
     },
     "aladin": {
      "ok": true,
-     "at": 1795161443047
+     "at": 1795161890552
     },
     "yes24": {
      "ok": false,
-     "at": 1795161443047
+     "at": 1795161890552
     },
     "store:cdloft": {
      "ok": true,
-     "at": 1795161443047
+     "at": 1795161890552
     },
     "store:soriah": {
      "ok": true,
-     "at": 1795161443047
+     "at": 1795161890552
     },
     "store:cd4love": {
      "ok": true,
-     "at": 1795161443047
+     "at": 1795161890552
     },
     "store:mosaicseoul": {
      "ok": true,
-     "at": 1795161443047
+     "at": 1795161890552
     },
     "store:lpland": {
      "ok": true,
-     "at": 1795161443047
+     "at": 1795161890552
     }
    },
    "al-gift": {
     "joongna": {
      "ok": true,
-     "at": 1795161443047
+     "at": 1795161890552
     },
     "aladin": {
      "ok": true,
-     "at": 1795161443047
+     "at": 1795161890552
     },
     "yes24": {
      "ok": false,
-     "at": 1795161443047
+     "at": 1795161890552
     },
     "store:cdloft": {
      "ok": true,
-     "at": 1795161443047
+     "at": 1795161890552
     },
     "store:soriah": {
      "ok": true,
-     "at": 1795161443047
+     "at": 1795161890552
     },
     "store:cd4love": {
      "ok": true,
-     "at": 1795161443047
+     "at": 1795161890552
     },
     "store:mosaicseoul": {
      "ok": true,
-     "at": 1795161443047
+     "at": 1795161890552
     },
     "store:lpland": {
      "ok": true,
-     "at": 1795161443047
+     "at": 1795161890552
     }
    },
    "al-letter": {
     "joongna": {
      "ok": true,
-     "at": 1795161443047
+     "at": 1795161890552
     },
     "aladin": {
      "ok": true,
-     "at": 1795161443047
+     "at": 1795161890552
     },
     "yes24": {
      "ok": false,
-     "at": 1795161443047
+     "at": 1795161890552
     },
     "store:cdloft": {
      "ok": true,
-     "at": 1795161443047
+     "at": 1795161890552
     },
     "store:soriah": {
      "ok": true,
-     "at": 1795161443047
+     "at": 1795161890552
     },
     "store:cd4love": {
      "ok": true,
-     "at": 1795161443047
+     "at": 1795161890552
     },
     "store:mosaicseoul": {
      "ok": true,
-     "at": 1795161443047
+     "at": 1795161890552
     },
     "store:lpland": {
      "ok": true,
-     "at": 1795161443047
+     "at": 1795161890552
     }
    },
    "al-sings": {
     "joongna": {
      "ok": true,
-     "at": 1795161443047
+     "at": 1795161890552
     },
     "aladin": {
      "ok": true,
-     "at": 1795161443047
+     "at": 1795161890552
     },
     "yes24": {
      "ok": false,
-     "at": 1795161443047
+     "at": 1795161890552
     },
     "store:cdloft": {
      "ok": true,
-     "at": 1795161443047
+     "at": 1795161890552
     },
     "store:soriah": {
      "ok": true,
-     "at": 1795161443047
+     "at": 1795161890552
     },
     "store:cd4love": {
      "ok": true,
-     "at": 1795161443047
+     "at": 1795161890552
     },
     "store:mosaicseoul": {
      "ok": true,
-     "at": 1795161443047
+     "at": 1795161890552
     },
     "store:lpland": {
      "ok": true,
-     "at": 1795161443047
+     "at": 1795161890552
     }
    },
    "al-could": {
     "joongna": {
      "ok": true,
-     "at": 1795161443047
+     "at": 1795161890552
     },
     "aladin": {
      "ok": true,
-     "at": 1795161443047
+     "at": 1795161890552
     },
     "yes24": {
      "ok": false,
-     "at": 1795161443047
+     "at": 1795161890552
     },
     "store:cdloft": {
      "ok": true,
-     "at": 1795161443047
+     "at": 1795161890552
     },
     "store:soriah": {
      "ok": true,
-     "at": 1795161443047
+     "at": 1795161890552
     },
     "store:cd4love": {
      "ok": true,
-     "at": 1795161443047
+     "at": 1795161890552
     },
     "store:mosaicseoul": {
      "ok": true,
-     "at": 1795161443047
+     "at": 1795161890552
     },
     "store:lpland": {
      "ok": true,
-     "at": 1795161443047
+     "at": 1795161890552
     }
    },
    "al-freud": {
     "joongna": {
      "ok": true,
-     "at": 1795161443047
+     "at": 1795161890552
     },
     "aladin": {
      "ok": true,
-     "at": 1795161443047
+     "at": 1795161890552
     },
     "yes24": {
      "ok": false,
-     "at": 1795161443047
+     "at": 1795161890552
     },
     "store:cdloft": {
      "ok": true,
-     "at": 1795161443047
+     "at": 1795161890552
     },
     "store:soriah": {
      "ok": true,
-     "at": 1795161443047
+     "at": 1795161890552
     },
     "store:cd4love": {
      "ok": true,
-     "at": 1795161443047
+     "at": 1795161890552
     },
     "store:mosaicseoul": {
      "ok": true,
-     "at": 1795161443047
+     "at": 1795161890552
     },
     "store:lpland": {
      "ok": true,
-     "at": 1795161443047
+     "at": 1795161890552
     }
    },
    "al-never": {
     "joongna": {
      "ok": true,
-     "at": 1795161443047
+     "at": 1795161890552
     },
     "aladin": {
      "ok": true,
-     "at": 1795161443047
+     "at": 1795161890552
     },
     "yes24": {
      "ok": false,
-     "at": 1795161443047
+     "at": 1795161890552
     },
     "store:cdloft": {
      "ok": true,
-     "at": 1795161443047
+     "at": 1795161890552
     },
     "store:soriah": {
      "ok": true,
-     "at": 1795161443047
+     "at": 1795161890552
     },
     "store:cd4love": {
      "ok": true,
-     "at": 1795161443047
+     "at": 1795161890552
     },
     "store:mosaicseoul": {
      "ok": true,
-     "at": 1795161443047
+     "at": 1795161890552
     },
     "store:lpland": {
      "ok": true,
-     "at": 1795161443047
+     "at": 1795161890552
     }
    }
   },
-  "lastHourly": 1795161443047
+  "lastHourly": 1795161890552
  },
  "albums": [
   {
@@ -610,7 +610,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -643,7 +643,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -677,9 +677,9 @@
    ],
    "missCount": 0,
    "verify": {
-    "at": 1795161443047,
+    "at": 1795161890552,
     "ok": true,
-    "okAt": 1795161443047,
+    "okAt": 1795161890552,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=InStock, productStatus=0",
@@ -702,7 +702,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -737,7 +737,7 @@
    ],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -772,7 +772,7 @@
    ],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -805,7 +805,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -838,7 +838,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -872,7 +872,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -907,7 +907,7 @@
    ],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -940,7 +940,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -974,9 +974,9 @@
    ],
    "missCount": 0,
    "verify": {
-    "at": 1795161443047,
+    "at": 1795161890552,
     "ok": true,
-    "okAt": 1795161443047,
+    "okAt": 1795161890552,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=InStock, productStatus=0",
@@ -999,7 +999,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -1033,9 +1033,9 @@
    ],
    "missCount": 0,
    "verify": {
-    "at": 1795161443047,
+    "at": 1795161890552,
     "ok": true,
-    "okAt": 1795161443047,
+    "okAt": 1795161890552,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=InStock, productStatus=0",
@@ -1060,7 +1060,7 @@
    ],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -1123,9 +1123,9 @@
    ],
    "missCount": 0,
    "verify": {
-    "at": 1795161443047,
+    "at": 1795161890552,
     "ok": true,
-    "okAt": 1795161443047,
+    "okAt": 1795161890552,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=InStock, productStatus=0",
@@ -1149,7 +1149,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -1198,9 +1198,9 @@
     }
    ],
    "verify": {
-    "at": 1795161443047,
+    "at": 1795161890552,
     "ok": true,
-    "okAt": 1795161443047,
+    "okAt": 1795161890552,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=InStock",
@@ -1225,7 +1225,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -1259,9 +1259,9 @@
     }
    ],
    "verify": {
-    "at": 1795161443047,
+    "at": 1795161890552,
     "ok": true,
-    "okAt": 1795161443047,
+    "okAt": 1795161890552,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=OutOfStock",
@@ -1288,7 +1288,7 @@
    ],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -1337,9 +1337,9 @@
     }
    ],
    "verify": {
-    "at": 1795161443047,
+    "at": 1795161890552,
     "ok": true,
-    "okAt": 1795161443047,
+    "okAt": 1795161890552,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=OutOfStock",
@@ -1366,7 +1366,7 @@
    ],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -1426,7 +1426,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -1459,7 +1459,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -1492,7 +1492,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -1525,7 +1525,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -1558,7 +1558,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -1591,7 +1591,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -1624,7 +1624,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -1657,7 +1657,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -1690,7 +1690,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -1739,9 +1739,9 @@
     }
    ],
    "verify": {
-    "at": 1795161443047,
+    "at": 1795161890552,
     "ok": true,
-    "okAt": 1795161443047,
+    "okAt": 1795161890552,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=OutOfStock",
@@ -1766,7 +1766,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -1799,7 +1799,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -1832,7 +1832,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -1865,7 +1865,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -1898,7 +1898,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -1947,9 +1947,9 @@
     }
    ],
    "verify": {
-    "at": 1795161443047,
+    "at": 1795161890552,
     "ok": true,
-    "okAt": 1795161443047,
+    "okAt": 1795161890552,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=InStock",
@@ -1974,7 +1974,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -2023,9 +2023,9 @@
     }
    ],
    "verify": {
-    "at": 1795161443047,
+    "at": 1795161890552,
     "ok": true,
-    "okAt": 1795161443047,
+    "okAt": 1795161890552,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=InStock",
@@ -2050,7 +2050,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -2083,7 +2083,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -2132,9 +2132,9 @@
     }
    ],
    "verify": {
-    "at": 1795161443047,
+    "at": 1795161890552,
     "ok": true,
-    "okAt": 1795161443047,
+    "okAt": 1795161890552,
     "error": null,
     "evidence": [
      "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=406685386",
@@ -2158,7 +2158,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -2193,7 +2193,7 @@
    ],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -2228,7 +2228,7 @@
    ],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -2261,7 +2261,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -2310,9 +2310,9 @@
     }
    ],
    "verify": {
-    "at": 1795161443047,
+    "at": 1795161890552,
     "ok": true,
-    "okAt": 1795161443047,
+    "okAt": 1795161890552,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=OutOfStock",
@@ -2337,7 +2337,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -2371,9 +2371,9 @@
     }
    ],
    "verify": {
-    "at": 1795161443047,
+    "at": 1795161890552,
     "ok": true,
-    "okAt": 1795161443047,
+    "okAt": 1795161890552,
     "error": null,
     "evidence": [
      "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=397881336",
@@ -2397,7 +2397,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -2431,9 +2431,9 @@
     }
    ],
    "verify": {
-    "at": 1795161443047,
+    "at": 1795161890552,
     "ok": true,
-    "okAt": 1795161443047,
+    "okAt": 1795161890552,
     "error": null,
     "evidence": [
      "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=405197399",
@@ -2457,7 +2457,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -2491,9 +2491,9 @@
     }
    ],
    "verify": {
-    "at": 1795161443047,
+    "at": 1795161890552,
     "ok": true,
-    "okAt": 1795161443047,
+    "okAt": 1795161890552,
     "error": null,
     "evidence": [
      "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=400589768",
@@ -2517,7 +2517,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -2550,7 +2550,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -2583,7 +2583,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -2616,7 +2616,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -2649,7 +2649,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -2682,7 +2682,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -2731,9 +2731,9 @@
     }
    ],
    "verify": {
-    "at": 1795161443047,
+    "at": 1795161890552,
     "ok": true,
-    "okAt": 1795161443047,
+    "okAt": 1795161890552,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=OutOfStock",
@@ -2758,7 +2758,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -2807,9 +2807,9 @@
     }
    ],
    "verify": {
-    "at": 1795161443047,
+    "at": 1795161890552,
     "ok": true,
-    "okAt": 1795161443047,
+    "okAt": 1795161890552,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=OutOfStock",
@@ -2834,7 +2834,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -2868,9 +2868,9 @@
     }
    ],
    "verify": {
-    "at": 1795161443047,
+    "at": 1795161890552,
     "ok": true,
-    "okAt": 1795161443047,
+    "okAt": 1795161890552,
     "error": null,
     "evidence": [
      "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=401736776",
@@ -2894,7 +2894,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -2943,9 +2943,9 @@
     }
    ],
    "verify": {
-    "at": 1795161443047,
+    "at": 1795161890552,
     "ok": true,
-    "okAt": 1795161443047,
+    "okAt": 1795161890552,
     "error": null,
     "evidence": [
      "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=396765787",
@@ -2969,7 +2969,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -3003,9 +3003,9 @@
     }
    ],
    "verify": {
-    "at": 1795161443047,
+    "at": 1795161890552,
     "ok": true,
-    "okAt": 1795161443047,
+    "okAt": 1795161890552,
     "error": null,
     "evidence": [
      "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=333310670",
@@ -3029,7 +3029,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -3062,7 +3062,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -3095,7 +3095,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -3128,7 +3128,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -3161,7 +3161,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -3194,7 +3194,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -3243,9 +3243,9 @@
     }
    ],
    "verify": {
-    "at": 1795161443047,
+    "at": 1795161890552,
     "ok": true,
-    "okAt": 1795161443047,
+    "okAt": 1795161890552,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=OutOfStock",
@@ -3270,7 +3270,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -3330,7 +3330,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -3363,7 +3363,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -3396,7 +3396,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -3429,7 +3429,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -3462,7 +3462,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -3496,9 +3496,9 @@
     }
    ],
    "verify": {
-    "at": 1795161443047,
+    "at": 1795161890552,
     "ok": true,
-    "okAt": 1795161443047,
+    "okAt": 1795161890552,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=InStock",
@@ -3523,7 +3523,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -3556,7 +3556,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -3605,9 +3605,9 @@
     }
    ],
    "verify": {
-    "at": 1795161443047,
+    "at": 1795161890552,
     "ok": true,
-    "okAt": 1795161443047,
+    "okAt": 1795161890552,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=InStock",
@@ -3632,7 +3632,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -3665,7 +3665,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -3698,7 +3698,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -3731,7 +3731,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -3780,9 +3780,9 @@
     }
    ],
    "verify": {
-    "at": 1795161443047,
+    "at": 1795161890552,
     "ok": true,
-    "okAt": 1795161443047,
+    "okAt": 1795161890552,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=InStock",
@@ -3807,7 +3807,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -3840,7 +3840,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -3873,7 +3873,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -3906,7 +3906,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -3939,7 +3939,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -3972,7 +3972,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -4005,7 +4005,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -4038,7 +4038,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -4072,9 +4072,9 @@
     }
    ],
    "verify": {
-    "at": 1795161443047,
+    "at": 1795161890552,
     "ok": true,
-    "okAt": 1795161443047,
+    "okAt": 1795161890552,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=OutOfStock",
@@ -4099,7 +4099,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -4132,7 +4132,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -4165,7 +4165,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -4198,7 +4198,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -4231,7 +4231,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -4264,7 +4264,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -4297,7 +4297,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -4330,7 +4330,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -4364,9 +4364,9 @@
     }
    ],
    "verify": {
-    "at": 1795161443047,
+    "at": 1795161890552,
     "ok": true,
-    "okAt": 1795161443047,
+    "okAt": 1795161890552,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=OutOfStock",
@@ -4391,7 +4391,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -4424,7 +4424,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -4458,9 +4458,9 @@
     }
    ],
    "verify": {
-    "at": 1795161443047,
+    "at": 1795161890552,
     "ok": true,
-    "okAt": 1795161443047,
+    "okAt": 1795161890552,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=OutOfStock",
@@ -4485,7 +4485,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -4518,7 +4518,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -4551,7 +4551,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -4600,9 +4600,9 @@
     }
    ],
    "verify": {
-    "at": 1795161443047,
+    "at": 1795161890552,
     "ok": true,
-    "okAt": 1795161443047,
+    "okAt": 1795161890552,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=OutOfStock",
@@ -4627,7 +4627,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -4660,7 +4660,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -4694,9 +4694,9 @@
     }
    ],
    "verify": {
-    "at": 1795161443047,
+    "at": 1795161890552,
     "ok": true,
-    "okAt": 1795161443047,
+    "okAt": 1795161890552,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=OutOfStock",
@@ -4721,7 +4721,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -4754,7 +4754,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -4787,7 +4787,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -4820,7 +4820,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -4853,7 +4853,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -4886,7 +4886,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -4919,7 +4919,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -4952,7 +4952,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -4985,7 +4985,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -5018,7 +5018,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -5051,7 +5051,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -5084,7 +5084,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -5117,7 +5117,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -5177,7 +5177,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -5226,9 +5226,9 @@
     }
    ],
    "verify": {
-    "at": 1795161443047,
+    "at": 1795161890552,
     "ok": true,
-    "okAt": 1795161443047,
+    "okAt": 1795161890552,
     "error": null,
     "evidence": [
      "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=364215705",
@@ -5252,7 +5252,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -5286,9 +5286,9 @@
     }
    ],
    "verify": {
-    "at": 1795161443047,
+    "at": 1795161890552,
     "ok": true,
-    "okAt": 1795161443047,
+    "okAt": 1795161890552,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=OutOfStock",
@@ -5313,7 +5313,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -5346,7 +5346,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -5379,7 +5379,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -5412,7 +5412,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -5445,7 +5445,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -5494,9 +5494,9 @@
     }
    ],
    "verify": {
-    "at": 1795161443047,
+    "at": 1795161890552,
     "ok": true,
-    "okAt": 1795161443047,
+    "okAt": 1795161890552,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=OutOfStock",
@@ -5521,7 +5521,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -5554,7 +5554,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -5587,7 +5587,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -5620,7 +5620,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -5653,7 +5653,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -5686,7 +5686,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -5719,7 +5719,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -5752,7 +5752,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -5788,7 +5788,7 @@
    ],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -5821,7 +5821,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -5870,9 +5870,9 @@
     }
    ],
    "verify": {
-    "at": 1795161443047,
+    "at": 1795161890552,
     "ok": true,
-    "okAt": 1795161443047,
+    "okAt": 1795161890552,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=InStock",
@@ -5897,7 +5897,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -5931,9 +5931,9 @@
     }
    ],
    "verify": {
-    "at": 1795161443047,
+    "at": 1795161890552,
     "ok": true,
-    "okAt": 1795161443047,
+    "okAt": 1795161890552,
     "error": null,
     "evidence": [
      "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=388210906",
@@ -5957,7 +5957,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -6006,9 +6006,9 @@
     }
    ],
    "verify": {
-    "at": 1795161443047,
+    "at": 1795161890552,
     "ok": true,
-    "okAt": 1795161443047,
+    "okAt": 1795161890552,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=InStock",
@@ -6033,7 +6033,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -6082,9 +6082,9 @@
     }
    ],
    "verify": {
-    "at": 1795161443047,
+    "at": 1795161890552,
     "ok": true,
-    "okAt": 1795161443047,
+    "okAt": 1795161890552,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=InStock",
@@ -6113,7 +6113,7 @@
    ],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -6147,9 +6147,9 @@
     }
    ],
    "verify": {
-    "at": 1795161443047,
+    "at": 1795161890552,
     "ok": true,
-    "okAt": 1795161443047,
+    "okAt": 1795161890552,
     "error": null,
     "evidence": [
      "상품 페이지 productId=17",
@@ -6173,7 +6173,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -6206,7 +6206,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -6241,7 +6241,7 @@
    ],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -6275,9 +6275,9 @@
     }
    ],
    "verify": {
-    "at": 1795161443047,
+    "at": 1795161890552,
     "ok": true,
-    "okAt": 1795161443047,
+    "okAt": 1795161890552,
     "error": null,
     "evidence": [
      "상품 페이지 productId=65178",
@@ -6302,7 +6302,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -6335,7 +6335,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795144500163,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -6369,9 +6369,9 @@
     }
    ],
    "verify": {
-    "at": 1795161443047,
+    "at": 1795161890552,
     "ok": true,
-    "okAt": 1795161443047,
+    "okAt": 1795161890552,
     "error": null,
     "evidence": [
      "상품 페이지 productId=2963",
@@ -6395,7 +6395,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795144500163,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -6428,7 +6428,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795144500163,
-   "checkedAt": 1795161443047,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -6460,8 +6460,8 @@
    "title": "[수입] 아트리움 앙상블 : 애비 로드",
    "hints": [],
    "auto": true,
-   "firstSeen": 1795161443047,
-   "checkedAt": 1795161443047,
+   "firstSeen": 1795161890552,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -6474,7 +6474,7 @@
      "price": 19000,
      "shipping": null,
      "status": "미확인",
-     "at": 1795161443047,
+     "at": 1795161890552,
      "via": "자동",
      "ver": false
     },
@@ -6489,15 +6489,15 @@
      "price": 19000,
      "shipping": null,
      "status": "품절",
-     "at": 1795161443048,
+     "at": 1795161890553,
      "via": "자동",
      "ver": true
     }
    ],
    "verify": {
-    "at": 1795161443047,
+    "at": 1795161890552,
     "ok": true,
-    "okAt": 1795161443047,
+    "okAt": 1795161890552,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=OutOfStock",
@@ -6521,8 +6521,8 @@
    "title": "[중고] [수입] 아트리움 앙상블 : 애비 로드",
    "hints": [],
    "auto": true,
-   "firstSeen": 1795161443047,
-   "checkedAt": 1795161443047,
+   "firstSeen": 1795161890552,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -6535,7 +6535,7 @@
      "price": 20000,
      "shipping": 3500,
      "status": "미확인",
-     "at": 1795161443047,
+     "at": 1795161890552,
      "via": "자동",
      "ver": false
     },
@@ -6550,15 +6550,15 @@
      "price": 20000,
      "shipping": 3500,
      "status": "판매중",
-     "at": 1795161443048,
+     "at": 1795161890553,
      "via": "자동",
      "ver": true
     }
    ],
    "verify": {
-    "at": 1795161443047,
+    "at": 1795161890552,
     "ok": true,
-    "okAt": 1795161443047,
+    "okAt": 1795161890552,
     "error": null,
     "evidence": [
      "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=342373453",
@@ -6581,8 +6581,8 @@
    "title": "[수입] It Could Happen To You",
    "hints": [],
    "auto": true,
-   "firstSeen": 1795161443047,
-   "checkedAt": 1795161443047,
+   "firstSeen": 1795161890552,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -6595,7 +6595,7 @@
      "price": 16400,
      "shipping": null,
      "status": "미확인",
-     "at": 1795161443047,
+     "at": 1795161890552,
      "via": "자동",
      "ver": false
     },
@@ -6610,15 +6610,15 @@
      "price": 16400,
      "shipping": null,
      "status": "품절",
-     "at": 1795161443048,
+     "at": 1795161890553,
      "via": "자동",
      "ver": true
     }
    ],
    "verify": {
-    "at": 1795161443047,
+    "at": 1795161890552,
     "ok": true,
-    "okAt": 1795161443047,
+    "okAt": 1795161890552,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=OutOfStock",
@@ -6642,8 +6642,8 @@
    "title": "[중고] [수입] It Could Happen To You",
    "hints": [],
    "auto": true,
-   "firstSeen": 1795161443047,
-   "checkedAt": 1795161443047,
+   "firstSeen": 1795161890552,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -6656,7 +6656,7 @@
      "price": 16000,
      "shipping": 3500,
      "status": "미확인",
-     "at": 1795161443047,
+     "at": 1795161890552,
      "via": "자동",
      "ver": false
     },
@@ -6671,15 +6671,15 @@
      "price": 16000,
      "shipping": 3500,
      "status": "판매중",
-     "at": 1795161443048,
+     "at": 1795161890553,
      "via": "자동",
      "ver": true
     }
    ],
    "verify": {
-    "at": 1795161443047,
+    "at": 1795161890552,
     "ok": true,
-    "okAt": 1795161443047,
+    "okAt": 1795161890552,
     "error": null,
     "evidence": [
      "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=386773006",
@@ -6702,8 +6702,8 @@
    "title": "[중고] [수입] It Could Happen To You",
    "hints": [],
    "auto": true,
-   "firstSeen": 1795161443047,
-   "checkedAt": 1795161443047,
+   "firstSeen": 1795161890552,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -6716,7 +6716,7 @@
      "price": 19800,
      "shipping": 3500,
      "status": "미확인",
-     "at": 1795161443047,
+     "at": 1795161890552,
      "via": "자동",
      "ver": false
     },
@@ -6731,15 +6731,15 @@
      "price": 19800,
      "shipping": 3500,
      "status": "판매중",
-     "at": 1795161443048,
+     "at": 1795161890553,
      "via": "자동",
      "ver": true
     }
    ],
    "verify": {
-    "at": 1795161443047,
+    "at": 1795161890552,
     "ok": true,
-    "okAt": 1795161443047,
+    "okAt": 1795161890552,
     "error": null,
     "evidence": [
      "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=302101947",
@@ -6762,8 +6762,8 @@
    "title": "[수입] It Could Happen To You",
    "hints": [],
    "auto": true,
-   "firstSeen": 1795161443047,
-   "checkedAt": 1795161443047,
+   "firstSeen": 1795161890552,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -6776,7 +6776,7 @@
      "price": 38600,
      "shipping": 3500,
      "status": "미확인",
-     "at": 1795161443047,
+     "at": 1795161890552,
      "via": "자동",
      "ver": false
     }
@@ -6795,8 +6795,8 @@
    "title": "It Could Happen To You",
    "hints": [],
    "auto": true,
-   "firstSeen": 1795161443047,
-   "checkedAt": 1795161443047,
+   "firstSeen": 1795161890552,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -6809,7 +6809,7 @@
      "price": 11200,
      "shipping": null,
      "status": "미확인",
-     "at": 1795161443047,
+     "at": 1795161890552,
      "via": "자동",
      "ver": false
     },
@@ -6824,15 +6824,15 @@
      "price": 11200,
      "shipping": null,
      "status": "품절",
-     "at": 1795161443048,
+     "at": 1795161890553,
      "via": "자동",
      "ver": true
     }
    ],
    "verify": {
-    "at": 1795161443047,
+    "at": 1795161890552,
     "ok": true,
-    "okAt": 1795161443047,
+    "okAt": 1795161890552,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=OutOfStock",
@@ -6856,8 +6856,8 @@
    "title": "[중고] It Could Happen To You",
    "hints": [],
    "auto": true,
-   "firstSeen": 1795161443047,
-   "checkedAt": 1795161443047,
+   "firstSeen": 1795161890552,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -6870,7 +6870,7 @@
      "price": 12000,
      "shipping": 3500,
      "status": "미확인",
-     "at": 1795161443047,
+     "at": 1795161890552,
      "via": "자동",
      "ver": false
     },
@@ -6885,15 +6885,15 @@
      "price": 12000,
      "shipping": 3500,
      "status": "판매중",
-     "at": 1795161443048,
+     "at": 1795161890553,
      "via": "자동",
      "ver": true
     }
    ],
    "verify": {
-    "at": 1795161443047,
+    "at": 1795161890552,
     "ok": true,
-    "okAt": 1795161443047,
+    "okAt": 1795161890552,
     "error": null,
     "evidence": [
      "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=400187558",
@@ -6916,8 +6916,8 @@
    "title": "[수입] It Could Happen To You (XRCD2)",
    "hints": [],
    "auto": true,
-   "firstSeen": 1795161443047,
-   "checkedAt": 1795161443047,
+   "firstSeen": 1795161890552,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -6930,7 +6930,7 @@
      "price": 38100,
      "shipping": null,
      "status": "미확인",
-     "at": 1795161443047,
+     "at": 1795161890552,
      "via": "자동",
      "ver": false
     },
@@ -6945,15 +6945,15 @@
      "price": 38100,
      "shipping": 0,
      "status": "품절",
-     "at": 1795161443048,
+     "at": 1795161890553,
      "via": "자동",
      "ver": true
     }
    ],
    "verify": {
-    "at": 1795161443047,
+    "at": 1795161890552,
     "ok": true,
-    "okAt": 1795161443047,
+    "okAt": 1795161890552,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=OutOfStock",
@@ -6977,8 +6977,8 @@
    "title": "[수입] It Could Happen To You (20 Bit)",
    "hints": [],
    "auto": true,
-   "firstSeen": 1795161443047,
-   "checkedAt": 1795161443047,
+   "firstSeen": 1795161890552,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -6991,7 +6991,7 @@
      "price": 16300,
      "shipping": null,
      "status": "미확인",
-     "at": 1795161443047,
+     "at": 1795161890552,
      "via": "자동",
      "ver": false
     },
@@ -7006,15 +7006,15 @@
      "price": 16300,
      "shipping": null,
      "status": "품절",
-     "at": 1795161443048,
+     "at": 1795161890553,
      "via": "자동",
      "ver": true
     }
    ],
    "verify": {
-    "at": 1795161443047,
+    "at": 1795161890552,
     "ok": true,
-    "okAt": 1795161443047,
+    "okAt": 1795161890552,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=OutOfStock",
@@ -7038,8 +7038,8 @@
    "title": "[수입] It Could Happen To You (20 Bit)",
    "hints": [],
    "auto": true,
-   "firstSeen": 1795161443047,
-   "checkedAt": 1795161443047,
+   "firstSeen": 1795161890552,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -7052,7 +7052,7 @@
      "price": 22000,
      "shipping": 3500,
      "status": "미확인",
-     "at": 1795161443047,
+     "at": 1795161890552,
      "via": "자동",
      "ver": false
     }
@@ -7071,8 +7071,8 @@
    "title": "[수입] It Could Happen To You (20 Bit)",
    "hints": [],
    "auto": true,
-   "firstSeen": 1795161443047,
-   "checkedAt": 1795161443047,
+   "firstSeen": 1795161890552,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -7085,7 +7085,7 @@
      "price": 30000,
      "shipping": 3500,
      "status": "미확인",
-     "at": 1795161443047,
+     "at": 1795161890552,
      "via": "자동",
      "ver": false
     }
@@ -7106,8 +7106,8 @@
     "리마스터 표기"
    ],
    "auto": true,
-   "firstSeen": 1795161443047,
-   "checkedAt": 1795161443047,
+   "firstSeen": 1795161890552,
+   "checkedAt": 1795161890552,
    "obs": [
     {
      "auth": "미확인",
@@ -7120,7 +7120,7 @@
      "price": 12700,
      "shipping": null,
      "status": "미확인",
-     "at": 1795161443047,
+     "at": 1795161890552,
      "via": "자동",
      "ver": false
     },
@@ -7135,15 +7135,15 @@
      "price": 12700,
      "shipping": null,
      "status": "품절",
-     "at": 1795161443048,
+     "at": 1795161890553,
      "via": "자동",
      "ver": true
     }
    ],
    "verify": {
-    "at": 1795161443047,
+    "at": 1795161890552,
     "ok": true,
-    "okAt": 1795161443047,
+    "okAt": 1795161890552,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=OutOfStock",
