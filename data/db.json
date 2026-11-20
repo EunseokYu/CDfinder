@@ -1,7 +1,7 @@
 {
  "schema": 3,
  "meta": {
-  "lastScan": 1795192234221,
+  "lastScan": 1795194043009,
   "sources": {
    "bunjang": {
     "label": "번개장터",
@@ -12,7 +12,7 @@
     "candidates": 0,
     "verified": 0,
     "verifyFailed": 0,
-    "at": 1795192234221
+    "at": 1795194043009
    },
    "aladin": {
     "label": "알라딘",
@@ -32,9 +32,9 @@
     "searched": 13,
     "failed": 0,
     "candidates": 12,
-    "verified": 4,
+    "verified": 5,
     "verifyFailed": 0,
-    "at": 1795192234221
+    "at": 1795194043009
    },
    "yes24": {
     "label": "YES24",
@@ -107,7 +107,7 @@
    "al-abbey": {
     "joongna": {
      "ok": true,
-     "at": 1795192234221
+     "at": 1795194043009
     },
     "aladin": {
      "ok": true,
@@ -141,7 +141,7 @@
    "al-gift": {
     "joongna": {
      "ok": true,
-     "at": 1795192234221
+     "at": 1795194043009
     },
     "aladin": {
      "ok": true,
@@ -175,7 +175,7 @@
    "al-letter": {
     "joongna": {
      "ok": true,
-     "at": 1795192234221
+     "at": 1795194043009
     },
     "aladin": {
      "ok": true,
@@ -209,7 +209,7 @@
    "al-sings": {
     "joongna": {
      "ok": true,
-     "at": 1795192234221
+     "at": 1795194043009
     },
     "aladin": {
      "ok": true,
@@ -243,7 +243,7 @@
    "al-could": {
     "joongna": {
      "ok": true,
-     "at": 1795192234221
+     "at": 1795194043009
     },
     "aladin": {
      "ok": true,
@@ -277,7 +277,7 @@
    "al-freud": {
     "joongna": {
      "ok": true,
-     "at": 1795192234221
+     "at": 1795194043009
     },
     "aladin": {
      "ok": true,
@@ -311,7 +311,7 @@
    "al-never": {
     "joongna": {
      "ok": true,
-     "at": 1795192234221
+     "at": 1795194043009
     },
     "aladin": {
      "ok": true,
@@ -613,7 +613,7 @@
    ],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795192234221,
+   "checkedAt": 1795194043009,
    "obs": [
     {
      "auth": "미확인",
@@ -647,9 +647,9 @@
    ],
    "missCount": 0,
    "verify": {
-    "at": 1795174232141,
+    "at": 1795194043009,
     "ok": true,
-    "okAt": 1795174232141,
+    "okAt": 1795194043009,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=InStock, productStatus=0",
@@ -672,7 +672,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795192234221,
+   "checkedAt": 1795194043009,
    "obs": [
     {
      "auth": "미확인",
@@ -706,9 +706,9 @@
    ],
    "missCount": 0,
    "verify": {
-    "at": 1795192234221,
+    "at": 1795194043009,
     "ok": true,
-    "okAt": 1795192234221,
+    "okAt": 1795194043009,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=InStock, productStatus=0",
@@ -733,7 +733,7 @@
    ],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795192234221,
+   "checkedAt": 1795194043009,
    "obs": [
     {
      "auth": "미확인",
@@ -767,9 +767,9 @@
    ],
    "missCount": 0,
    "verify": {
-    "at": 1795174232141,
+    "at": 1795194043009,
     "ok": true,
-    "okAt": 1795174232141,
+    "okAt": 1795194043009,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=InStock, productStatus=0",
@@ -795,7 +795,7 @@
    ],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795192234221,
+   "checkedAt": 1795194043009,
    "obs": [
     {
      "auth": "미확인",
@@ -810,9 +810,35 @@
      "status": "판매중",
      "at": 1795099415746,
      "via": "자동"
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 93000,
+     "shipping": 4200,
+     "status": "판매중",
+     "at": 1795194043009,
+     "via": "자동",
+     "ver": true
     }
    ],
-   "missCount": 0
+   "missCount": 0,
+   "verify": {
+    "at": 1795194043009,
+    "ok": true,
+    "okAt": 1795194043009,
+    "error": null,
+    "evidence": [
+     "상품 페이지 JSON-LD availability=InStock, productStatus=0",
+     "배송 옵션 4200원 중 최저 적용",
+     "카테고리 노트북/PC"
+    ]
+   }
   },
   {
    "id": "joongna:230777283",
@@ -830,7 +856,7 @@
    ],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795192234221,
+   "checkedAt": 1795194043009,
    "obs": [
     {
      "auth": "미확인",
@@ -845,9 +871,35 @@
      "status": "판매중",
      "at": 1795099415746,
      "via": "자동"
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 150000,
+     "shipping": 4000,
+     "status": "판매중",
+     "at": 1795194043009,
+     "via": "자동",
+     "ver": true
     }
    ],
-   "missCount": 0
+   "missCount": 0,
+   "verify": {
+    "at": 1795194043009,
+    "ok": true,
+    "okAt": 1795194043009,
+    "error": null,
+    "evidence": [
+     "상품 페이지 JSON-LD availability=InStock, productStatus=0",
+     "배송 옵션 4000원 중 최저 적용",
+     "카테고리 노트북/PC"
+    ]
+   }
   },
   {
    "id": "joongna:207285162",
@@ -863,7 +915,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795192234221,
+   "checkedAt": 1795194043009,
    "obs": [
     {
      "auth": "미확인",
@@ -896,7 +948,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795192234221,
+   "checkedAt": 1795194043009,
    "obs": [
     {
      "auth": "미확인",
@@ -930,7 +982,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795192234221,
+   "checkedAt": 1795194043009,
    "obs": [
     {
      "auth": "미확인",
@@ -965,7 +1017,7 @@
    ],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795192234221,
+   "checkedAt": 1795194043009,
    "obs": [
     {
      "auth": "미확인",
@@ -998,7 +1050,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795192234221,
+   "checkedAt": 1795194043009,
    "obs": [
     {
      "auth": "미확인",
@@ -1057,7 +1109,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795192234221,
+   "checkedAt": 1795194043009,
    "obs": [
     {
      "auth": "미확인",
@@ -1118,7 +1170,7 @@
    ],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795192234221,
+   "checkedAt": 1795194043009,
    "obs": [
     {
      "auth": "미확인",
@@ -1458,7 +1510,7 @@
     }
    ],
    "verify": {
-    "at": 1795174232141,
+    "at": 1795194043009,
     "ok": false,
     "okAt": 1795144417062,
     "error": "HTTP 403",
@@ -1536,7 +1588,7 @@
     }
    ],
    "verify": {
-    "at": 1795174232141,
+    "at": 1795194043009,
     "ok": false,
     "okAt": null,
     "error": "HTTP 403",
@@ -1576,7 +1628,7 @@
     }
    ],
    "verify": {
-    "at": 1795174232141,
+    "at": 1795194043009,
     "ok": false,
     "okAt": null,
     "error": "HTTP 403",
@@ -1616,7 +1668,7 @@
     }
    ],
    "verify": {
-    "at": 1795174232141,
+    "at": 1795194043009,
     "ok": false,
     "okAt": null,
     "error": "HTTP 403",
@@ -1656,7 +1708,7 @@
     }
    ],
    "verify": {
-    "at": 1795174232141,
+    "at": 1795194043009,
     "ok": false,
     "okAt": null,
     "error": "HTTP 403",
@@ -1696,7 +1748,7 @@
     }
    ],
    "verify": {
-    "at": 1795174232141,
+    "at": 1795194043009,
     "ok": false,
     "okAt": null,
     "error": "HTTP 403",
@@ -1769,7 +1821,7 @@
     }
    ],
    "verify": {
-    "at": 1795174232141,
+    "at": 1795194043009,
     "ok": false,
     "okAt": null,
     "error": "HTTP 403",
@@ -1885,7 +1937,7 @@
     }
    ],
    "verify": {
-    "at": 1795174232141,
+    "at": 1795194043009,
     "ok": false,
     "okAt": null,
     "error": "HTTP 403",
@@ -1925,7 +1977,7 @@
     }
    ],
    "verify": {
-    "at": 1795174232141,
+    "at": 1795194043009,
     "ok": false,
     "okAt": null,
     "error": "HTTP 403",
@@ -1965,7 +2017,7 @@
     }
    ],
    "verify": {
-    "at": 1795174232141,
+    "at": 1795194043009,
     "ok": false,
     "okAt": null,
     "error": "HTTP 403",
@@ -2190,7 +2242,7 @@
     }
    ],
    "verify": {
-    "at": 1795174232141,
+    "at": 1795194043009,
     "ok": false,
     "okAt": null,
     "error": "HTTP 403",
@@ -2260,10 +2312,10 @@
     }
    ],
    "verify": {
-    "at": 1795192234221,
-    "ok": true,
+    "at": 1795194043009,
+    "ok": false,
     "okAt": 1795192234221,
-    "error": null,
+    "error": "HTTP 403",
     "evidence": [
      "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=406685386",
      "바로구매·장바구니 버튼 있음",
@@ -2305,7 +2357,7 @@
     }
    ],
    "verify": {
-    "at": 1795174232141,
+    "at": 1795194043009,
     "ok": false,
     "okAt": null,
     "error": "HTTP 403",
@@ -2347,7 +2399,7 @@
     }
    ],
    "verify": {
-    "at": 1795174232141,
+    "at": 1795194043009,
     "ok": false,
     "okAt": null,
     "error": "HTTP 403",
@@ -2389,7 +2441,7 @@
     }
    ],
    "verify": {
-    "at": 1795174232141,
+    "at": 1795194043009,
     "ok": false,
     "okAt": null,
     "error": "HTTP 403",
@@ -2520,10 +2572,10 @@
     }
    ],
    "verify": {
-    "at": 1795192234221,
-    "ok": true,
+    "at": 1795194043009,
+    "ok": false,
     "okAt": 1795192234221,
-    "error": null,
+    "error": "HTTP 403",
     "evidence": [
      "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=397881336",
      "바로구매·장바구니 버튼 있음",
@@ -2580,10 +2632,10 @@
     }
    ],
    "verify": {
-    "at": 1795192234221,
-    "ok": true,
+    "at": 1795194043009,
+    "ok": false,
     "okAt": 1795192234221,
-    "error": null,
+    "error": "HTTP 403",
     "evidence": [
      "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=405197399",
      "바로구매·장바구니 버튼 있음",
@@ -2640,10 +2692,10 @@
     }
    ],
    "verify": {
-    "at": 1795192234221,
-    "ok": true,
+    "at": 1795194043009,
+    "ok": false,
     "okAt": 1795192234221,
-    "error": null,
+    "error": "HTTP 403",
     "evidence": [
      "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=400589768",
      "바로구매·장바구니 버튼 있음",
@@ -2685,7 +2737,7 @@
     }
    ],
    "verify": {
-    "at": 1795174232141,
+    "at": 1795194043009,
     "ok": false,
     "okAt": null,
     "error": "HTTP 403",
@@ -2725,7 +2777,7 @@
     }
    ],
    "verify": {
-    "at": 1795174232141,
+    "at": 1795194043009,
     "ok": false,
     "okAt": null,
     "error": "HTTP 403",
@@ -2765,7 +2817,7 @@
     }
    ],
    "verify": {
-    "at": 1795174232141,
+    "at": 1795194043009,
     "ok": false,
     "okAt": null,
     "error": "HTTP 403",
@@ -2803,7 +2855,14 @@
      "via": "자동",
      "ver": false
     }
-   ]
+   ],
+   "verify": {
+    "at": 1795194043009,
+    "ok": false,
+    "okAt": null,
+    "error": "HTTP 403",
+    "evidence": []
+   }
   },
   {
    "id": "aladin:used:333511096",
@@ -2836,7 +2895,14 @@
      "via": "자동",
      "ver": false
     }
-   ]
+   ],
+   "verify": {
+    "at": 1795194043009,
+    "ok": false,
+    "okAt": null,
+    "error": "HTTP 403",
+    "evidence": []
+   }
   },
   {
    "id": "aladin:new:344037425",
@@ -3038,10 +3104,10 @@
     }
    ],
    "verify": {
-    "at": 1795192234221,
-    "ok": true,
+    "at": 1795194043009,
+    "ok": false,
     "okAt": 1795192234221,
-    "error": null,
+    "error": "HTTP 403",
     "evidence": [
      "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=401736776",
      "바로구매·장바구니 버튼 있음",
@@ -6769,713 +6835,6 @@
     ]
    },
    "notCD": true
-  },
-  {
-   "id": "aladin:new:7729893",
-   "sourceKey": "aladin",
-   "editionId": "ed-abbey",
-   "source": "알라딘",
-   "shop": "알라딘 (신품)",
-   "region": "온라인",
-   "delivery": "배송",
-   "kind": "신품",
-   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=7729893",
-   "title": "[수입] 아트리움 앙상블 : 애비 로드",
-   "hints": [],
-   "auto": true,
-   "firstSeen": 1795192234221,
-   "checkedAt": 1795192234221,
-   "obs": [
-    {
-     "auth": "미확인",
-     "authNote": "",
-     "match": "미확인",
-     "disc": "미확인",
-     "case": "미확인",
-     "booklet": "미확인",
-     "memo": "검색 결과에서 발견 (원본 검증 전)",
-     "price": 19000,
-     "shipping": null,
-     "status": "미확인",
-     "at": 1795192234221,
-     "via": "자동",
-     "ver": false
-    },
-    {
-     "auth": "미확인",
-     "authNote": "",
-     "match": "미확인",
-     "disc": "미확인",
-     "case": "미확인",
-     "booklet": "미확인",
-     "memo": "",
-     "price": 19000,
-     "shipping": null,
-     "status": "품절",
-     "at": 1795192234222,
-     "via": "자동",
-     "ver": true
-    }
-   ],
-   "verify": {
-    "at": 1795192234221,
-    "ok": true,
-    "okAt": 1795192234221,
-    "error": null,
-    "evidence": [
-     "상품 페이지 JSON-LD availability=OutOfStock",
-     "판매가 19000원",
-     "배송료: 2만원 미만 — 배송료 금액이 페이지에 없어 총액 미확인",
-     "알라딘 직접 판매",
-     "Disc 1장"
-    ]
-   }
-  },
-  {
-   "id": "aladin:used:342373453",
-   "sourceKey": "aladin",
-   "editionId": "ed-abbey",
-   "source": "알라딘",
-   "shop": "알라딘 판매자 corollajewel",
-   "region": "온라인",
-   "delivery": "배송",
-   "kind": "중고",
-   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=342373453",
-   "title": "[중고] [수입] 아트리움 앙상블 : 애비 로드",
-   "hints": [],
-   "auto": true,
-   "firstSeen": 1795192234221,
-   "checkedAt": 1795192234221,
-   "obs": [
-    {
-     "auth": "미확인",
-     "authNote": "",
-     "match": "미확인",
-     "disc": "미확인",
-     "case": "미확인",
-     "booklet": "미확인",
-     "memo": "검색 결과에서 발견 (원본 검증 전)",
-     "price": 20000,
-     "shipping": 3500,
-     "status": "미확인",
-     "at": 1795192234221,
-     "via": "자동",
-     "ver": false
-    },
-    {
-     "auth": "미확인",
-     "authNote": "",
-     "match": "미확인",
-     "disc": "S",
-     "case": "미확인",
-     "booklet": "미확인",
-     "memo": "",
-     "price": 20000,
-     "shipping": 3500,
-     "status": "판매중",
-     "at": 1795192234222,
-     "via": "자동",
-     "ver": true
-    }
-   ],
-   "verify": {
-    "at": 1795192234221,
-    "ok": true,
-    "okAt": 1795192234221,
-    "error": null,
-    "evidence": [
-     "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=342373453",
-     "바로구매·장바구니 버튼 있음",
-     "판매자 배송료: 택배 3,500원",
-     "상태 최상"
-    ]
-   }
-  },
-  {
-   "id": "aladin:new:703771",
-   "sourceKey": "aladin",
-   "editionId": "ed-could",
-   "source": "알라딘",
-   "shop": "알라딘 (신품)",
-   "region": "온라인",
-   "delivery": "배송",
-   "kind": "신품",
-   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=703771",
-   "title": "[수입] It Could Happen To You",
-   "hints": [],
-   "auto": true,
-   "firstSeen": 1795192234221,
-   "checkedAt": 1795192234221,
-   "obs": [
-    {
-     "auth": "미확인",
-     "authNote": "",
-     "match": "미확인",
-     "disc": "미확인",
-     "case": "미확인",
-     "booklet": "미확인",
-     "memo": "검색 결과에서 발견 (원본 검증 전)",
-     "price": 16400,
-     "shipping": null,
-     "status": "미확인",
-     "at": 1795192234221,
-     "via": "자동",
-     "ver": false
-    },
-    {
-     "auth": "미확인",
-     "authNote": "",
-     "match": "미확인",
-     "disc": "미확인",
-     "case": "미확인",
-     "booklet": "미확인",
-     "memo": "",
-     "price": 16400,
-     "shipping": null,
-     "status": "품절",
-     "at": 1795192234222,
-     "via": "자동",
-     "ver": true
-    }
-   ],
-   "verify": {
-    "at": 1795192234221,
-    "ok": true,
-    "okAt": 1795192234221,
-    "error": null,
-    "evidence": [
-     "상품 페이지 JSON-LD availability=OutOfStock",
-     "판매가 16400원",
-     "배송료: 2만원 미만 — 배송료 금액이 페이지에 없어 총액 미확인",
-     "알라딘 직접 판매",
-     "Disc 1장"
-    ]
-   }
-  },
-  {
-   "id": "aladin:used:386773006",
-   "sourceKey": "aladin",
-   "editionId": "ed-could",
-   "source": "알라딘",
-   "shop": "알라딘 판매자 Archiv",
-   "region": "온라인",
-   "delivery": "배송",
-   "kind": "중고",
-   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=386773006",
-   "title": "[중고] [수입] It Could Happen To You",
-   "hints": [],
-   "auto": true,
-   "firstSeen": 1795192234221,
-   "checkedAt": 1795192234221,
-   "obs": [
-    {
-     "auth": "미확인",
-     "authNote": "",
-     "match": "미확인",
-     "disc": "미확인",
-     "case": "미확인",
-     "booklet": "미확인",
-     "memo": "검색 결과에서 발견 (원본 검증 전)",
-     "price": 16000,
-     "shipping": 3500,
-     "status": "미확인",
-     "at": 1795192234221,
-     "via": "자동",
-     "ver": false
-    },
-    {
-     "auth": "미확인",
-     "authNote": "",
-     "match": "미확인",
-     "disc": "A",
-     "case": "미확인",
-     "booklet": "미확인",
-     "memo": "",
-     "price": 16000,
-     "shipping": 3500,
-     "status": "판매중",
-     "at": 1795192234222,
-     "via": "자동",
-     "ver": true
-    }
-   ],
-   "verify": {
-    "at": 1795192234221,
-    "ok": true,
-    "okAt": 1795192234221,
-    "error": null,
-    "evidence": [
-     "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=386773006",
-     "바로구매·장바구니 버튼 있음",
-     "판매자 배송료: 택배 3,500원",
-     "상태 상"
-    ]
-   }
-  },
-  {
-   "id": "aladin:used:302101947",
-   "sourceKey": "aladin",
-   "editionId": "ed-could",
-   "source": "알라딘",
-   "shop": "알라딘 판매자 Treasure Hunt",
-   "region": "온라인",
-   "delivery": "배송",
-   "kind": "중고",
-   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=302101947",
-   "title": "[중고] [수입] It Could Happen To You",
-   "hints": [],
-   "auto": true,
-   "firstSeen": 1795192234221,
-   "checkedAt": 1795192234221,
-   "obs": [
-    {
-     "auth": "미확인",
-     "authNote": "",
-     "match": "미확인",
-     "disc": "미확인",
-     "case": "미확인",
-     "booklet": "미확인",
-     "memo": "검색 결과에서 발견 (원본 검증 전)",
-     "price": 19800,
-     "shipping": 3500,
-     "status": "미확인",
-     "at": 1795192234221,
-     "via": "자동",
-     "ver": false
-    },
-    {
-     "auth": "미확인",
-     "authNote": "",
-     "match": "미확인",
-     "disc": "S",
-     "case": "미확인",
-     "booklet": "미확인",
-     "memo": "",
-     "price": 19800,
-     "shipping": 3500,
-     "status": "판매중",
-     "at": 1795192234222,
-     "via": "자동",
-     "ver": true
-    }
-   ],
-   "verify": {
-    "at": 1795192234221,
-    "ok": true,
-    "okAt": 1795192234221,
-    "error": null,
-    "evidence": [
-     "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=302101947",
-     "바로구매·장바구니 버튼 있음",
-     "판매자 배송료: 70,000원 미만 택배 3,500원",
-     "상태 최상"
-    ]
-   }
-  },
-  {
-   "id": "aladin:used:316109256",
-   "sourceKey": "aladin",
-   "editionId": "ed-could",
-   "source": "알라딘",
-   "shop": "알라딘 판매자 Revolvo",
-   "region": "온라인",
-   "delivery": "배송",
-   "kind": "중고",
-   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=316109256",
-   "title": "[수입] It Could Happen To You",
-   "hints": [],
-   "auto": true,
-   "firstSeen": 1795192234221,
-   "checkedAt": 1795192234221,
-   "obs": [
-    {
-     "auth": "미확인",
-     "authNote": "",
-     "match": "미확인",
-     "disc": "미확인",
-     "case": "미확인",
-     "booklet": "미확인",
-     "memo": "검색 결과에서 발견 (원본 검증 전)",
-     "price": 38600,
-     "shipping": 3500,
-     "status": "미확인",
-     "at": 1795192234221,
-     "via": "자동",
-     "ver": false
-    }
-   ]
-  },
-  {
-   "id": "aladin:new:354411",
-   "sourceKey": "aladin",
-   "editionId": "ed-could",
-   "source": "알라딘",
-   "shop": "알라딘 (신품)",
-   "region": "온라인",
-   "delivery": "배송",
-   "kind": "신품",
-   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=354411",
-   "title": "It Could Happen To You",
-   "hints": [],
-   "auto": true,
-   "firstSeen": 1795192234221,
-   "checkedAt": 1795192234221,
-   "obs": [
-    {
-     "auth": "미확인",
-     "authNote": "",
-     "match": "미확인",
-     "disc": "미확인",
-     "case": "미확인",
-     "booklet": "미확인",
-     "memo": "검색 결과에서 발견 (원본 검증 전)",
-     "price": 11200,
-     "shipping": null,
-     "status": "미확인",
-     "at": 1795192234221,
-     "via": "자동",
-     "ver": false
-    },
-    {
-     "auth": "미확인",
-     "authNote": "",
-     "match": "미확인",
-     "disc": "미확인",
-     "case": "미확인",
-     "booklet": "미확인",
-     "memo": "",
-     "price": 11200,
-     "shipping": null,
-     "status": "품절",
-     "at": 1795192234222,
-     "via": "자동",
-     "ver": true
-    }
-   ],
-   "verify": {
-    "at": 1795192234221,
-    "ok": true,
-    "okAt": 1795192234221,
-    "error": null,
-    "evidence": [
-     "상품 페이지 JSON-LD availability=OutOfStock",
-     "판매가 11200원",
-     "배송료: 2만원 미만 — 배송료 금액이 페이지에 없어 총액 미확인",
-     "알라딘 직접 판매",
-     "Disc 1장"
-    ]
-   }
-  },
-  {
-   "id": "aladin:used:400187558",
-   "sourceKey": "aladin",
-   "editionId": "ed-could",
-   "source": "알라딘",
-   "shop": "알라딘 판매자 라플라타",
-   "region": "온라인",
-   "delivery": "배송",
-   "kind": "중고",
-   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=400187558",
-   "title": "[중고] It Could Happen To You",
-   "hints": [],
-   "auto": true,
-   "firstSeen": 1795192234221,
-   "checkedAt": 1795192234221,
-   "obs": [
-    {
-     "auth": "미확인",
-     "authNote": "",
-     "match": "미확인",
-     "disc": "미확인",
-     "case": "미확인",
-     "booklet": "미확인",
-     "memo": "검색 결과에서 발견 (원본 검증 전)",
-     "price": 12000,
-     "shipping": 3500,
-     "status": "미확인",
-     "at": 1795192234221,
-     "via": "자동",
-     "ver": false
-    },
-    {
-     "auth": "미확인",
-     "authNote": "",
-     "match": "미확인",
-     "disc": "A",
-     "case": "미확인",
-     "booklet": "미확인",
-     "memo": "",
-     "price": 12000,
-     "shipping": 3500,
-     "status": "판매중",
-     "at": 1795192234222,
-     "via": "자동",
-     "ver": true
-    }
-   ],
-   "verify": {
-    "at": 1795192234221,
-    "ok": true,
-    "okAt": 1795192234221,
-    "error": null,
-    "evidence": [
-     "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=400187558",
-     "바로구매·장바구니 버튼 있음",
-     "판매자 배송료: 택배 3,500원",
-     "상태 상"
-    ]
-   }
-  },
-  {
-   "id": "aladin:new:706583",
-   "sourceKey": "aladin",
-   "editionId": "ed-could",
-   "source": "알라딘",
-   "shop": "알라딘 (신품)",
-   "region": "온라인",
-   "delivery": "배송",
-   "kind": "신품",
-   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=706583",
-   "title": "[수입] It Could Happen To You (XRCD2)",
-   "hints": [],
-   "auto": true,
-   "firstSeen": 1795192234221,
-   "checkedAt": 1795192234221,
-   "obs": [
-    {
-     "auth": "미확인",
-     "authNote": "",
-     "match": "미확인",
-     "disc": "미확인",
-     "case": "미확인",
-     "booklet": "미확인",
-     "memo": "검색 결과에서 발견 (원본 검증 전)",
-     "price": 38100,
-     "shipping": null,
-     "status": "미확인",
-     "at": 1795192234221,
-     "via": "자동",
-     "ver": false
-    },
-    {
-     "auth": "미확인",
-     "authNote": "",
-     "match": "미확인",
-     "disc": "미확인",
-     "case": "미확인",
-     "booklet": "미확인",
-     "memo": "",
-     "price": 38100,
-     "shipping": 0,
-     "status": "품절",
-     "at": 1795192234222,
-     "via": "자동",
-     "ver": true
-    }
-   ],
-   "verify": {
-    "at": 1795192234221,
-    "ok": true,
-    "okAt": 1795192234221,
-    "error": null,
-    "evidence": [
-     "상품 페이지 JSON-LD availability=OutOfStock",
-     "판매가 38100원",
-     "배송료: 배송료 무료",
-     "알라딘 직접 판매",
-     "Disc 1장"
-    ]
-   }
-  },
-  {
-   "id": "aladin:new:707013",
-   "sourceKey": "aladin",
-   "editionId": "ed-could",
-   "source": "알라딘",
-   "shop": "알라딘 (신품)",
-   "region": "온라인",
-   "delivery": "배송",
-   "kind": "신품",
-   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=707013",
-   "title": "[수입] It Could Happen To You (20 Bit)",
-   "hints": [],
-   "auto": true,
-   "firstSeen": 1795192234221,
-   "checkedAt": 1795192234221,
-   "obs": [
-    {
-     "auth": "미확인",
-     "authNote": "",
-     "match": "미확인",
-     "disc": "미확인",
-     "case": "미확인",
-     "booklet": "미확인",
-     "memo": "검색 결과에서 발견 (원본 검증 전)",
-     "price": 16300,
-     "shipping": null,
-     "status": "미확인",
-     "at": 1795192234221,
-     "via": "자동",
-     "ver": false
-    },
-    {
-     "auth": "미확인",
-     "authNote": "",
-     "match": "미확인",
-     "disc": "미확인",
-     "case": "미확인",
-     "booklet": "미확인",
-     "memo": "",
-     "price": 16300,
-     "shipping": null,
-     "status": "품절",
-     "at": 1795192234222,
-     "via": "자동",
-     "ver": true
-    }
-   ],
-   "verify": {
-    "at": 1795192234221,
-    "ok": true,
-    "okAt": 1795192234221,
-    "error": null,
-    "evidence": [
-     "상품 페이지 JSON-LD availability=OutOfStock",
-     "판매가 16300원",
-     "배송료: 2만원 미만 — 배송료 금액이 페이지에 없어 총액 미확인",
-     "알라딘 직접 판매",
-     "Disc 1장"
-    ]
-   }
-  },
-  {
-   "id": "aladin:used:294773274",
-   "sourceKey": "aladin",
-   "editionId": "ed-could",
-   "source": "알라딘",
-   "shop": "알라딘 판매자 rossete",
-   "region": "온라인",
-   "delivery": "배송",
-   "kind": "중고",
-   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=294773274",
-   "title": "[수입] It Could Happen To You (20 Bit)",
-   "hints": [],
-   "auto": true,
-   "firstSeen": 1795192234221,
-   "checkedAt": 1795192234221,
-   "obs": [
-    {
-     "auth": "미확인",
-     "authNote": "",
-     "match": "미확인",
-     "disc": "미확인",
-     "case": "미확인",
-     "booklet": "미확인",
-     "memo": "검색 결과에서 발견 (원본 검증 전)",
-     "price": 22000,
-     "shipping": 3500,
-     "status": "미확인",
-     "at": 1795192234221,
-     "via": "자동",
-     "ver": false
-    }
-   ]
-  },
-  {
-   "id": "aladin:used:272445310",
-   "sourceKey": "aladin",
-   "editionId": "ed-could",
-   "source": "알라딘",
-   "shop": "알라딘 판매자 lbs6786",
-   "region": "온라인",
-   "delivery": "배송",
-   "kind": "중고",
-   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=272445310",
-   "title": "[수입] It Could Happen To You (20 Bit)",
-   "hints": [],
-   "auto": true,
-   "firstSeen": 1795192234221,
-   "checkedAt": 1795192234221,
-   "obs": [
-    {
-     "auth": "미확인",
-     "authNote": "",
-     "match": "미확인",
-     "disc": "미확인",
-     "case": "미확인",
-     "booklet": "미확인",
-     "memo": "검색 결과에서 발견 (원본 검증 전)",
-     "price": 30000,
-     "shipping": 3500,
-     "status": "미확인",
-     "at": 1795192234221,
-     "via": "자동",
-     "ver": false
-    }
-   ]
-  },
-  {
-   "id": "aladin:new:798802",
-   "sourceKey": "aladin",
-   "editionId": "ed-could",
-   "source": "알라딘",
-   "shop": "알라딘 (신품)",
-   "region": "온라인",
-   "delivery": "배송",
-   "kind": "신품",
-   "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=798802",
-   "title": "[수입] It Could Happen To You(20 Bit Remastered)",
-   "hints": [
-    "리마스터 표기"
-   ],
-   "auto": true,
-   "firstSeen": 1795192234221,
-   "checkedAt": 1795192234221,
-   "obs": [
-    {
-     "auth": "미확인",
-     "authNote": "",
-     "match": "미확인",
-     "disc": "미확인",
-     "case": "미확인",
-     "booklet": "미확인",
-     "memo": "검색 결과에서 발견 (원본 검증 전)",
-     "price": 12700,
-     "shipping": null,
-     "status": "미확인",
-     "at": 1795192234221,
-     "via": "자동",
-     "ver": false
-    },
-    {
-     "auth": "미확인",
-     "authNote": "",
-     "match": "미확인",
-     "disc": "미확인",
-     "case": "미확인",
-     "booklet": "미확인",
-     "memo": "",
-     "price": 12700,
-     "shipping": null,
-     "status": "품절",
-     "at": 1795192234222,
-     "via": "자동",
-     "ver": true
-    }
-   ],
-   "verify": {
-    "at": 1795192234221,
-    "ok": true,
-    "okAt": 1795192234221,
-    "error": null,
-    "evidence": [
-     "상품 페이지 JSON-LD availability=OutOfStock",
-     "판매가 12700원",
-     "배송료: 2만원 미만 — 배송료 금액이 페이지에 없어 총액 미확인",
-     "알라딘 직접 판매",
-     "Disc 1장"
-    ]
-   }
   }
  ],
  "collection": [],
