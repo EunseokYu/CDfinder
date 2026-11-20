@@ -1,0 +1,12 @@
+{
+ "note": "직접 확인한 음반점 공식 판매 채널. 매시간 이 목록에서 희망 앨범을 조회한다. 매장 소개·SNS·입고 공지만으로는 재고를 등록하지 않는다(상품 페이지 검증 필수).",
+ "stores": [
+  {"id": "cdloft", "name": "시디로프트", "region": "서울 서초구", "url": "https://cdloft.co.kr", "platform": "cafe24", "search": "/product/search.html?keyword=", "defaultFormat": "CD", "lpMark": "[LP]", "shippingText": "4만원 미만 구매시: 3,000원 / 4만원 이상 무료 (상품 페이지 배송료 안내)", "checked": "2026-11-20", "status": "active", "evidence": "카페24 상품 검색·상품 페이지에 가격·재고·디스크/북클릿 등급 표기"},
+  {"id": "soriah", "name": "소리아", "region": "서울 종로구", "url": "https://soriah.co.kr", "platform": "cafe24", "search": "/product/search.html?keyword=", "defaultFormat": null, "checked": "2026-11-20", "status": "active", "evidence": "상품마다 음반구분(1CD/1LP)·판매가·품절 아이콘·배송비 4,000원 표기"},
+  {"id": "cd4love", "name": "CD4LOVE", "region": "울산 남구", "url": "https://cd4love.co.kr", "platform": "cafe24", "search": "/product/search.html?keyword=", "defaultFormat": null, "englishOnly": true, "checked": "2026-11-20", "status": "active", "evidence": "상품명 ‘CD :’/‘LP :’ 표기, 배송비 3,000원(5만원 이상 무료), 재고 수량 표기. 한글 검색어는 결과 없음"},
+  {"id": "mosaicseoul", "name": "모자이크서울", "region": "서울 중구(신당점·상수점)", "url": "https://mosaicseoul.kr", "platform": "cafe24", "search": "/product/search.html?keyword=", "defaultFormat": "LP", "checked": "2026-11-20", "status": "active", "evidence": "중고 레코드 위주. 상품명·설명에 CD가 명시된 경우만 CD로 인정"},
+  {"id": "lpland", "name": "엘피랜드", "region": "경기 고양시", "url": "https://lpland.co.kr", "platform": "cafe24", "search": "/product/search.html?keyword=", "defaultFormat": "LP", "checked": "2026-11-20", "status": "active", "evidence": "LP 위주. CD 명시 상품만 인정"},
+  {"id": "koolcd", "name": "KoolCD", "region": "미확인", "url": "https://koolcd.com", "platform": "asp", "checked": "2026-11-20", "status": "pending", "evidence": "희귀·수입·중고 CD 판매 확인. 검색 경로 미구현"},
+  {"id": "mucktong", "name": "먹통레코드", "region": "부산 중구", "url": "http://www.mucktong.com", "platform": "unknown", "checked": "2026-11-20", "status": "unverified", "evidence": "홈페이지가 1.5KB 프레임만 응답 — 온라인 판매 채널 확인 안 됨"}
+ ]
+}

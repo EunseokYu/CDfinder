@@ -3,7 +3,7 @@
 'use strict';
 /* ========== 상수 ========== */
 const STATUS=['판매중','판매완료','품절','숨김','미확인'];
-const SOURCES=['번개장터','알라딘','중고나라','YES24','헬로마켓','음반점','기타'];
+const SOURCES=['알라딘','YES24','번개장터','중고나라','음반점','기타'];
 const PACK=['주얼케이스','디지팩','페이퍼슬리브','박스세트','기타','미확인'];
 const RELEASE=['초판','재발매','미확인'],MASTER=['리마스터','기존 마스터','미확인'];
 const AUTH=['확인됨','미확인','의심'],MATCH=['일치','미확인','불일치'];
@@ -12,7 +12,7 @@ const BGRADES=[...GRADES.slice(0,4),['누락','북클릿 누락'],['미확인','
 const ALLOW=[['S','S 이상'],['A','A 이상'],['B','B 이상'],['C','C 이상'],['ANY','상관없음']];
 const PARTS=Engine.PARTS;
 const V={'구매 추천':['v-buy','✓',0],'관망':['v-wait','…',1],'비추천':['v-no','✕',2],'판매 확인 필요':['v-check','?',3],'제외':['v-out','—',4]};
-const CRIT0=()=>({kind:'중고',target:null,disc:'A',case:'B',booklet:'A'});
+const CRIT0=()=>({kind:'중고',target:null,disc:'ANY',case:'ANY',booklet:'ANY',requireAuth:false});
 
 /* ========== 유틸 ========== */
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -110,10 +110,12 @@ const edChips=e=>`<span class="chips"><span class="chip">발매: ${esc(e.release
 /* ========== 렌더 ========== */
 function head(){
   const m=S&&S.meta||{};
-  const src=Object.values(m.sources||{}).map(s=>`${esc(s.label)} ${s.skipped?'꺼짐':s.fail&&!s.ok?'오류':'정상'}`).join(' · ');
+  const ST={ok:'정상',partial:'일부 실패',failed:'실패',skipped:'꺼짐',waiting:'대기'};
+  const srcs=Object.entries(m.sources||{}).filter(([k])=>!k.startsWith('store:'));const stores=Object.entries(m.sources||{}).filter(([k])=>k.startsWith('store:'));
+  const src=[...srcs.map(([,s])=>`${esc(s.label)} ${ST[s.state]||'?'}`),stores.length?`음반점 ${stores.filter(([,s])=>s.state==='ok'||s.state==='partial').length}/${stores.length}곳 정상`:''].filter(Boolean).join(' · ');
   return`<header class="top" id="hdr"><div class="wrap hrow"><h1>음반 탐색 노트</h1>
   <nav class="tabs" role="tablist" aria-label="화면 전환"><button role="tab" data-act="tab" data-v="wish" aria-selected="${UI.tab==='wish'}">사고 싶은 음반</button><button role="tab" data-act="tab" data-v="owned" aria-selected="${UI.tab==='owned'}">보유 음반 (${S?S.collection.length:0})</button></nav></div>
-  <div class="wrap scanbar"><span>마지막 자동 스캔 <b>${m.lastScan?ago(m.lastScan):'아직 없음'}</b>${src?` · ${src}`:''}</span>
+  <div class="wrap scanbar"><span>마지막 자동 스캔 <b>${m.lastScan?ago(m.lastScan):'아직 없음'}</b>${m.lastHourly?` (전체 판매처 ${ago(m.lastHourly)})`:''}${src?` · ${src}`:''}</span>
   <span class="acts"><button data-act="refresh">새로고침</button>${!cfg.token&&lockInfo?'<button class="pri" data-act="unlock">암호로 잠금 해제</button>':''}<button data-act="cfg">${cfg.token?'GitHub 연결됨':'GitHub 연결'}</button></span></div></header>`;
 }
 function renderHeaderOnly(){const h=$('#hdr');if(h)h.outerHTML=head()}
@@ -121,7 +123,7 @@ function render(){
   if(!S){$('#app').innerHTML=head()+`<main class="wrap"><p class="${loadErr?'warn':'note'}">${esc(loadErr||'데이터를 불러오는 중…')}</p></main>`;return}
   $('#app').innerHTML=head()+`<main class="wrap">${loadErr?`<p class="warn">${esc(loadErr)} — 마지막으로 받은 데이터를 보여줍니다.</p>`:''}
   ${cfg.token?'':`<p class="warn">읽기 전용입니다. 저장하려면 ${lockInfo?'‘암호로 잠금 해제’를 누르고 암호를 입력하세요.':'‘GitHub 연결’에서 토큰을 설정하세요.'}</p>`}
-  <p class="note">자동 수집 매물은 정품·판본·상태가 모두 ‘미확인’으로 들어옵니다. 원문을 보고 ‘매물 갱신’에서 확인한 값으로 바꿔야 ‘구매 추천’이 될 수 있습니다.</p>
+  <p class="note">자동 수집 매물은 개별 상품 원본에서 가격·재고·배송비를 확인한 경우에만 최저가와 추천에 들어갑니다. 정품·상태는 원문에 근거가 있을 때만 표시합니다.</p>
   ${UI.tab==='owned'?ownedView():UI.view==='detail'?detailView():listView()}</main>`;
 }
 function alertsBox(){
@@ -154,11 +156,30 @@ function results(){
   if(done.length)h+=`<details><summary>탐색 중인 판본이 없는 앨범 ${done.length}개 (스캔하지 않음)</summary><div class="grid" style="margin-top:8px">${done.map(a=>`<article class="card"><h3>${esc(a.title)}</h3><p class="artist">${esc(a.artist)}</p><button data-act="open" data-id="${a.id}">판본 보기·탐색 재개</button></article>`).join('')}</div></details>`;
   return h;
 }
+/* 앨범별 조회 범위: 성공·실패를 0건과 구분 */
+function coverage(a){
+  const cov=(S.meta&&S.meta.coverage&&S.meta.coverage[a.id])||{},srcs=(S.meta&&S.meta.sources)||{};
+  const name=k=>k.startsWith('store:')?'음반점':(srcs[k]&&srcs[k].label)||k;
+  const ok=new Set(),fail=new Set();let stOk=0,stAll=0;
+  for(const[k,v]of Object.entries(cov)){if(k.startsWith('store:')){stAll++;if(v.ok)stOk++;continue}(v.ok?ok:fail).add(name(k))}
+  for(const[k,v]of Object.entries(srcs))if(v.state==='skipped'&&!k.startsWith('store:'))fail.add(v.label);
+  if(stAll)(stOk?ok:fail).add(`음반점 ${stOk}/${stAll}곳`);
+  return{ok:[...ok],fail:[...fail].filter(x=>!ok.has(x)),any:Object.keys(cov).length>0};
+}
+function bestBox(a,ed){
+  const k=ed.criteria.kind,b=Engine.best(S,ed,k,'배송'),bh=Engine.best(S,ed,k,'현장'),cv=coverage(a);
+  const scope=`<p class="meta">확인한 곳: ${esc(cv.ok.join('·')||'없음')}${cv.fail.length?` · 확인 불가: ${esc(cv.fail.join('·'))}`:''}</p>`;
+  const row=(x,label)=>{const u=safeUrl(x.l.url);return`<div class="best"><span class="sub">${label}</span><strong>${won(x.tot)}</strong>
+    <span>${esc(x.l.source)}${x.l.shop&&x.l.shop!==x.l.source?` · ${esc(x.l.shop)}`:''}${x.l.delivery==='현장'?` · ${esc(x.l.region)}`:''}</span><span class="sub">${esc(x.why)} · 평균 ${won(x.avg)} (${x.count}건) · 검증 ${dt(x.at)}</span>
+    ${u?`<a class="btn" href="${esc(u)}" target="_blank" rel="noopener">상품 보기</a>`:''}</div>`};
+  if(!b&&!bh){const msg=!cv.any?'아직 조회 전':!cv.ok.length?'현재 판매 여부 확인 불가':'확인된 매물 없음';return`<div class="best none"><strong>${msg}</strong></div>${scope}`}
+  return(b?row(b,`확인된 최저가 · ${esc(k)} · 배송 포함`):'')+(bh?row(bh,`매장 수령 최저가 · ${esc(k)}`):'')+scope;
+}
 function statDl(ed,k){
-  const st=Engine.stats(S,ed,k),ch=Engine.change(S,ed,k),rf=Engine.ref(S,ed,k);
-  return`<dl class="st"><div><dt>최저가 (검증)</dt><dd class="big">${st.count?won(st.min):'—'}</dd></div><div><dt>평균가 (검증)</dt><dd class="big">${st.count?won(st.avg):'—'}</dd></div>
+  const st=Engine.stats(S,ed,k,null,'배송'),ch=Engine.change(S,ed,k,'배송');
+  return`<dl class="st"><div><dt>최저가 (배송, 검증)</dt><dd class="big">${st.count?won(st.min):'—'}</dd></div><div><dt>평균가 (검증)</dt><dd class="big">${st.count?won(st.avg):'—'}</dd></div>
   <div><dt>최근 최저가 변동</dt><dd>${esc(ch.t)}${ch.why&&ch.d?`<span class="sub"><br>${esc(ch.why)}</span>`:''}</dd></div><div><dt>비교 매물</dt><dd>${st.count}건 집계</dd></div>
-  <div><dt>참고 시세 (미검증 포함)</dt><dd>${rf.n?`${won(rf.median)}<span class="sub"> 중앙값 · ${rf.n}건 · 최저 ${won(rf.min)}</span>`:'—'}</dd></div><div><dt>목표 총액</dt><dd>${ed.criteria.target==null?'미설정':won(ed.criteria.target)}</dd></div></dl>`;
+  <div><dt>목표 총액</dt><dd>${ed.criteria.target==null?'미설정':won(ed.criteria.target)}</dd></div></dl>`;
 }
 function card(a,m){
   const ed=cardEd(a);
@@ -169,10 +190,9 @@ function card(a,m){
   const buys=js.filter(([,j])=>j.v==='구매 추천').sort((x,y)=>x[1].tot-y[1].tot),best=buys[0];
   const cnt=Object.keys(V).filter(v=>v!=='제외').map(v=>[v,js.filter(([,j])=>j.v===v).length]).filter(x=>x[1]).map(x=>`${x[0]} ${x[1]}`).join(' · ');
   return`<article class="card">${h}
-  <p class="edl"><b>${esc(ed.name)}</b> · ${esc(k)} 기준${activeEds(a).length>1?` <span class="sub">(희망 판본 ${activeEds(a).length}개)</span>`:''}${edChips(ed)}</p>
-  ${statDl(ed,k)}<p class="meta">최근 확인 ${dt(lastAt)}</p>
-  ${best?`<div class="rec yes">${vb('구매 추천')} <b>총 ${won(best[1].tot)}</b> · ${esc(best[0].source)} ${best[0].delivery==='현장'?'현장 구매':'배송'}<br>${esc(best[1].r[0])}</div>`
-        :`<div class="rec none">구매 추천 매물 없음${cnt?` — ${esc(cnt)}`:''}</div>`}
+  <p class="edl"><b>${esc(ed.name)}</b> · ${esc(k)} 기준${activeEds(a).length>1?` <span class="sub">(희망 판본 ${activeEds(a).length}개)</span>`:''}</p>
+  ${bestBox(a,ed)}
+  ${best?`<div class="rec yes">${vb('구매 추천')} ${esc(best[1].r[0])}</div>`:`<p class="meta">${cnt?esc(cnt):'추적 중인 매물 없음'} · 최근 확인 ${dt(lastAt)}</p>`}
   ${m?`<p class="meta">필터와 일치하는 매물 ${m.length}건</p>`:''}
   <button data-act="open" data-id="${a.id}">매물 비교 보기</button></article>`;
 }
@@ -196,7 +216,8 @@ function detailView(){
    <div><b>구매 조건</b><dl class="st" style="margin-top:6px"><div><dt>희망 구분</dt><dd>${esc(c.kind)}</dd></div><div><dt>목표 총액</dt><dd>${c.target==null?'미설정':won(c.target)}</dd></div>
     ${PARTS.map(([k,n])=>`<div><dt>${n} 허용</dt><dd>${esc(ALLOW.find(x=>x[0]===c[k])[1])}</dd></div>`).join('')}</dl></div></div>
    <div class="acts" style="margin-top:10px"><button data-act="editEd">판본·구매 조건 수정</button><button data-act="toggleWant">${ed.wanted?'희망 판본에서 빼기':'희망 판본으로 지정'}</button><button data-act="toggleEnd">${ed.ended?'이 판본 탐색 재개':'이 판본 탐색 종료'}</button></div></section>
-  <h2>가격 통계 <small>검증 통계는 정품 확인·판본 일치·허용 상태 충족·총액 확인 매물만 · 목표가와 무관</small></h2>
+  <div style="margin-top:12px">${bestBox(a,ed)}</div>
+  <h2>가격 통계 <small>원본 검증·필수 조건 충족·총액 확인된 판매 중 매물만 · 배송 매물 기준 · 목표가와 무관</small></h2>
   <div class="two">${['중고','신품'].map(k=>`<div class="box"><b>${k}${k===c.kind?' (희망 구분)':''}</b>${statDl(ed,k)}</div>`).join('')}</div>
   <h2>판매 중 매물 비교 <small>${act.length}건</small></h2><div class="acts" style="margin-bottom:10px"><button class="pri" data-act="addL">매물 수동 추가</button></div>
   ${act.length?`<div class="lgrid">${act.map(x=>lcard(...x)).join('')}</div>`:'<p class="empty">판매 중인 매물이 없습니다. 다음 자동 스캔을 기다리거나 직접 추가하세요.</p>'}
@@ -213,7 +234,9 @@ function lcard(l,j){
   <ul class="rs">${j.r.map(r=>`<li>${esc(r)}</li>`).join('')}</ul>
   ${(l.hints||[]).length?`<p class="meta">제목에서 찾은 단서: ${esc(l.hints.join(', '))}</p>`:''}
   <p class="meta">디스크 ${esc(o.disc)} · 케이스 ${esc(o.case)} · 북클릿 ${esc(o.booklet)} · 판본 ${esc(o.match)} · 정품 ${esc(o.auth)}${o.authNote?` (${esc(o.authNote)})`:''}</p>
-  <p class="meta">${esc(l.source)} · ${esc(l.shop)} · ${esc(l.region)} · ${esc(l.kind)} · ${l.auto?'자동 수집':'수동 입력'} · 판매 상태 ${esc(o.status)} · 최근 확인 ${dt(Engine.checkedAt(l))}</p>
+  <p class="meta">${esc(l.source)} · ${esc(l.shop)} · ${esc(l.region)} · ${esc(l.kind)} · ${l.delivery==='현장'?'매장 수령':'배송'} · ${l.auto?'자동 수집':'수동 입력'} · 판매 상태 ${esc(o.status)}</p>
+  <p class="meta">${l.auto?(l.verify&&l.verify.okAt?`원본 검증 ${dt(l.verify.okAt)}${l.verify.at!==l.verify.okAt?` · 최근 재확인 실패 ${dt(l.verify.at)}`:''}`:'원본 검증 전 (검색 결과만 확인)'):`직접 입력 ${dt(o.at)}`}</p>
+  ${l.verify&&(l.verify.evidence||[]).length?`<details><summary>검증 근거</summary><ul class="rs">${l.verify.evidence.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></details>`:''}
   <details><summary>가격·상태 이력 ${l.obs.length}건</summary><ol class="hist">${[...l.obs].reverse().map(x=>`<li>${dt(x.at)} — ${won(x.price)}${l.delivery==='현장'?' (현장)':` + 배송 ${x.shipping==null?'미확인':won(x.shipping)}`} · ${esc(x.status)} · ${esc(x.via||'')}${x.memo?` · ${esc(x.memo)}`:''}</li>`).join('')}</ol></details>
   <div class="acts">${u?`<a class="btn" href="${esc(u)}" target="_blank" rel="noopener">원문 열기</a>`:''}<button data-act="updL" data-id="${l.id}">매물 갱신 (가격·상태·확인 정보)</button><button data-act="baseL" data-id="${l.id}">기본 정보 수정</button>
   <button data-act="reg" data-id="${l.id}"${reg?' disabled':''}>${reg?'소장 등록됨':'소장 등록'}</button></div></article>`;
@@ -303,9 +326,10 @@ function edForm(ed,albumId){
    ${fi('keywords','판본 구분 단서 (쉼표로 구분)',(e.keywords||[]).join(', '),'placeholder="예: 일본반, SHM, 2009"')}
    <p class="hint">희망 판본이 여러 개면, 매물 제목에 이 단서가 더 많이 있는 판본에 자동 배정합니다(판본 일치는 여전히 ‘미확인’). 리마스터 여부를 모르는 재발매는 마스터링을 ‘미확인’으로 두세요.</p>${fc('wanted','희망 판본 (자동 스캔 대상)',e.wanted)}</fieldset>
    <fieldset><legend>구매 조건 (매물 가격 이력에는 기록되지 않음)</legend><div class="frow">${fs('kind','희망 구분',['중고','신품'],c.kind)}${fi('target','목표 총액(원)',c.target,'inputmode="numeric" placeholder="미설정"')}</div>
-   <div class="frow">${PARTS.map(([k,n])=>fs(k,n+' 허용 상태',ALLOW,c[k])).join('')}</div><p class="hint">목표 총액 이하 매물이 새로 뜨면 알림을 보냅니다.</p></fieldset>`,
+   <div class="frow">${PARTS.map(([k,n])=>fs(k,n+' 허용 상태',ALLOW,c[k]||'ANY')).join('')}</div>${fc('requireAuth','정품 근거 확인을 필수 조건으로',c.requireAuth)}
+   <p class="hint">‘상관없음’이 아닌 상태나 정품 근거를 필수로 지정하면, 원문에서 확인되지 않는 매물은 추천을 보류합니다. 판본 구분 단서·카탈로그 번호를 넣으면 원문에서 일치 근거가 있어야 추천합니다.</p></fieldset>`,
   ed?'저장':'추가',d=>{if(!d.name.trim())return'판본 이름을 입력하세요.';const y=num(d.year,'발매 연도'),t=num(d.target,'목표 총액');if(y.e)return y.e;if(t.e)return t.e;
-    const v={name:d.name.trim(),year:y.v,label:d.label.trim(),catalogNo:d.catalogNo.trim(),packaging:d.packaging,release:d.release,mastering:d.mastering,keywords:list(d.keywords),wanted:d.wanted,criteria:{kind:d.kind,target:t.v,disc:d.disc,case:d.case,booklet:d.booklet}};
+    const v={name:d.name.trim(),year:y.v,label:d.label.trim(),catalogNo:d.catalogNo.trim(),packaging:d.packaging,release:d.release,mastering:d.mastering,keywords:list(d.keywords),wanted:d.wanted,criteria:{kind:d.kind,target:t.v,disc:d.disc,case:d.case,booklet:d.booklet,requireAuth:d.requireAuth,userSet:true}};
     if(!ed)UI.editionId=e.id;
     return save(db=>{if(ed){const x=db.editions.find(z=>z.id===ed.id);if(!x)return'판본이 삭제되었습니다.';Object.assign(x,v)}else db.editions.push({...e,...v})},ed?'판본·조건 수정':'판본 추가')});
 }
@@ -316,7 +340,8 @@ const obsFields=o=>`<fieldset><legend>가격·판매 상태</legend><div class="
  <div class="frow">${fs('disc','디스크',GRADES,o.disc)}${fs('case','케이스',GRADES,o.case)}${fs('booklet','북클릿',BGRADES,o.booklet)}</div>${fi('memo','관측 메모',o.memo||'','placeholder="선택"')}</fieldset>`;
 function readObs(d){const p=num(d.price,'가격'),s=num(d.shipping,'배송비');if(p.e)return p.e;if(s.e)return s.e;
   return{price:p.v,shipping:s.v,status:d.status,auth:d.auth,match:d.match,authNote:d.authNote.trim(),disc:d.disc,case:d.case,booklet:d.booklet,memo:d.memo.trim()}}
-function pushObs(l,o){const prev=l.obs[l.obs.length-1];l.obs.push({...o,at:Math.max(Date.now(),prev?prev.at+1:0),via:'수동'});l.checkedAt=Date.now()}
+function pushObs(l,o){const prev=l.obs[l.obs.length-1],at=Math.max(Date.now(),prev?prev.at+1:0);l.obs.push({...o,at,via:'수동',ver:true});l.checkedAt=at;
+  if(l.auto)l.verify={at,ok:true,okAt:at,error:null,evidence:['사용자가 원본을 보고 직접 확인']}}
 const baseFields=(l,a)=>`<fieldset><legend>매물 기본 정보</legend>${fs('editionId','판본',albumEds(a).map(e=>[e.id,e.name]),l.editionId)}<div class="frow">${fs('source','출처',SOURCES,l.source)}${fs('kind','신품/중고',['중고','신품'],l.kind)}${fs('delivery','수령 방식',[['배송','배송 수령'],['현장','현장 구매']],l.delivery)}</div>
  <div class="frow">${fi('shop','매장명/판매자',l.shop)}${fi('region','지역',l.region)}</div>${fi('url','매물 링크',l.url||'','type="url" placeholder="https://"')}</fieldset>`;
 const readBase=d=>d.shop.trim()&&d.region.trim()?{editionId:d.editionId,source:d.source,kind:d.kind,delivery:d.delivery,shop:d.shop.trim(),region:d.region.trim(),url:safeUrl(d.url.trim())||''}:'매장명/판매자와 지역을 입력하세요.';
