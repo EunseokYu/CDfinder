@@ -1,5 +1,5 @@
 {
- "at": 1795282382641,
+ "at": 1795284038314,
  "hourly": false,
  "sources": {
   "joongna": {
@@ -129,19 +129,6 @@
     "상태 중"
    ]
   },
-  "aladin:used:342373453": {
-   "ok": true,
-   "status": "판매중",
-   "price": 20000,
-   "shipping": 3500,
-   "isCD": true,
-   "evidence": [
-    "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=342373453",
-    "바로구매·장바구니 버튼 있음",
-    "판매자 배송료: 택배 3,500원",
-    "상태 최상"
-   ]
-  },
   "joongna:225806254": {
    "ok": true,
    "status": "판매중",
@@ -152,6 +139,19 @@
     "상품 페이지 JSON-LD availability=InStock, productStatus=0",
     "배송 옵션 4000원 중 최저 적용",
     "카테고리 노트북/PC"
+   ]
+  },
+  "aladin:used:385941713": {
+   "ok": true,
+   "status": "판매중",
+   "price": 25000,
+   "shipping": 3500,
+   "isCD": true,
+   "evidence": [
+    "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=385941713",
+    "바로구매·장바구니 버튼 있음",
+    "판매자 배송료: 60,000원 미만 택배 3,500원",
+    "상태 상"
    ]
   },
   "aladin:used:397881336": {
@@ -365,42 +365,42 @@
     "Disc 1장"
    ]
   },
-  "aladin:used:400187558": {
+  "aladin:used:388653535": {
    "ok": true,
    "status": "판매중",
-   "price": 12000,
+   "price": 26000,
    "shipping": 3500,
    "isCD": true,
    "evidence": [
-    "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=400187558",
+    "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=388653535",
     "바로구매·장바구니 버튼 있음",
     "판매자 배송료: 택배 3,500원",
-    "상태 상"
+    "상태 최상"
    ]
   },
-  "aladin:used:386773006": {
+  "aladin:used:339123048": {
    "ok": true,
    "status": "판매중",
-   "price": 16000,
+   "price": 32000,
    "shipping": 3500,
    "isCD": true,
    "evidence": [
-    "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=386773006",
+    "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=339123048",
     "바로구매·장바구니 버튼 있음",
-    "판매자 배송료: 택배 3,500원",
-    "상태 상"
+    "판매자 배송료: 90,000원 미만 택배 3,500원",
+    "상태 최상"
    ]
   },
-  "aladin:used:302101947": {
+  "aladin:used:380475146": {
    "ok": true,
    "status": "판매중",
-   "price": 19800,
+   "price": 37500,
    "shipping": 3500,
    "isCD": true,
    "evidence": [
-    "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=302101947",
+    "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=380475146",
     "바로구매·장바구니 버튼 있음",
-    "판매자 배송료: 70,000원 미만 택배 3,500원",
+    "판매자 배송료: 68,000원 미만 택배 3,500원",
     "상태 최상"
    ]
   },
