@@ -1,7 +1,7 @@
 {
  "schema": 3,
  "meta": {
-  "lastScan": 1795221031666,
+  "lastScan": 1795222837787,
   "sources": {
    "bunjang": {
     "label": "번개장터",
@@ -12,18 +12,18 @@
     "candidates": 0,
     "verified": 0,
     "verifyFailed": 0,
-    "at": 1795221031666
+    "at": 1795222837787
    },
    "aladin": {
     "label": "알라딘",
-    "state": "ok",
-    "reason": null,
-    "searched": 13,
-    "failed": 0,
-    "candidates": 126,
-    "verified": 42,
-    "verifyFailed": 0,
-    "at": 1795219240644
+    "state": "failed",
+    "reason": "The Beatles Abbey Road: 검색 HTTP 403",
+    "searched": 0,
+    "failed": 13,
+    "candidates": 0,
+    "verified": 0,
+    "verifyFailed": 70,
+    "at": 1795222837787
    },
    "joongna": {
     "label": "중고나라",
@@ -32,9 +32,9 @@
     "searched": 13,
     "failed": 0,
     "candidates": 12,
-    "verified": 4,
+    "verified": 12,
     "verifyFailed": 0,
-    "at": 1795221031666
+    "at": 1795222837787
    },
    "yes24": {
     "label": "YES24",
@@ -45,7 +45,7 @@
     "candidates": 0,
     "verified": 0,
     "verifyFailed": 0,
-    "at": 1795219240644
+    "at": 1795222837787
    },
    "store:cdloft": {
     "label": "시디로프트",
@@ -56,7 +56,7 @@
     "candidates": 0,
     "verified": 0,
     "verifyFailed": 0,
-    "at": 1795219240644
+    "at": 1795222837787
    },
    "store:soriah": {
     "label": "소리아",
@@ -67,7 +67,7 @@
     "candidates": 1,
     "verified": 1,
     "verifyFailed": 0,
-    "at": 1795219240644
+    "at": 1795222837787
    },
    "store:cd4love": {
     "label": "CD4LOVE",
@@ -78,7 +78,7 @@
     "candidates": 1,
     "verified": 1,
     "verifyFailed": 0,
-    "at": 1795219240644
+    "at": 1795222837787
    },
    "store:mosaicseoul": {
     "label": "모자이크서울",
@@ -87,9 +87,9 @@
     "searched": 20,
     "failed": 0,
     "candidates": 3,
-    "verified": 1,
+    "verified": 3,
     "verifyFailed": 0,
-    "at": 1795219240644
+    "at": 1795222837787
    },
    "store:lpland": {
     "label": "엘피랜드",
@@ -98,252 +98,252 @@
     "searched": 20,
     "failed": 0,
     "candidates": 3,
-    "verified": 0,
+    "verified": 3,
     "verifyFailed": 0,
-    "at": 1795219240644
+    "at": 1795222837787
    }
   },
   "coverage": {
    "al-abbey": {
     "joongna": {
      "ok": true,
-     "at": 1795221031666
+     "at": 1795222837787
     },
     "aladin": {
-     "ok": true,
-     "at": 1795219240644
+     "ok": false,
+     "at": 1795222837787
     },
     "yes24": {
      "ok": false,
-     "at": 1795219240644
+     "at": 1795222837787
     },
     "store:cdloft": {
      "ok": true,
-     "at": 1795219240644
+     "at": 1795222837787
     },
     "store:soriah": {
      "ok": true,
-     "at": 1795219240644
+     "at": 1795222837787
     },
     "store:cd4love": {
      "ok": true,
-     "at": 1795219240644
+     "at": 1795222837787
     },
     "store:mosaicseoul": {
      "ok": true,
-     "at": 1795219240644
+     "at": 1795222837787
     },
     "store:lpland": {
      "ok": true,
-     "at": 1795219240644
+     "at": 1795222837787
     }
    },
    "al-gift": {
     "joongna": {
      "ok": true,
-     "at": 1795221031666
+     "at": 1795222837787
     },
     "aladin": {
-     "ok": true,
-     "at": 1795219240644
+     "ok": false,
+     "at": 1795222837787
     },
     "yes24": {
      "ok": false,
-     "at": 1795219240644
+     "at": 1795222837787
     },
     "store:cdloft": {
      "ok": true,
-     "at": 1795219240644
+     "at": 1795222837787
     },
     "store:soriah": {
      "ok": true,
-     "at": 1795219240644
+     "at": 1795222837787
     },
     "store:cd4love": {
      "ok": true,
-     "at": 1795219240644
+     "at": 1795222837787
     },
     "store:mosaicseoul": {
      "ok": true,
-     "at": 1795219240644
+     "at": 1795222837787
     },
     "store:lpland": {
      "ok": true,
-     "at": 1795219240644
+     "at": 1795222837787
     }
    },
    "al-letter": {
     "joongna": {
      "ok": true,
-     "at": 1795221031666
+     "at": 1795222837787
     },
     "aladin": {
-     "ok": true,
-     "at": 1795219240644
+     "ok": false,
+     "at": 1795222837787
     },
     "yes24": {
      "ok": false,
-     "at": 1795219240644
+     "at": 1795222837787
     },
     "store:cdloft": {
      "ok": true,
-     "at": 1795219240644
+     "at": 1795222837787
     },
     "store:soriah": {
      "ok": true,
-     "at": 1795219240644
+     "at": 1795222837787
     },
     "store:cd4love": {
      "ok": true,
-     "at": 1795219240644
+     "at": 1795222837787
     },
     "store:mosaicseoul": {
      "ok": true,
-     "at": 1795219240644
+     "at": 1795222837787
     },
     "store:lpland": {
      "ok": true,
-     "at": 1795219240644
+     "at": 1795222837787
     }
    },
    "al-sings": {
     "joongna": {
      "ok": true,
-     "at": 1795221031666
+     "at": 1795222837787
     },
     "aladin": {
-     "ok": true,
-     "at": 1795219240644
+     "ok": false,
+     "at": 1795222837787
     },
     "yes24": {
      "ok": false,
-     "at": 1795219240644
+     "at": 1795222837787
     },
     "store:cdloft": {
      "ok": true,
-     "at": 1795219240644
+     "at": 1795222837787
     },
     "store:soriah": {
      "ok": true,
-     "at": 1795219240644
+     "at": 1795222837787
     },
     "store:cd4love": {
      "ok": true,
-     "at": 1795219240644
+     "at": 1795222837787
     },
     "store:mosaicseoul": {
      "ok": true,
-     "at": 1795219240644
+     "at": 1795222837787
     },
     "store:lpland": {
      "ok": true,
-     "at": 1795219240644
+     "at": 1795222837787
     }
    },
    "al-could": {
     "joongna": {
      "ok": true,
-     "at": 1795221031666
+     "at": 1795222837787
     },
     "aladin": {
-     "ok": true,
-     "at": 1795219240644
+     "ok": false,
+     "at": 1795222837787
     },
     "yes24": {
      "ok": false,
-     "at": 1795219240644
+     "at": 1795222837787
     },
     "store:cdloft": {
      "ok": true,
-     "at": 1795219240644
+     "at": 1795222837787
     },
     "store:soriah": {
      "ok": true,
-     "at": 1795219240644
+     "at": 1795222837787
     },
     "store:cd4love": {
      "ok": true,
-     "at": 1795219240644
+     "at": 1795222837787
     },
     "store:mosaicseoul": {
      "ok": true,
-     "at": 1795219240644
+     "at": 1795222837787
     },
     "store:lpland": {
      "ok": true,
-     "at": 1795219240644
+     "at": 1795222837787
     }
    },
    "al-freud": {
     "joongna": {
      "ok": true,
-     "at": 1795221031666
+     "at": 1795222837787
     },
     "aladin": {
-     "ok": true,
-     "at": 1795219240644
+     "ok": false,
+     "at": 1795222837787
     },
     "yes24": {
      "ok": false,
-     "at": 1795219240644
+     "at": 1795222837787
     },
     "store:cdloft": {
      "ok": true,
-     "at": 1795219240644
+     "at": 1795222837787
     },
     "store:soriah": {
      "ok": true,
-     "at": 1795219240644
+     "at": 1795222837787
     },
     "store:cd4love": {
      "ok": true,
-     "at": 1795219240644
+     "at": 1795222837787
     },
     "store:mosaicseoul": {
      "ok": true,
-     "at": 1795219240644
+     "at": 1795222837787
     },
     "store:lpland": {
      "ok": true,
-     "at": 1795219240644
+     "at": 1795222837787
     }
    },
    "al-never": {
     "joongna": {
      "ok": true,
-     "at": 1795221031666
+     "at": 1795222837787
     },
     "aladin": {
-     "ok": true,
-     "at": 1795219240644
+     "ok": false,
+     "at": 1795222837787
     },
     "yes24": {
      "ok": false,
-     "at": 1795219240644
+     "at": 1795222837787
     },
     "store:cdloft": {
      "ok": true,
-     "at": 1795219240644
+     "at": 1795222837787
     },
     "store:soriah": {
      "ok": true,
-     "at": 1795219240644
+     "at": 1795222837787
     },
     "store:cd4love": {
      "ok": true,
-     "at": 1795219240644
+     "at": 1795222837787
     },
     "store:mosaicseoul": {
      "ok": true,
-     "at": 1795219240644
+     "at": 1795222837787
     },
     "store:lpland": {
      "ok": true,
-     "at": 1795219240644
+     "at": 1795222837787
     }
    }
   },
-  "lastHourly": 1795219240644
+  "lastHourly": 1795222837787
  },
  "albums": [
   {
@@ -613,7 +613,7 @@
    ],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795221031666,
+   "checkedAt": 1795222837787,
    "obs": [
     {
      "auth": "미확인",
@@ -647,9 +647,9 @@
    ],
    "missCount": 0,
    "verify": {
-    "at": 1795194043009,
+    "at": 1795222837787,
     "ok": true,
-    "okAt": 1795194043009,
+    "okAt": 1795222837787,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=InStock, productStatus=0",
@@ -672,7 +672,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795221031666,
+   "checkedAt": 1795222837787,
    "obs": [
     {
      "auth": "미확인",
@@ -706,9 +706,9 @@
    ],
    "missCount": 0,
    "verify": {
-    "at": 1795221031666,
+    "at": 1795222837787,
     "ok": true,
-    "okAt": 1795221031666,
+    "okAt": 1795222837787,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=InStock, productStatus=0",
@@ -733,7 +733,7 @@
    ],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795221031666,
+   "checkedAt": 1795222837787,
    "obs": [
     {
      "auth": "미확인",
@@ -767,9 +767,9 @@
    ],
    "missCount": 0,
    "verify": {
-    "at": 1795194043009,
+    "at": 1795222837787,
     "ok": true,
-    "okAt": 1795194043009,
+    "okAt": 1795222837787,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=InStock, productStatus=0",
@@ -795,7 +795,7 @@
    ],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795221031666,
+   "checkedAt": 1795222837787,
    "obs": [
     {
      "auth": "미확인",
@@ -829,9 +829,9 @@
    ],
    "missCount": 0,
    "verify": {
-    "at": 1795194043009,
+    "at": 1795222837787,
     "ok": true,
-    "okAt": 1795194043009,
+    "okAt": 1795222837787,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=InStock, productStatus=0",
@@ -856,7 +856,7 @@
    ],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795221031666,
+   "checkedAt": 1795222837787,
    "obs": [
     {
      "auth": "미확인",
@@ -890,9 +890,9 @@
    ],
    "missCount": 0,
    "verify": {
-    "at": 1795194043009,
+    "at": 1795222837787,
     "ok": true,
-    "okAt": 1795194043009,
+    "okAt": 1795222837787,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=InStock, productStatus=0",
@@ -912,10 +912,12 @@
    "kind": "중고",
    "url": "https://web.joongna.com/product/207285162",
    "title": "백예린 Every letter i sent you CD",
-   "hints": [],
+   "hints": [
+    "미개봉 표기"
+   ],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795221031666,
+   "checkedAt": 1795222837787,
    "obs": [
     {
      "auth": "미확인",
@@ -930,9 +932,35 @@
      "status": "판매중",
      "at": 1795099415746,
      "via": "자동"
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 149000,
+     "shipping": null,
+     "status": "판매중",
+     "at": 1795222837787,
+     "via": "자동",
+     "ver": true
     }
    ],
-   "missCount": 0
+   "missCount": 0,
+   "verify": {
+    "at": 1795222837787,
+    "ok": true,
+    "okAt": 1795222837787,
+    "error": null,
+    "evidence": [
+     "상품 페이지 JSON-LD availability=InStock, productStatus=0",
+     "배송비 표기 없음",
+     "카테고리 노트북/PC"
+    ]
+   }
   },
   {
    "id": "joongna:231847509",
@@ -945,10 +973,12 @@
    "kind": "중고",
    "url": "https://web.joongna.com/product/231847509",
    "title": "백예린 앨범 및 굿즈 / Every letter I sent you CD 포함 일괄 판매",
-   "hints": [],
+   "hints": [
+    "미개봉 표기"
+   ],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795221031666,
+   "checkedAt": 1795222837787,
    "obs": [
     {
      "auth": "미확인",
@@ -963,10 +993,36 @@
      "status": "판매중",
      "at": 1795099415746,
      "via": "자동"
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 270000,
+     "shipping": 0,
+     "status": "판매중",
+     "at": 1795222837787,
+     "via": "자동",
+     "ver": true
     }
    ],
    "missCount": 0,
-   "bundle": true
+   "bundle": true,
+   "verify": {
+    "at": 1795222837787,
+    "ok": true,
+    "okAt": 1795222837787,
+    "error": null,
+    "evidence": [
+     "상품 페이지 JSON-LD availability=InStock, productStatus=0",
+     "배송비 포함",
+     "카테고리 노트북/PC"
+    ]
+   }
   },
   {
    "id": "joongna:224033566",
@@ -979,10 +1035,12 @@
    "kind": "중고",
    "url": "https://web.joongna.com/product/224033566",
    "title": "백예린 Every letter I sent you 앨범",
-   "hints": [],
+   "hints": [
+    "미개봉 표기"
+   ],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795221031666,
+   "checkedAt": 1795222837787,
    "obs": [
     {
      "auth": "미확인",
@@ -997,9 +1055,36 @@
      "status": "판매중",
      "at": 1795099415746,
      "via": "자동"
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 100000,
+     "shipping": 4000,
+     "status": "판매중",
+     "at": 1795222837787,
+     "via": "자동",
+     "ver": true
     }
    ],
-   "missCount": 0
+   "missCount": 0,
+   "verify": {
+    "at": 1795222837787,
+    "ok": true,
+    "okAt": 1795222837787,
+    "error": null,
+    "evidence": [
+     "상품 페이지 JSON-LD availability=InStock, productStatus=0",
+     "배송 옵션 4000원 중 최저 적용",
+     "카테고리 노트북/PC"
+    ]
+   },
+   "notCD": true
   },
   {
    "id": "joongna:231479831",
@@ -1017,7 +1102,7 @@
    ],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795221031666,
+   "checkedAt": 1795222837787,
    "obs": [
     {
      "auth": "미확인",
@@ -1032,9 +1117,35 @@
      "status": "판매중",
      "at": 1795099415746,
      "via": "자동"
+    },
+    {
+     "auth": "미확인",
+     "authNote": "",
+     "match": "미확인",
+     "disc": "미확인",
+     "case": "미확인",
+     "booklet": "미확인",
+     "memo": "",
+     "price": 185000,
+     "shipping": 3800,
+     "status": "판매중",
+     "at": 1795222837787,
+     "via": "자동",
+     "ver": true
     }
    ],
-   "missCount": 0
+   "missCount": 0,
+   "verify": {
+    "at": 1795222837787,
+    "ok": true,
+    "okAt": 1795222837787,
+    "error": null,
+    "evidence": [
+     "상품 페이지 JSON-LD availability=InStock, productStatus=0",
+     "배송 옵션 3800원 중 최저 적용",
+     "카테고리 노트북/PC"
+    ]
+   }
   },
   {
    "id": "joongna:231291911",
@@ -1050,7 +1161,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795221031666,
+   "checkedAt": 1795222837787,
    "obs": [
     {
      "auth": "미확인",
@@ -1084,9 +1195,9 @@
    ],
    "missCount": 0,
    "verify": {
-    "at": 1795221031666,
+    "at": 1795222837787,
     "ok": true,
-    "okAt": 1795221031666,
+    "okAt": 1795222837787,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=InStock, productStatus=0",
@@ -1109,7 +1220,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795221031666,
+   "checkedAt": 1795222837787,
    "obs": [
     {
      "auth": "미확인",
@@ -1143,9 +1254,9 @@
    ],
    "missCount": 0,
    "verify": {
-    "at": 1795221031666,
+    "at": 1795222837787,
     "ok": true,
-    "okAt": 1795221031666,
+    "okAt": 1795222837787,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=InStock, productStatus=0",
@@ -1170,7 +1281,7 @@
    ],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795221031666,
+   "checkedAt": 1795222837787,
    "obs": [
     {
      "auth": "미확인",
@@ -1233,9 +1344,9 @@
    ],
    "missCount": 0,
    "verify": {
-    "at": 1795221031666,
+    "at": 1795222837787,
     "ok": true,
-    "okAt": 1795221031666,
+    "okAt": 1795222837787,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=InStock, productStatus=0",
@@ -1510,10 +1621,10 @@
     }
    ],
    "verify": {
-    "at": 1795204840769,
-    "ok": true,
+    "at": 1795222837787,
+    "ok": false,
     "okAt": 1795204840769,
-    "error": null,
+    "error": "HTTP 403",
     "evidence": [
      "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=385941713",
      "바로구매·장바구니 버튼 있음",
@@ -1588,7 +1699,7 @@
     }
    ],
    "verify": {
-    "at": 1795194043009,
+    "at": 1795222837787,
     "ok": false,
     "okAt": null,
     "error": "HTTP 403",
@@ -1628,7 +1739,7 @@
     }
    ],
    "verify": {
-    "at": 1795194043009,
+    "at": 1795222837787,
     "ok": false,
     "okAt": null,
     "error": "HTTP 403",
@@ -1668,7 +1779,7 @@
     }
    ],
    "verify": {
-    "at": 1795194043009,
+    "at": 1795222837787,
     "ok": false,
     "okAt": null,
     "error": "HTTP 403",
@@ -1708,7 +1819,7 @@
     }
    ],
    "verify": {
-    "at": 1795194043009,
+    "at": 1795222837787,
     "ok": false,
     "okAt": null,
     "error": "HTTP 403",
@@ -1748,7 +1859,7 @@
     }
    ],
    "verify": {
-    "at": 1795194043009,
+    "at": 1795222837787,
     "ok": false,
     "okAt": null,
     "error": "HTTP 403",
@@ -1821,7 +1932,7 @@
     }
    ],
    "verify": {
-    "at": 1795194043009,
+    "at": 1795222837787,
     "ok": false,
     "okAt": null,
     "error": "HTTP 403",
@@ -1937,7 +2048,7 @@
     }
    ],
    "verify": {
-    "at": 1795194043009,
+    "at": 1795222837787,
     "ok": false,
     "okAt": null,
     "error": "HTTP 403",
@@ -1977,7 +2088,7 @@
     }
    ],
    "verify": {
-    "at": 1795194043009,
+    "at": 1795222837787,
     "ok": false,
     "okAt": null,
     "error": "HTTP 403",
@@ -2017,7 +2128,7 @@
     }
    ],
    "verify": {
-    "at": 1795194043009,
+    "at": 1795222837787,
     "ok": false,
     "okAt": null,
     "error": "HTTP 403",
@@ -2242,7 +2353,7 @@
     }
    ],
    "verify": {
-    "at": 1795194043009,
+    "at": 1795222837787,
     "ok": false,
     "okAt": null,
     "error": "HTTP 403",
@@ -2312,10 +2423,10 @@
     }
    ],
    "verify": {
-    "at": 1795221031666,
-    "ok": true,
+    "at": 1795222837787,
+    "ok": false,
     "okAt": 1795221031666,
-    "error": null,
+    "error": "HTTP 403",
     "evidence": [
      "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=406685386",
      "바로구매·장바구니 버튼 있음",
@@ -2357,7 +2468,7 @@
     }
    ],
    "verify": {
-    "at": 1795194043009,
+    "at": 1795222837787,
     "ok": false,
     "okAt": null,
     "error": "HTTP 403",
@@ -2399,7 +2510,7 @@
     }
    ],
    "verify": {
-    "at": 1795194043009,
+    "at": 1795222837787,
     "ok": false,
     "okAt": null,
     "error": "HTTP 403",
@@ -2441,7 +2552,7 @@
     }
    ],
    "verify": {
-    "at": 1795194043009,
+    "at": 1795222837787,
     "ok": false,
     "okAt": null,
     "error": "HTTP 403",
@@ -2572,10 +2683,10 @@
     }
    ],
    "verify": {
-    "at": 1795221031666,
-    "ok": true,
+    "at": 1795222837787,
+    "ok": false,
     "okAt": 1795221031666,
-    "error": null,
+    "error": "HTTP 403",
     "evidence": [
      "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=397881336",
      "바로구매·장바구니 버튼 있음",
@@ -2632,10 +2743,10 @@
     }
    ],
    "verify": {
-    "at": 1795221031666,
-    "ok": true,
+    "at": 1795222837787,
+    "ok": false,
     "okAt": 1795221031666,
-    "error": null,
+    "error": "HTTP 403",
     "evidence": [
      "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=405197399",
      "바로구매·장바구니 버튼 있음",
@@ -2692,10 +2803,10 @@
     }
    ],
    "verify": {
-    "at": 1795221031666,
-    "ok": true,
+    "at": 1795222837787,
+    "ok": false,
     "okAt": 1795221031666,
-    "error": null,
+    "error": "HTTP 403",
     "evidence": [
      "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=400589768",
      "바로구매·장바구니 버튼 있음",
@@ -2737,7 +2848,7 @@
     }
    ],
    "verify": {
-    "at": 1795194043009,
+    "at": 1795222837787,
     "ok": false,
     "okAt": null,
     "error": "HTTP 403",
@@ -2777,7 +2888,7 @@
     }
    ],
    "verify": {
-    "at": 1795194043009,
+    "at": 1795222837787,
     "ok": false,
     "okAt": null,
     "error": "HTTP 403",
@@ -2817,7 +2928,7 @@
     }
    ],
    "verify": {
-    "at": 1795194043009,
+    "at": 1795222837787,
     "ok": false,
     "okAt": null,
     "error": "HTTP 403",
@@ -2857,7 +2968,7 @@
     }
    ],
    "verify": {
-    "at": 1795194043009,
+    "at": 1795222837787,
     "ok": false,
     "okAt": null,
     "error": "HTTP 403",
@@ -2897,7 +3008,7 @@
     }
    ],
    "verify": {
-    "at": 1795194043009,
+    "at": 1795222837787,
     "ok": false,
     "okAt": null,
     "error": "HTTP 403",
@@ -3104,10 +3215,10 @@
     }
    ],
    "verify": {
-    "at": 1795221031666,
-    "ok": true,
+    "at": 1795222837787,
+    "ok": false,
     "okAt": 1795221031666,
-    "error": null,
+    "error": "HTTP 403",
     "evidence": [
      "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=401736776",
      "바로구매·장바구니 버튼 있음",
@@ -3179,10 +3290,10 @@
     }
    ],
    "verify": {
-    "at": 1795221031666,
-    "ok": true,
+    "at": 1795222837787,
+    "ok": false,
     "okAt": 1795221031666,
-    "error": null,
+    "error": "HTTP 403",
     "evidence": [
      "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=396765787",
      "바로구매·장바구니 버튼 있음",
@@ -3239,10 +3350,10 @@
     }
    ],
    "verify": {
-    "at": 1795221031666,
-    "ok": true,
+    "at": 1795222837787,
+    "ok": false,
     "okAt": 1795221031666,
-    "error": null,
+    "error": "HTTP 403",
     "evidence": [
      "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=333310670",
      "바로구매·장바구니 버튼 있음",
@@ -3282,7 +3393,14 @@
      "via": "자동",
      "ver": false
     }
-   ]
+   ],
+   "verify": {
+    "at": 1795222837787,
+    "ok": false,
+    "okAt": null,
+    "error": "HTTP 403",
+    "evidence": []
+   }
   },
   {
    "id": "aladin:used:289672477",
@@ -3315,7 +3433,14 @@
      "via": "자동",
      "ver": false
     }
-   ]
+   ],
+   "verify": {
+    "at": 1795222837787,
+    "ok": false,
+    "okAt": null,
+    "error": "HTTP 403",
+    "evidence": []
+   }
   },
   {
    "id": "aladin:used:339353100",
@@ -3348,7 +3473,14 @@
      "via": "자동",
      "ver": false
     }
-   ]
+   ],
+   "verify": {
+    "at": 1795222837787,
+    "ok": false,
+    "okAt": null,
+    "error": "HTTP 403",
+    "evidence": []
+   }
   },
   {
    "id": "aladin:used:375380867",
@@ -3381,7 +3513,14 @@
      "via": "자동",
      "ver": false
     }
-   ]
+   ],
+   "verify": {
+    "at": 1795222837787,
+    "ok": false,
+    "okAt": null,
+    "error": "HTTP 403",
+    "evidence": []
+   }
   },
   {
    "id": "aladin:used:401343485",
@@ -3414,7 +3553,14 @@
      "via": "자동",
      "ver": false
     }
-   ]
+   ],
+   "verify": {
+    "at": 1795222837787,
+    "ok": false,
+    "okAt": null,
+    "error": "HTTP 403",
+    "evidence": []
+   }
   },
   {
    "id": "aladin:new:344036095",
@@ -3540,10 +3686,10 @@
     }
    ],
    "verify": {
-    "at": 1795144417062,
-    "ok": true,
+    "at": 1795222837787,
+    "ok": false,
     "okAt": 1795144417062,
-    "error": null,
+    "error": "HTTP 403",
     "evidence": [
      "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=368717444",
      "바로구매·장바구니 버튼 있음",
@@ -3583,7 +3729,14 @@
      "via": "자동",
      "ver": false
     }
-   ]
+   ],
+   "verify": {
+    "at": 1795222837787,
+    "ok": false,
+    "okAt": null,
+    "error": "HTTP 403",
+    "evidence": []
+   }
   },
   {
    "id": "aladin:used:390874934",
@@ -3616,7 +3769,14 @@
      "via": "자동",
      "ver": false
     }
-   ]
+   ],
+   "verify": {
+    "at": 1795222837787,
+    "ok": false,
+    "okAt": null,
+    "error": "HTTP 403",
+    "evidence": []
+   }
   },
   {
    "id": "aladin:used:364116783",
@@ -3649,7 +3809,14 @@
      "via": "자동",
      "ver": false
     }
-   ]
+   ],
+   "verify": {
+    "at": 1795222837787,
+    "ok": false,
+    "okAt": null,
+    "error": "HTTP 403",
+    "evidence": []
+   }
   },
   {
    "id": "aladin:used:371955833",
@@ -3682,7 +3849,14 @@
      "via": "자동",
      "ver": false
     }
-   ]
+   ],
+   "verify": {
+    "at": 1795222837787,
+    "ok": false,
+    "okAt": null,
+    "error": "HTTP 403",
+    "evidence": []
+   }
   },
   {
    "id": "aladin:new:711925",
@@ -3776,7 +3950,14 @@
      "via": "자동",
      "ver": false
     }
-   ]
+   ],
+   "verify": {
+    "at": 1795222837787,
+    "ok": false,
+    "okAt": null,
+    "error": "HTTP 403",
+    "evidence": []
+   }
   },
   {
    "id": "aladin:new:303764908",
@@ -3885,7 +4066,14 @@
      "via": "자동",
      "ver": false
     }
-   ]
+   ],
+   "verify": {
+    "at": 1795222837787,
+    "ok": false,
+    "okAt": null,
+    "error": "HTTP 403",
+    "evidence": []
+   }
   },
   {
    "id": "aladin:used:322882503",
@@ -3918,7 +4106,14 @@
      "via": "자동",
      "ver": false
     }
-   ]
+   ],
+   "verify": {
+    "at": 1795222837787,
+    "ok": false,
+    "okAt": null,
+    "error": "HTTP 403",
+    "evidence": []
+   }
   },
   {
    "id": "aladin:used:309592014",
@@ -3951,7 +4146,14 @@
      "via": "자동",
      "ver": false
     }
-   ]
+   ],
+   "verify": {
+    "at": 1795222837787,
+    "ok": false,
+    "okAt": null,
+    "error": "HTTP 403",
+    "evidence": []
+   }
   },
   {
    "id": "aladin:new:299529222",
@@ -4060,7 +4262,14 @@
      "via": "자동",
      "ver": false
     }
-   ]
+   ],
+   "verify": {
+    "at": 1795222837787,
+    "ok": false,
+    "okAt": null,
+    "error": "HTTP 403",
+    "evidence": []
+   }
   },
   {
    "id": "aladin:used:399302549",
@@ -4093,7 +4302,14 @@
      "via": "자동",
      "ver": false
     }
-   ]
+   ],
+   "verify": {
+    "at": 1795222837787,
+    "ok": false,
+    "okAt": null,
+    "error": "HTTP 403",
+    "evidence": []
+   }
   },
   {
    "id": "aladin:used:388493538",
@@ -4126,7 +4342,14 @@
      "via": "자동",
      "ver": false
     }
-   ]
+   ],
+   "verify": {
+    "at": 1795222837787,
+    "ok": false,
+    "okAt": null,
+    "error": "HTTP 403",
+    "evidence": []
+   }
   },
   {
    "id": "aladin:used:388493156",
@@ -4159,7 +4382,14 @@
      "via": "자동",
      "ver": false
     }
-   ]
+   ],
+   "verify": {
+    "at": 1795222837787,
+    "ok": false,
+    "okAt": null,
+    "error": "HTTP 403",
+    "evidence": []
+   }
   },
   {
    "id": "aladin:used:370586960",
@@ -4192,7 +4422,14 @@
      "via": "자동",
      "ver": false
     }
-   ]
+   ],
+   "verify": {
+    "at": 1795222837787,
+    "ok": false,
+    "okAt": null,
+    "error": "HTTP 403",
+    "evidence": []
+   }
   },
   {
    "id": "aladin:used:370586953",
@@ -4225,7 +4462,14 @@
      "via": "자동",
      "ver": false
     }
-   ]
+   ],
+   "verify": {
+    "at": 1795222837787,
+    "ok": false,
+    "okAt": null,
+    "error": "HTTP 403",
+    "evidence": []
+   }
   },
   {
    "id": "aladin:used:368465057",
@@ -4258,7 +4502,14 @@
      "via": "자동",
      "ver": false
     }
-   ]
+   ],
+   "verify": {
+    "at": 1795222837787,
+    "ok": false,
+    "okAt": null,
+    "error": "HTTP 403",
+    "evidence": []
+   }
   },
   {
    "id": "aladin:new:292208368",
@@ -4352,7 +4603,14 @@
      "via": "자동",
      "ver": false
     }
-   ]
+   ],
+   "verify": {
+    "at": 1795222837787,
+    "ok": false,
+    "okAt": null,
+    "error": "HTTP 403",
+    "evidence": []
+   }
   },
   {
    "id": "aladin:used:338286894",
@@ -4385,7 +4643,14 @@
      "via": "자동",
      "ver": false
     }
-   ]
+   ],
+   "verify": {
+    "at": 1795222837787,
+    "ok": false,
+    "okAt": null,
+    "error": "HTTP 403",
+    "evidence": []
+   }
   },
   {
    "id": "aladin:used:399417603",
@@ -4418,7 +4683,14 @@
      "via": "자동",
      "ver": false
     }
-   ]
+   ],
+   "verify": {
+    "at": 1795222837787,
+    "ok": false,
+    "okAt": null,
+    "error": "HTTP 403",
+    "evidence": []
+   }
   },
   {
    "id": "aladin:used:399244496",
@@ -4451,7 +4723,14 @@
      "via": "자동",
      "ver": false
     }
-   ]
+   ],
+   "verify": {
+    "at": 1795222837787,
+    "ok": false,
+    "okAt": null,
+    "error": "HTTP 403",
+    "evidence": []
+   }
   },
   {
    "id": "aladin:used:337881784",
@@ -4484,7 +4763,14 @@
      "via": "자동",
      "ver": false
     }
-   ]
+   ],
+   "verify": {
+    "at": 1795222837787,
+    "ok": false,
+    "okAt": null,
+    "error": "HTTP 403",
+    "evidence": []
+   }
   },
   {
    "id": "aladin:used:361905178",
@@ -4517,7 +4803,14 @@
      "via": "자동",
      "ver": false
     }
-   ]
+   ],
+   "verify": {
+    "at": 1795222837787,
+    "ok": false,
+    "okAt": null,
+    "error": "HTTP 403",
+    "evidence": []
+   }
   },
   {
    "id": "aladin:used:358832255",
@@ -4550,7 +4843,14 @@
      "via": "자동",
      "ver": false
     }
-   ]
+   ],
+   "verify": {
+    "at": 1795222837787,
+    "ok": false,
+    "okAt": null,
+    "error": "HTTP 403",
+    "evidence": []
+   }
   },
   {
    "id": "aladin:new:411198",
@@ -4644,7 +4944,14 @@
      "via": "자동",
      "ver": false
     }
-   ]
+   ],
+   "verify": {
+    "at": 1795222837787,
+    "ok": false,
+    "okAt": null,
+    "error": "HTTP 403",
+    "evidence": []
+   }
   },
   {
    "id": "aladin:new:314077617",
@@ -4771,7 +5078,14 @@
      "via": "자동",
      "ver": false
     }
-   ]
+   ],
+   "verify": {
+    "at": 1795222837787,
+    "ok": false,
+    "okAt": null,
+    "error": "HTTP 403",
+    "evidence": []
+   }
   },
   {
    "id": "aladin:new:275241833",
@@ -4880,7 +5194,14 @@
      "via": "자동",
      "ver": false
     }
-   ]
+   ],
+   "verify": {
+    "at": 1795222837787,
+    "ok": false,
+    "okAt": null,
+    "error": "HTTP 403",
+    "evidence": []
+   }
   },
   {
    "id": "aladin:new:703384",
@@ -4974,7 +5295,14 @@
      "via": "자동",
      "ver": false
     }
-   ]
+   ],
+   "verify": {
+    "at": 1795222837787,
+    "ok": false,
+    "okAt": null,
+    "error": "HTTP 403",
+    "evidence": []
+   }
   },
   {
    "id": "aladin:used:345959675",
@@ -5007,7 +5335,14 @@
      "via": "자동",
      "ver": false
     }
-   ]
+   ],
+   "verify": {
+    "at": 1795222837787,
+    "ok": false,
+    "okAt": null,
+    "error": "HTTP 403",
+    "evidence": []
+   }
   },
   {
    "id": "aladin:used:384395154",
@@ -5040,7 +5375,14 @@
      "via": "자동",
      "ver": false
     }
-   ]
+   ],
+   "verify": {
+    "at": 1795222837787,
+    "ok": false,
+    "okAt": null,
+    "error": "HTTP 403",
+    "evidence": []
+   }
   },
   {
    "id": "aladin:used:348846491",
@@ -5073,7 +5415,14 @@
      "via": "자동",
      "ver": false
     }
-   ]
+   ],
+   "verify": {
+    "at": 1795222837787,
+    "ok": false,
+    "okAt": null,
+    "error": "HTTP 403",
+    "evidence": []
+   }
   },
   {
    "id": "aladin:used:348371338",
@@ -5106,7 +5455,14 @@
      "via": "자동",
      "ver": false
     }
-   ]
+   ],
+   "verify": {
+    "at": 1795222837787,
+    "ok": false,
+    "okAt": null,
+    "error": "HTTP 403",
+    "evidence": []
+   }
   },
   {
    "id": "aladin:used:318837982",
@@ -5139,7 +5495,14 @@
      "via": "자동",
      "ver": false
     }
-   ]
+   ],
+   "verify": {
+    "at": 1795222837787,
+    "ok": false,
+    "okAt": null,
+    "error": "HTTP 403",
+    "evidence": []
+   }
   },
   {
    "id": "aladin:used:343432162",
@@ -5172,7 +5535,14 @@
      "via": "자동",
      "ver": false
     }
-   ]
+   ],
+   "verify": {
+    "at": 1795222837787,
+    "ok": false,
+    "okAt": null,
+    "error": "HTTP 403",
+    "evidence": []
+   }
   },
   {
    "id": "aladin:new:341822033",
@@ -5238,7 +5608,14 @@
      "via": "자동",
      "ver": false
     }
-   ]
+   ],
+   "verify": {
+    "at": 1795222837787,
+    "ok": false,
+    "okAt": null,
+    "error": "HTTP 403",
+    "evidence": []
+   }
   },
   {
    "id": "aladin:used:372645013",
@@ -5271,7 +5648,14 @@
      "via": "자동",
      "ver": false
     }
-   ]
+   ],
+   "verify": {
+    "at": 1795222837787,
+    "ok": false,
+    "okAt": null,
+    "error": "HTTP 403",
+    "evidence": []
+   }
   },
   {
    "id": "aladin:used:358825191",
@@ -5304,7 +5688,14 @@
      "via": "자동",
      "ver": false
     }
-   ]
+   ],
+   "verify": {
+    "at": 1795222837787,
+    "ok": false,
+    "okAt": null,
+    "error": "HTTP 403",
+    "evidence": []
+   }
   },
   {
    "id": "aladin:used:358825190",
@@ -5337,7 +5728,14 @@
      "via": "자동",
      "ver": false
     }
-   ]
+   ],
+   "verify": {
+    "at": 1795222837787,
+    "ok": false,
+    "okAt": null,
+    "error": "HTTP 403",
+    "evidence": []
+   }
   },
   {
    "id": "aladin:used:402413353",
@@ -5387,10 +5785,10 @@
     }
    ],
    "verify": {
-    "at": 1795144417062,
-    "ok": true,
+    "at": 1795222837787,
+    "ok": false,
     "okAt": 1795144417062,
-    "error": null,
+    "error": "HTTP 403",
     "evidence": [
      "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=402413353",
      "바로구매·장바구니 버튼 있음",
@@ -5462,10 +5860,10 @@
     }
    ],
    "verify": {
-    "at": 1795221031666,
-    "ok": true,
+    "at": 1795222837787,
+    "ok": false,
     "okAt": 1795221031666,
-    "error": null,
+    "error": "HTTP 403",
     "evidence": [
      "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=364215705",
      "바로구매·장바구니 버튼 있음",
@@ -6349,7 +6747,7 @@
    ],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795219240644,
+   "checkedAt": 1795222837787,
    "obs": [
     {
      "auth": "미확인",
@@ -6383,9 +6781,9 @@
     }
    ],
    "verify": {
-    "at": 1795219240644,
+    "at": 1795222837787,
     "ok": true,
-    "okAt": 1795219240644,
+    "okAt": 1795222837787,
     "error": null,
     "evidence": [
      "상품 페이지 productId=17",
@@ -6411,7 +6809,7 @@
    ],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795219240644,
+   "checkedAt": 1795222837787,
    "obs": [
     {
      "auth": "미확인",
@@ -6445,9 +6843,9 @@
     }
    ],
    "verify": {
-    "at": 1795174232141,
+    "at": 1795222837787,
     "ok": true,
-    "okAt": 1795174232141,
+    "okAt": 1795222837787,
     "error": null,
     "evidence": [
      "상품 페이지 productId=83257",
@@ -6474,7 +6872,7 @@
    ],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795219240644,
+   "checkedAt": 1795222837787,
    "obs": [
     {
      "auth": "미확인",
@@ -6508,9 +6906,9 @@
     }
    ],
    "verify": {
-    "at": 1795174232141,
+    "at": 1795222837787,
     "ok": true,
-    "okAt": 1795174232141,
+    "okAt": 1795222837787,
     "error": null,
     "evidence": [
      "상품 페이지 productId=65439",
@@ -6537,7 +6935,7 @@
    ],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795219240644,
+   "checkedAt": 1795222837787,
    "obs": [
     {
      "auth": "미확인",
@@ -6571,9 +6969,9 @@
     }
    ],
    "verify": {
-    "at": 1795219240644,
+    "at": 1795222837787,
     "ok": true,
-    "okAt": 1795219240644,
+    "okAt": 1795222837787,
     "error": null,
     "evidence": [
      "상품 페이지 productId=65178",
@@ -6601,7 +6999,7 @@
    ],
    "auto": true,
    "firstSeen": 1795143914706,
-   "checkedAt": 1795219240644,
+   "checkedAt": 1795222837787,
    "obs": [
     {
      "auth": "미확인",
@@ -6635,9 +7033,9 @@
     }
    ],
    "verify": {
-    "at": 1795174232141,
+    "at": 1795222837787,
     "ok": true,
-    "okAt": 1795174232141,
+    "okAt": 1795222837787,
     "error": null,
     "evidence": [
      "상품 페이지 productId=13469",
@@ -6662,7 +7060,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795144500163,
-   "checkedAt": 1795219240644,
+   "checkedAt": 1795222837787,
    "obs": [
     {
      "auth": "미확인",
@@ -6696,9 +7094,9 @@
     }
    ],
    "verify": {
-    "at": 1795219240644,
+    "at": 1795222837787,
     "ok": true,
-    "okAt": 1795219240644,
+    "okAt": 1795222837787,
     "error": null,
     "evidence": [
      "상품 페이지 productId=2963",
@@ -6725,7 +7123,7 @@
    ],
    "auto": true,
    "firstSeen": 1795144500163,
-   "checkedAt": 1795219240644,
+   "checkedAt": 1795222837787,
    "obs": [
     {
      "auth": "미확인",
@@ -6759,9 +7157,9 @@
     }
    ],
    "verify": {
-    "at": 1795174232141,
+    "at": 1795222837787,
     "ok": true,
-    "okAt": 1795174232141,
+    "okAt": 1795222837787,
     "error": null,
     "evidence": [
      "상품 페이지 productId=13351",
@@ -6789,7 +7187,7 @@
    ],
    "auto": true,
    "firstSeen": 1795144500163,
-   "checkedAt": 1795219240644,
+   "checkedAt": 1795222837787,
    "obs": [
     {
      "auth": "미확인",
@@ -6823,9 +7221,9 @@
     }
    ],
    "verify": {
-    "at": 1795203035810,
+    "at": 1795222837787,
     "ok": true,
-    "okAt": 1795203035810,
+    "okAt": 1795222837787,
     "error": null,
     "evidence": [
      "상품 페이지 productId=4500",
