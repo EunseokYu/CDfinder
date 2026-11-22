@@ -1,6 +1,6 @@
 {
- "at": 1795375835053,
- "hourly": true,
+ "at": 1795377639146,
+ "hourly": false,
  "sources": {
   "joongna": {
    "label": "중고나라",
@@ -28,130 +28,94 @@
   "aladin": {
    "label": "알라딘",
    "tier": "hourly",
-   "state": "partial",
-   "searched": 7,
-   "failed": 6,
-   "candidates": 31,
-   "verified": 29,
+   "state": "waiting",
+   "searched": 0,
+   "failed": 0,
+   "candidates": 0,
+   "verified": 22,
    "verifyFailed": 0,
-   "errors": [
-    "The Beatles Abbey Road: The operation was aborted due to timeout",
-    "비틀즈 애비로드: The operation was aborted due to timeout",
-    "백예린 선물: The operation was aborted due to timeout",
-    "백예린 Every letter I sent you.: The operation was aborted due to timeout"
-   ]
+   "errors": [],
+   "reason": "1시간 회차에만 조회"
   },
   "yes24": {
    "label": "YES24",
    "tier": "hourly",
-   "state": "failed",
+   "state": "waiting",
    "searched": 0,
-   "failed": 13,
+   "failed": 0,
    "candidates": 0,
    "verified": 0,
    "verifyFailed": 0,
-   "errors": [
-    "The Beatles Abbey Road: 검색·모바일 검색 요청이 모두 메인 페이지로 리다이렉트됨(해외 서버 차단으로 보임) — 상품 발견 불가",
-    "비틀즈 애비로드: 검색·모바일 검색 요청이 모두 메인 페이지로 리다이렉트됨(해외 서버 차단으로 보임) — 상품 발견 불가",
-    "백예린 선물: 검색·모바일 검색 요청이 모두 메인 페이지로 리다이렉트됨(해외 서버 차단으로 보임) — 상품 발견 불가",
-    "백예린 Every letter I sent you.: 검색·모바일 검색 요청이 모두 메인 페이지로 리다이렉트됨(해외 서버 차단으로 보임) — 상품 발견 불가"
-   ],
-   "reason": "The Beatles Abbey Road: 검색·모바일 검색 요청이 모두 메인 페이지로 리다이렉트됨(해외 서버 차단으로 보임) — 상품 발견 불가"
+   "errors": [],
+   "reason": "1시간 회차에만 조회"
   },
   "store:cdloft": {
    "label": "시디로프트",
    "tier": "hourly",
-   "state": "ok",
-   "searched": 20,
+   "state": "waiting",
+   "searched": 0,
    "failed": 0,
    "candidates": 0,
    "verified": 0,
    "verifyFailed": 0,
-   "errors": []
+   "errors": [],
+   "reason": "1시간 회차에만 조회"
   },
   "store:soriah": {
    "label": "소리아",
    "tier": "hourly",
-   "state": "ok",
-   "searched": 20,
+   "state": "waiting",
+   "searched": 0,
    "failed": 0,
-   "candidates": 1,
-   "verified": 1,
+   "candidates": 0,
+   "verified": 0,
    "verifyFailed": 0,
-   "errors": []
+   "errors": [],
+   "reason": "1시간 회차에만 조회"
   },
   "store:cd4love": {
    "label": "CD4LOVE",
    "tier": "hourly",
-   "state": "ok",
-   "searched": 20,
+   "state": "waiting",
+   "searched": 0,
    "failed": 0,
-   "candidates": 1,
-   "verified": 1,
+   "candidates": 0,
+   "verified": 0,
    "verifyFailed": 0,
-   "errors": []
+   "errors": [],
+   "reason": "1시간 회차에만 조회"
   },
   "store:mosaicseoul": {
    "label": "모자이크서울",
    "tier": "hourly",
-   "state": "ok",
-   "searched": 20,
+   "state": "waiting",
+   "searched": 0,
    "failed": 0,
-   "candidates": 3,
-   "verified": 1,
+   "candidates": 0,
+   "verified": 0,
    "verifyFailed": 0,
-   "errors": []
+   "errors": [],
+   "reason": "1시간 회차에만 조회"
   },
   "store:lpland": {
    "label": "엘피랜드",
    "tier": "hourly",
-   "state": "ok",
-   "searched": 20,
+   "state": "waiting",
+   "searched": 0,
    "failed": 0,
-   "candidates": 3,
-   "verified": 1,
+   "candidates": 0,
+   "verified": 0,
    "verifyFailed": 0,
-   "errors": []
+   "errors": [],
+   "reason": "1시간 회차에만 조회"
   }
  },
- "requests": 183,
+ "requests": 39,
  "requestHosts": [
   "web.joongna.com",
-  "www.aladin.co.kr",
-  "www.yes24.com",
-  "cdloft.co.kr",
-  "soriah.co.kr",
-  "cd4love.co.kr",
-  "mosaicseoul.kr",
-  "lpland.co.kr"
+  "www.aladin.co.kr"
  ],
  "verified": {
-  "store:soriah:2963": {
-   "ok": true,
-   "status": "품절",
-   "price": 7000,
-   "shipping": 4000,
-   "isCD": true,
-   "evidence": [
-    "상품 페이지 productId=2963",
-    "품절 아이콘=T, 재고=0, 구매 버튼 있음",
-    "배송 비용 4,000원",
-    "형식 근거: 1CD"
-   ]
-  },
-  "store:cd4love:17": {
-   "ok": true,
-   "status": "품절",
-   "price": 15600,
-   "shipping": 3000,
-   "isCD": true,
-   "evidence": [
-    "상품 페이지 productId=17",
-    "품절 아이콘=T, 재고=0, 구매 버튼 있음",
-    "배송비 3,000원 (50,000원 이상 무료)",
-    "형식 근거: ﻿"
-   ]
-  },
   "aladin:used:406685386": {
    "ok": true,
    "status": "판매중",
@@ -175,19 +139,6 @@
     "상품 페이지 JSON-LD availability=InStock, productStatus=0",
     "배송 옵션 4000원 중 최저 적용",
     "카테고리 노트북/PC"
-   ]
-  },
-  "store:lpland:4500": {
-   "ok": true,
-   "status": "품절",
-   "price": 25000,
-   "shipping": 4000,
-   "isCD": false,
-   "evidence": [
-    "상품 페이지 productId=4500",
-    "품절 아이콘=T, 재고=0, 구매 버튼 없음",
-    "배송 비용 4,000원",
-    "형식 근거: 희귀 중고음악관련 판매 사이트 엘피랜드(LPLAND)입니다."
    ]
   },
   "aladin:used:385941713": {
@@ -318,19 +269,6 @@
     "카테고리 노트북/PC"
    ]
   },
-  "store:mosaicseoul:65178": {
-   "ok": true,
-   "status": "품절",
-   "price": 230600,
-   "shipping": null,
-   "isCD": false,
-   "evidence": [
-    "상품 페이지 productId=65178",
-    "품절 아이콘=T, 재고=0, 구매 버튼 있음",
-    "배송비 표기 없음",
-    "형식 근거: Ref : W60301-100Cover : Very Good Plus (VG+) Media : Very Good Plus (VG+) Genre : Hip-Hop18 US PRESSING / LIMITED EDITION, REISSUE"
-   ]
-  },
   "joongna:223467210": {
    "ok": true,
    "status": "판매중",
@@ -343,99 +281,85 @@
     "카테고리 노트북/PC"
    ]
   },
-  "aladin:new:354411": {
+  "aladin:new:209013939": {
    "ok": true,
-   "status": "품절",
-   "price": 11200,
-   "shipping": null,
-   "isCD": true,
-   "evidence": [
-    "상품 페이지 JSON-LD availability=OutOfStock",
-    "판매가 11200원",
-    "배송료: 2만원 미만 — 배송료 금액이 페이지에 없어 총액 미확인",
-    "알라딘 직접 판매",
-    "Disc 1장"
-   ]
-  },
-  "aladin:new:798802": {
-   "ok": true,
-   "status": "품절",
-   "price": 12700,
-   "shipping": null,
-   "isCD": true,
-   "evidence": [
-    "상품 페이지 JSON-LD availability=OutOfStock",
-    "판매가 12700원",
-    "배송료: 2만원 미만 — 배송료 금액이 페이지에 없어 총액 미확인",
-    "알라딘 직접 판매",
-    "Disc 1장"
-   ]
-  },
-  "aladin:new:707013": {
-   "ok": true,
-   "status": "품절",
-   "price": 16300,
-   "shipping": null,
-   "isCD": true,
-   "evidence": [
-    "상품 페이지 JSON-LD availability=OutOfStock",
-    "판매가 16300원",
-    "배송료: 2만원 미만 — 배송료 금액이 페이지에 없어 총액 미확인",
-    "알라딘 직접 판매",
-    "Disc 1장"
-   ]
-  },
-  "aladin:new:8446473": {
-   "ok": true,
-   "status": "품절",
-   "price": 16400,
-   "shipping": null,
-   "isCD": true,
-   "evidence": [
-    "상품 페이지 JSON-LD availability=OutOfStock",
-    "판매가 16400원",
-    "배송료: 2만원 미만 — 배송료 금액이 페이지에 없어 총액 미확인",
-    "알라딘 직접 판매",
-    "Disc 1장"
-   ]
-  },
-  "aladin:new:703771": {
-   "ok": true,
-   "status": "품절",
-   "price": 16400,
-   "shipping": null,
-   "isCD": true,
-   "evidence": [
-    "상품 페이지 JSON-LD availability=OutOfStock",
-    "판매가 16400원",
-    "배송료: 2만원 미만 — 배송료 금액이 페이지에 없어 총액 미확인",
-    "알라딘 직접 판매",
-    "Disc 1장"
-   ]
-  },
-  "aladin:new:317726876": {
-   "ok": true,
-   "status": "품절",
-   "price": 28600,
+   "status": "판매중",
+   "price": 29600,
    "shipping": 0,
    "isCD": true,
    "evidence": [
-    "상품 페이지 JSON-LD availability=OutOfStock",
-    "판매가 28600원",
+    "상품 페이지 JSON-LD availability=InStock",
+    "판매가 29600원",
     "배송료: 배송료 무료",
     "알라딘 직접 판매",
     "Disc 1장"
    ]
   },
-  "aladin:new:706583": {
+  "aladin:new:363529621": {
    "ok": true,
-   "status": "품절",
-   "price": 38100,
+   "status": "판매중",
+   "price": 27500,
+   "shipping": 3000,
+   "isCD": true,
+   "evidence": [
+    "상품 페이지 JSON-LD availability=InStock",
+    "판매가 27500원",
+    "배송료: 50,000원 미만 택배 3,000원",
+    "판매 업체 imusic",
+    "Disc 1장"
+   ]
+  },
+  "aladin:new:352228501": {
+   "ok": true,
+   "status": "판매중",
+   "price": 27700,
+   "shipping": 3000,
+   "isCD": true,
+   "evidence": [
+    "상품 페이지 JSON-LD availability=InStock",
+    "판매가 27700원",
+    "배송료: 50,000원 미만 택배 3,000원",
+    "판매 업체 imusic",
+    "Disc 1장"
+   ]
+  },
+  "aladin:new:711925": {
+   "ok": true,
+   "status": "판매중",
+   "price": 16400,
+   "shipping": null,
+   "isCD": true,
+   "evidence": [
+    "상품 페이지 JSON-LD availability=InStock",
+    "판매가 16400원",
+    "배송료: 2만원 미만 — 배송료 금액이 페이지에 없어 총액 미확인",
+    "알라딘 직접 판매",
+    "Disc 1장"
+   ]
+  },
+  "aladin:new:299529222": {
+   "ok": true,
+   "status": "판매중",
+   "price": 23500,
    "shipping": 0,
    "isCD": true,
    "evidence": [
-    "상품 페이지 JSON-LD availability=OutOfStock",
-    "판매가 38100원",
+    "상품 페이지 JSON-LD availability=InStock",
+    "판매가 23500원",
+    "배송료: 배송료 무료",
+    "알라딘 직접 판매",
+    "Disc 1장"
+   ]
+  },
+  "aladin:new:303764908": {
+   "ok": true,
+   "status": "판매중",
+   "price": 27500,
+   "shipping": 0,
+   "isCD": true,
+   "evidence": [
+    "상품 페이지 JSON-LD availability=InStock",
+    "판매가 27500원",
     "배송료: 배송료 무료",
     "알라딘 직접 판매",
     "Disc 1장"
@@ -533,90 +457,6 @@
     "바로구매·장바구니 버튼 있음",
     "판매자 배송료: 택배 3,500원",
     "상태 최상"
-   ]
-  },
-  "aladin:new:209013939": {
-   "ok": true,
-   "status": "판매중",
-   "price": 29600,
-   "shipping": 0,
-   "isCD": true,
-   "evidence": [
-    "상품 페이지 JSON-LD availability=InStock",
-    "판매가 29600원",
-    "배송료: 배송료 무료",
-    "알라딘 직접 판매",
-    "Disc 1장"
-   ]
-  },
-  "aladin:new:363529621": {
-   "ok": true,
-   "status": "판매중",
-   "price": 27500,
-   "shipping": 3000,
-   "isCD": true,
-   "evidence": [
-    "상품 페이지 JSON-LD availability=InStock",
-    "판매가 27500원",
-    "배송료: 50,000원 미만 택배 3,000원",
-    "판매 업체 imusic",
-    "Disc 1장"
-   ]
-  },
-  "aladin:new:352228501": {
-   "ok": true,
-   "status": "판매중",
-   "price": 27700,
-   "shipping": 3000,
-   "isCD": true,
-   "evidence": [
-    "상품 페이지 JSON-LD availability=InStock",
-    "판매가 27700원",
-    "배송료: 50,000원 미만 택배 3,000원",
-    "판매 업체 imusic",
-    "Disc 1장"
-   ]
-  },
-  "aladin:new:711925": {
-   "ok": true,
-   "status": "판매중",
-   "price": 16400,
-   "shipping": null,
-   "isCD": true,
-   "evidence": [
-    "상품 페이지 JSON-LD availability=InStock",
-    "판매가 16400원",
-    "배송료: 2만원 미만 — 배송료 금액이 페이지에 없어 총액 미확인",
-    "알라딘 직접 판매",
-    "Disc 1장"
-   ]
-  },
-  "aladin:new:299529222": {
-   "ok": true,
-   "status": "판매중",
-   "price": 23500,
-   "shipping": 0,
-   "isCD": true,
-   "evidence": [
-    "상품 페이지 JSON-LD availability=InStock",
-    "판매가 23500원",
-    "배송료: 배송료 무료",
-    "알라딘 직접 판매",
-    "Disc 1장"
-   ]
-  },
-  "aladin:new:303764908": {
-   "ok": true,
-   "status": "판매중",
-   "price": 27500,
-   "shipping": 0,
-   "isCD": true,
-   "evidence": [
-    "상품 페이지 JSON-LD availability=InStock",
-    "판매가 27500원",
-    "배송료: 배송료 무료",
-    "알라딘 직접 판매",
-    "Disc 1장"
    ]
   }
  }
