@@ -1,7 +1,7 @@
 {
  "schema": 3,
  "meta": {
-  "lastScan": 1795356039154,
+  "lastScan": 1795357830508,
   "sources": {
    "bunjang": {
     "label": "번개장터",
@@ -12,7 +12,7 @@
     "candidates": 0,
     "verified": 0,
     "verifyFailed": 0,
-    "at": 1795356039154
+    "at": 1795357830508
    },
    "aladin": {
     "label": "알라딘",
@@ -32,9 +32,9 @@
     "searched": 13,
     "failed": 0,
     "candidates": 13,
-    "verified": 12,
+    "verified": 4,
     "verifyFailed": 0,
-    "at": 1795356039154
+    "at": 1795357830508
    },
    "yes24": {
     "label": "YES24",
@@ -107,7 +107,7 @@
    "al-abbey": {
     "joongna": {
      "ok": true,
-     "at": 1795356039154
+     "at": 1795357830508
     },
     "aladin": {
      "ok": false,
@@ -141,7 +141,7 @@
    "al-gift": {
     "joongna": {
      "ok": true,
-     "at": 1795356039154
+     "at": 1795357830508
     },
     "aladin": {
      "ok": false,
@@ -175,7 +175,7 @@
    "al-letter": {
     "joongna": {
      "ok": true,
-     "at": 1795356039154
+     "at": 1795357830508
     },
     "aladin": {
      "ok": false,
@@ -209,7 +209,7 @@
    "al-sings": {
     "joongna": {
      "ok": true,
-     "at": 1795356039154
+     "at": 1795357830508
     },
     "aladin": {
      "ok": false,
@@ -243,7 +243,7 @@
    "al-could": {
     "joongna": {
      "ok": true,
-     "at": 1795356039154
+     "at": 1795357830508
     },
     "aladin": {
      "ok": false,
@@ -277,7 +277,7 @@
    "al-freud": {
     "joongna": {
      "ok": true,
-     "at": 1795356039154
+     "at": 1795357830508
     },
     "aladin": {
      "ok": false,
@@ -311,7 +311,7 @@
    "al-never": {
     "joongna": {
      "ok": true,
-     "at": 1795356039154
+     "at": 1795357830508
     },
     "aladin": {
      "ok": false,
@@ -613,7 +613,7 @@
    ],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795356039154,
+   "checkedAt": 1795357830508,
    "obs": [
     {
      "auth": "미확인",
@@ -672,7 +672,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795356039154,
+   "checkedAt": 1795357830508,
    "obs": [
     {
      "auth": "미확인",
@@ -706,9 +706,9 @@
    ],
    "missCount": 0,
    "verify": {
-    "at": 1795356039154,
+    "at": 1795357830508,
     "ok": true,
-    "okAt": 1795356039154,
+    "okAt": 1795357830508,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=InStock, productStatus=0",
@@ -733,7 +733,7 @@
    ],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795356039154,
+   "checkedAt": 1795357830508,
    "obs": [
     {
      "auth": "미확인",
@@ -795,7 +795,7 @@
    ],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795356039154,
+   "checkedAt": 1795357830508,
    "obs": [
     {
      "auth": "미확인",
@@ -856,7 +856,7 @@
    ],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795356039154,
+   "checkedAt": 1795357830508,
    "obs": [
     {
      "auth": "미확인",
@@ -917,7 +917,7 @@
    ],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795356039154,
+   "checkedAt": 1795357830508,
    "obs": [
     {
      "auth": "미확인",
@@ -978,7 +978,7 @@
    ],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795356039154,
+   "checkedAt": 1795357830508,
    "obs": [
     {
      "auth": "미확인",
@@ -1040,7 +1040,7 @@
    ],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795356039154,
+   "checkedAt": 1795357830508,
    "obs": [
     {
      "auth": "미확인",
@@ -1102,7 +1102,7 @@
    ],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795356039154,
+   "checkedAt": 1795357830508,
    "obs": [
     {
      "auth": "미확인",
@@ -1161,7 +1161,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795356039154,
+   "checkedAt": 1795357830508,
    "obs": [
     {
      "auth": "미확인",
@@ -1195,9 +1195,9 @@
    ],
    "missCount": 0,
    "verify": {
-    "at": 1795356039154,
+    "at": 1795357830508,
     "ok": true,
-    "okAt": 1795356039154,
+    "okAt": 1795357830508,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=InStock, productStatus=0",
@@ -1220,7 +1220,7 @@
    "hints": [],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795356039154,
+   "checkedAt": 1795357830508,
    "obs": [
     {
      "auth": "미확인",
@@ -1254,9 +1254,9 @@
    ],
    "missCount": 0,
    "verify": {
-    "at": 1795356039154,
+    "at": 1795357830508,
     "ok": true,
-    "okAt": 1795356039154,
+    "okAt": 1795357830508,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=InStock, productStatus=0",
@@ -1281,7 +1281,7 @@
    ],
    "auto": true,
    "firstSeen": 1795099415746,
-   "checkedAt": 1795356039154,
+   "checkedAt": 1795357830508,
    "obs": [
     {
      "auth": "미확인",
@@ -1344,9 +1344,9 @@
    ],
    "missCount": 0,
    "verify": {
-    "at": 1795354231111,
+    "at": 1795357830508,
     "ok": true,
-    "okAt": 1795354231111,
+    "okAt": 1795357830508,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=InStock, productStatus=0",
@@ -1419,9 +1419,9 @@
     }
    ],
    "verify": {
-    "at": 1795354231111,
+    "at": 1795357830508,
     "ok": true,
-    "okAt": 1795354231111,
+    "okAt": 1795357830508,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=InStock",
@@ -1621,10 +1621,10 @@
     }
    ],
    "verify": {
-    "at": 1795356039154,
-    "ok": false,
-    "okAt": 1795332634338,
-    "error": "HTTP 403",
+    "at": 1795357830508,
+    "ok": true,
+    "okAt": 1795357830508,
+    "error": null,
     "evidence": [
      "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=385941713",
      "바로구매·장바구니 버튼 있음",
@@ -2231,9 +2231,9 @@
     }
    ],
    "verify": {
-    "at": 1795354231111,
+    "at": 1795357830508,
     "ok": true,
-    "okAt": 1795354231111,
+    "okAt": 1795357830508,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=InStock",
@@ -2307,9 +2307,9 @@
     }
    ],
    "verify": {
-    "at": 1795354231111,
+    "at": 1795357830508,
     "ok": true,
-    "okAt": 1795354231111,
+    "okAt": 1795357830508,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=InStock",
@@ -2423,10 +2423,10 @@
     }
    ],
    "verify": {
-    "at": 1795356039154,
-    "ok": false,
-    "okAt": 1795354231111,
-    "error": "HTTP 403",
+    "at": 1795357830508,
+    "ok": true,
+    "okAt": 1795357830508,
+    "error": null,
     "evidence": [
      "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=406685386",
      "바로구매·장바구니 버튼 있음",
@@ -2683,10 +2683,10 @@
     }
    ],
    "verify": {
-    "at": 1795356039154,
-    "ok": false,
-    "okAt": 1795354231111,
-    "error": "HTTP 403",
+    "at": 1795357830508,
+    "ok": true,
+    "okAt": 1795357830508,
+    "error": null,
     "evidence": [
      "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=397881336",
      "바로구매·장바구니 버튼 있음",
@@ -2743,10 +2743,10 @@
     }
    ],
    "verify": {
-    "at": 1795356039154,
-    "ok": false,
-    "okAt": 1795354231111,
-    "error": "HTTP 403",
+    "at": 1795357830508,
+    "ok": true,
+    "okAt": 1795357830508,
+    "error": null,
     "evidence": [
      "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=405197399",
      "바로구매·장바구니 버튼 있음",
@@ -2803,10 +2803,10 @@
     }
    ],
    "verify": {
-    "at": 1795356039154,
-    "ok": false,
-    "okAt": 1795354231111,
-    "error": "HTTP 403",
+    "at": 1795357830508,
+    "ok": true,
+    "okAt": 1795357830508,
+    "error": null,
     "evidence": [
      "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=400589768",
      "바로구매·장바구니 버튼 있음",
@@ -3215,10 +3215,10 @@
     }
    ],
    "verify": {
-    "at": 1795356039154,
-    "ok": false,
-    "okAt": 1795354231111,
-    "error": "HTTP 403",
+    "at": 1795357830508,
+    "ok": true,
+    "okAt": 1795357830508,
+    "error": null,
     "evidence": [
      "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=401736776",
      "바로구매·장바구니 버튼 있음",
@@ -3290,10 +3290,10 @@
     }
    ],
    "verify": {
-    "at": 1795356039154,
-    "ok": false,
-    "okAt": 1795354231111,
-    "error": "HTTP 403",
+    "at": 1795357830508,
+    "ok": true,
+    "okAt": 1795357830508,
+    "error": null,
     "evidence": [
      "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=396765787",
      "바로구매·장바구니 버튼 있음",
@@ -3350,10 +3350,10 @@
     }
    ],
    "verify": {
-    "at": 1795356039154,
-    "ok": false,
-    "okAt": 1795354231111,
-    "error": "HTTP 403",
+    "at": 1795357830508,
+    "ok": true,
+    "okAt": 1795357830508,
+    "error": null,
     "evidence": [
      "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=333310670",
      "바로구매·장바구니 버튼 있음",
@@ -3906,9 +3906,9 @@
     }
    ],
    "verify": {
-    "at": 1795354231111,
+    "at": 1795357830508,
     "ok": true,
-    "okAt": 1795354231111,
+    "okAt": 1795357830508,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=InStock",
@@ -4022,9 +4022,9 @@
     }
    ],
    "verify": {
-    "at": 1795354231111,
+    "at": 1795357830508,
     "ok": true,
-    "okAt": 1795354231111,
+    "okAt": 1795357830508,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=InStock",
@@ -4218,9 +4218,9 @@
     }
    ],
    "verify": {
-    "at": 1795354231111,
+    "at": 1795357830508,
     "ok": true,
-    "okAt": 1795354231111,
+    "okAt": 1795357830508,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=InStock",
@@ -5860,10 +5860,10 @@
     }
    ],
    "verify": {
-    "at": 1795356039154,
-    "ok": false,
-    "okAt": 1795354231111,
-    "error": "HTTP 403",
+    "at": 1795357830508,
+    "ok": true,
+    "okAt": 1795357830508,
+    "error": null,
     "evidence": [
      "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=364215705",
      "바로구매·장바구니 버튼 있음",
@@ -5981,9 +5981,9 @@
     }
    ],
    "verify": {
-    "at": 1795332634338,
+    "at": 1795357830508,
     "ok": true,
-    "okAt": 1795332634338,
+    "okAt": 1795357830508,
     "error": null,
     "evidence": [
      "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=339123048",
@@ -6216,9 +6216,9 @@
     }
    ],
    "verify": {
-    "at": 1795332634338,
+    "at": 1795357830508,
     "ok": true,
-    "okAt": 1795332634338,
+    "okAt": 1795357830508,
     "error": null,
     "evidence": [
      "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=388653535",
@@ -6276,9 +6276,9 @@
     }
    ],
    "verify": {
-    "at": 1795332634338,
+    "at": 1795357830508,
     "ok": true,
-    "okAt": 1795332634338,
+    "okAt": 1795357830508,
     "error": null,
     "evidence": [
      "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=380475146",
@@ -6585,9 +6585,9 @@
     }
    ],
    "verify": {
-    "at": 1795354231111,
+    "at": 1795357830508,
     "ok": true,
-    "okAt": 1795354231111,
+    "okAt": 1795357830508,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=InStock",
@@ -6646,9 +6646,9 @@
     }
    ],
    "verify": {
-    "at": 1795354231111,
+    "at": 1795357830508,
     "ok": true,
-    "okAt": 1795354231111,
+    "okAt": 1795357830508,
     "error": null,
     "evidence": [
      "개별 중고 상품 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=388210906",
@@ -6721,9 +6721,9 @@
     }
    ],
    "verify": {
-    "at": 1795354231111,
+    "at": 1795357830508,
     "ok": true,
-    "okAt": 1795354231111,
+    "okAt": 1795357830508,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=InStock",
@@ -6797,9 +6797,9 @@
     }
    ],
    "verify": {
-    "at": 1795354231111,
+    "at": 1795357830508,
     "ok": true,
-    "okAt": 1795354231111,
+    "okAt": 1795357830508,
     "error": null,
     "evidence": [
      "상품 페이지 JSON-LD availability=InStock",
@@ -7392,7 +7392,7 @@
    ],
    "auto": true,
    "firstSeen": 1795248040868,
-   "checkedAt": 1795356039154,
+   "checkedAt": 1795357830508,
    "obs": [
     {
      "auth": "미확인",
