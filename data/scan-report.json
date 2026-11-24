@@ -1,5 +1,5 @@
 {
- "at": 1795554040572,
+ "at": 1795554475205,
  "hourly": true,
  "sources": {
   "joongna": {
@@ -8,7 +8,7 @@
    "state": "ok",
    "searched": 13,
    "failed": 0,
-   "candidates": 13,
+   "candidates": 12,
    "verified": 4,
    "verifyFailed": 0,
    "errors": []
