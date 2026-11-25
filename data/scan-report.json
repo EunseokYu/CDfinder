@@ -1,6 +1,6 @@
 {
- "at": 1795609834013,
- "hourly": false,
+ "at": 1795611640953,
+ "hourly": true,
  "sources": {
   "joongna": {
    "label": "중고나라",
@@ -9,7 +9,7 @@
    "searched": 13,
    "failed": 0,
    "candidates": 13,
-   "verified": 6,
+   "verified": 12,
    "verifyFailed": 0,
    "errors": []
   },
@@ -28,99 +28,132 @@
   "aladin": {
    "label": "알라딘",
    "tier": "hourly",
-   "state": "waiting",
+   "state": "failed",
    "searched": 0,
-   "failed": 0,
+   "failed": 13,
    "candidates": 0,
    "verified": 0,
-   "verifyFailed": 24,
-   "errors": [],
-   "reason": "1시간 회차에만 조회"
+   "verifyFailed": 70,
+   "errors": [
+    "The Beatles Abbey Road: 검색 HTTP 403",
+    "비틀즈 애비로드: 검색 HTTP 403",
+    "백예린 선물: 검색 HTTP 403",
+    "백예린 Every letter I sent you.: 검색 HTTP 403"
+   ],
+   "reason": "The Beatles Abbey Road: 검색 HTTP 403"
   },
   "yes24": {
    "label": "YES24",
    "tier": "hourly",
-   "state": "waiting",
+   "state": "failed",
    "searched": 0,
-   "failed": 0,
+   "failed": 13,
    "candidates": 0,
    "verified": 0,
    "verifyFailed": 0,
-   "errors": [],
-   "reason": "1시간 회차에만 조회"
+   "errors": [
+    "The Beatles Abbey Road: 검색·모바일 검색 요청이 모두 메인 페이지로 리다이렉트됨(해외 서버 차단으로 보임) — 상품 발견 불가",
+    "비틀즈 애비로드: 검색·모바일 검색 요청이 모두 메인 페이지로 리다이렉트됨(해외 서버 차단으로 보임) — 상품 발견 불가",
+    "백예린 선물: 검색·모바일 검색 요청이 모두 메인 페이지로 리다이렉트됨(해외 서버 차단으로 보임) — 상품 발견 불가",
+    "백예린 Every letter I sent you.: 검색·모바일 검색 요청이 모두 메인 페이지로 리다이렉트됨(해외 서버 차단으로 보임) — 상품 발견 불가"
+   ],
+   "reason": "The Beatles Abbey Road: 검색·모바일 검색 요청이 모두 메인 페이지로 리다이렉트됨(해외 서버 차단으로 보임) — 상품 발견 불가"
   },
   "store:cdloft": {
    "label": "시디로프트",
    "tier": "hourly",
-   "state": "waiting",
-   "searched": 0,
+   "state": "ok",
+   "searched": 20,
    "failed": 0,
    "candidates": 0,
    "verified": 0,
    "verifyFailed": 0,
-   "errors": [],
-   "reason": "1시간 회차에만 조회"
+   "errors": []
   },
   "store:soriah": {
    "label": "소리아",
    "tier": "hourly",
-   "state": "waiting",
-   "searched": 0,
+   "state": "ok",
+   "searched": 20,
    "failed": 0,
-   "candidates": 0,
-   "verified": 0,
+   "candidates": 1,
+   "verified": 1,
    "verifyFailed": 0,
-   "errors": [],
-   "reason": "1시간 회차에만 조회"
+   "errors": []
   },
   "store:cd4love": {
    "label": "CD4LOVE",
    "tier": "hourly",
-   "state": "waiting",
-   "searched": 0,
+   "state": "ok",
+   "searched": 20,
    "failed": 0,
-   "candidates": 0,
-   "verified": 0,
+   "candidates": 1,
+   "verified": 1,
    "verifyFailed": 0,
-   "errors": [],
-   "reason": "1시간 회차에만 조회"
+   "errors": []
   },
   "store:mosaicseoul": {
    "label": "모자이크서울",
    "tier": "hourly",
-   "state": "waiting",
-   "searched": 0,
+   "state": "ok",
+   "searched": 20,
    "failed": 0,
-   "candidates": 0,
-   "verified": 0,
+   "candidates": 3,
+   "verified": 3,
    "verifyFailed": 0,
-   "errors": [],
-   "reason": "1시간 회차에만 조회"
+   "errors": []
   },
   "store:lpland": {
    "label": "엘피랜드",
    "tier": "hourly",
-   "state": "waiting",
-   "searched": 0,
+   "state": "ok",
+   "searched": 20,
    "failed": 0,
-   "candidates": 0,
-   "verified": 0,
+   "candidates": 3,
+   "verified": 3,
    "verifyFailed": 0,
-   "errors": [],
-   "reason": "1시간 회차에만 조회"
+   "errors": []
   }
  },
- "requests": 43,
+ "requests": 221,
  "requestHosts": [
   "web.joongna.com",
-  "www.aladin.co.kr"
+  "www.aladin.co.kr",
+  "www.yes24.com",
+  "cdloft.co.kr",
+  "soriah.co.kr",
+  "cd4love.co.kr",
+  "mosaicseoul.kr",
+  "lpland.co.kr"
  ],
  "verified": {
-  "aladin:used:406685386": {
-   "ok": false,
-   "error": "HTTP 403"
+  "store:soriah:2963": {
+   "ok": true,
+   "status": "품절",
+   "price": 7000,
+   "shipping": 4000,
+   "isCD": true,
+   "evidence": [
+    "상품 페이지 productId=2963",
+    "품절 아이콘=T, 재고=0, 구매 버튼 있음",
+    "배송 비용 4,000원",
+    "형식 근거: 1CD"
+   ]
   },
-  "aladin:used:342373453": {
+  "store:cd4love:17": {
+   "ok": true,
+   "status": "품절",
+   "price": 15600,
+   "shipping": 3000,
+   "isCD": true,
+   "evidence": [
+    "상품 페이지 productId=17",
+    "품절 아이콘=T, 재고=0, 구매 버튼 있음",
+    "배송비 3,000원 (50,000원 이상 무료)",
+    "형식 근거: ﻿"
+   ]
+  },
+  "aladin:used:406685386": {
    "ok": false,
    "error": "HTTP 403"
   },
@@ -134,6 +167,19 @@
     "상품 페이지 JSON-LD availability=InStock, productStatus=0",
     "배송 옵션 4000원 중 최저 적용",
     "카테고리 노트북/PC"
+   ]
+  },
+  "store:lpland:4500": {
+   "ok": true,
+   "status": "품절",
+   "price": 25000,
+   "shipping": 4000,
+   "isCD": false,
+   "evidence": [
+    "상품 페이지 productId=4500",
+    "품절 아이콘=T, 재고=0, 구매 버튼 없음",
+    "배송 비용 4,000원",
+    "형식 근거: 희귀 중고음악관련 판매 사이트 엘피랜드(LPLAND)입니다."
    ]
   },
   "aladin:used:385941713": {
@@ -172,6 +218,19 @@
    "ok": false,
    "error": "HTTP 403"
   },
+  "store:lpland:13351": {
+   "ok": true,
+   "status": "품절",
+   "price": 40000,
+   "shipping": 4000,
+   "isCD": false,
+   "evidence": [
+    "상품 페이지 productId=13351",
+    "품절 아이콘=T, 재고=0, 구매 버튼 없음",
+    "배송 비용 4,000원",
+    "형식 근거: 희귀 중고음악관련 판매 사이트 엘피랜드(LPLAND)입니다."
+   ]
+  },
   "aladin:used:361040465": {
    "ok": false,
    "error": "HTTP 403"
@@ -188,9 +247,35 @@
    "ok": false,
    "error": "HTTP 403"
   },
+  "store:mosaicseoul:83257": {
+   "ok": true,
+   "status": "품절",
+   "price": 47000,
+   "shipping": null,
+   "isCD": false,
+   "evidence": [
+    "상품 페이지 productId=83257",
+    "품절 아이콘=T, 재고=0, 구매 버튼 있음",
+    "배송비 표기 없음",
+    "형식 근거: Ref : E61114-044Cover : Very Good (VG) Media : Very Good (VG) ●Ring Wear_자켓에 판 자국 ●Large Writing on Cover_커버에 낙서  ●Plays Better than Grade_상태 대비 음질 좋음Genre : Pop Rock, Psychedelic Rock69 US ORIGINAL / JACKSONVILLEICONIC POP ROCK CLAS..."
+   ]
+  },
   "aladin:used:403019062": {
    "ok": false,
    "error": "HTTP 403"
+  },
+  "store:mosaicseoul:65439": {
+   "ok": true,
+   "status": "품절",
+   "price": 66800,
+   "shipping": null,
+   "isCD": false,
+   "evidence": [
+    "상품 페이지 productId=65439",
+    "품절 아이콘=T, 재고=0, 구매 버튼 있음",
+    "배송비 표기 없음",
+    "형식 근거: Ref : W60313-042Cover : Very Good (VG) Media : Very Good (VG) ●Run Out Variant__ 각인 변형Genre : Rock69 US ORIGINALICONIC POP ROCK CLASSIC !"
+   ]
   },
   "aladin:used:360765353": {
    "ok": false,
@@ -203,6 +288,19 @@
   "aladin:used:284239145": {
    "ok": false,
    "error": "HTTP 403"
+  },
+  "store:lpland:13469": {
+   "ok": true,
+   "status": "미확인",
+   "price": 85000,
+   "shipping": 4000,
+   "isCD": false,
+   "evidence": [
+    "상품 페이지 productId=13469",
+    "품절 아이콘=F, 재고=1, 구매 버튼 없음",
+    "배송 비용 4,000원",
+    "형식 근거: 희귀 중고음악관련 판매 사이트 엘피랜드(LPLAND)입니다."
+   ]
   },
   "aladin:used:400539467": {
    "ok": false,
@@ -283,6 +381,150 @@
     "배송 옵션 4000원 중 최저 적용",
     "카테고리 노트북/PC"
    ]
+  },
+  "aladin:used:401736776": {
+   "ok": false,
+   "error": "HTTP 403"
+  },
+  "aladin:used:396765787": {
+   "ok": false,
+   "error": "HTTP 403"
+  },
+  "aladin:used:333310670": {
+   "ok": false,
+   "error": "HTTP 403"
+  },
+  "aladin:used:368717444": {
+   "ok": false,
+   "error": "HTTP 403"
+  },
+  "aladin:used:366274594": {
+   "ok": false,
+   "error": "HTTP 403"
+  },
+  "joongna:224033566": {
+   "ok": true,
+   "status": "판매중",
+   "price": 100000,
+   "shipping": 4000,
+   "isCD": false,
+   "evidence": [
+    "상품 페이지 JSON-LD availability=InStock, productStatus=0",
+    "배송 옵션 4000원 중 최저 적용",
+    "카테고리 노트북/PC"
+   ]
+  },
+  "aladin:used:289672477": {
+   "ok": false,
+   "error": "HTTP 403"
+  },
+  "aladin:used:339353100": {
+   "ok": false,
+   "error": "HTTP 403"
+  },
+  "aladin:used:364116783": {
+   "ok": false,
+   "error": "HTTP 403"
+  },
+  "aladin:used:401344315": {
+   "ok": false,
+   "error": "HTTP 403"
+  },
+  "aladin:used:390874934": {
+   "ok": false,
+   "error": "HTTP 403"
+  },
+  "aladin:used:371955833": {
+   "ok": false,
+   "error": "HTTP 403"
+  },
+  "aladin:used:375380867": {
+   "ok": false,
+   "error": "HTTP 403"
+  },
+  "aladin:used:401343485": {
+   "ok": false,
+   "error": "HTTP 403"
+  },
+  "joongna:207285162": {
+   "ok": true,
+   "status": "판매중",
+   "price": 149000,
+   "shipping": null,
+   "isCD": true,
+   "evidence": [
+    "상품 페이지 JSON-LD availability=InStock, productStatus=0",
+    "배송비 표기 없음",
+    "카테고리 노트북/PC"
+   ]
+  },
+  "joongna:231479831": {
+   "ok": true,
+   "status": "판매중",
+   "price": 185000,
+   "shipping": 3800,
+   "isCD": true,
+   "evidence": [
+    "상품 페이지 JSON-LD availability=InStock, productStatus=0",
+    "배송 옵션 3800원 중 최저 적용",
+    "카테고리 노트북/PC"
+   ]
+  },
+  "joongna:231847509": {
+   "ok": true,
+   "status": "판매중",
+   "price": 270000,
+   "shipping": 0,
+   "isCD": true,
+   "evidence": [
+    "상품 페이지 JSON-LD availability=InStock, productStatus=0",
+    "배송비 포함",
+    "카테고리 노트북/PC"
+   ]
+  },
+  "aladin:used:364215705": {
+   "ok": false,
+   "error": "HTTP 403"
+  },
+  "joongna:231291911": {
+   "ok": true,
+   "status": "판매중",
+   "price": 22000,
+   "shipping": 5000,
+   "isCD": true,
+   "evidence": [
+    "상품 페이지 JSON-LD availability=InStock, productStatus=0",
+    "배송 옵션 5000원 중 최저 적용",
+    "카테고리 노트북/PC"
+   ]
+  },
+  "joongna:225698336": {
+   "ok": true,
+   "status": "판매중",
+   "price": 22750,
+   "shipping": 0,
+   "isCD": true,
+   "evidence": [
+    "상품 페이지 JSON-LD availability=InStock, productStatus=0",
+    "배송비 포함",
+    "카테고리 노트북/PC"
+   ]
+  },
+  "aladin:used:402413353": {
+   "ok": false,
+   "error": "HTTP 403"
+  },
+  "aladin:used:380891794": {
+   "ok": false,
+   "error": "HTTP 403"
+  },
+  "aladin:used:400766131": {
+   "ok": false,
+   "error": "HTTP 403"
+  },
+  "aladin:used:338286894": {
+   "ok": false,
+   "error": "HTTP 403"
   }
  }
 }
