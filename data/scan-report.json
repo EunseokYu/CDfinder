@@ -1,6 +1,6 @@
 {
- "at": 1795656630714,
- "hourly": true,
+ "at": 1795658436720,
+ "hourly": false,
  "sources": {
   "joongna": {
    "label": "중고나라",
@@ -28,125 +28,94 @@
   "aladin": {
    "label": "알라딘",
    "tier": "hourly",
-   "state": "ok",
-   "searched": 13,
+   "state": "waiting",
+   "searched": 0,
    "failed": 0,
-   "candidates": 126,
-   "verified": 42,
+   "candidates": 0,
+   "verified": 22,
    "verifyFailed": 0,
-   "errors": []
+   "errors": [],
+   "reason": "1시간 회차에만 조회"
   },
   "yes24": {
    "label": "YES24",
    "tier": "hourly",
-   "state": "failed",
+   "state": "waiting",
    "searched": 0,
-   "failed": 13,
+   "failed": 0,
    "candidates": 0,
    "verified": 0,
    "verifyFailed": 0,
-   "errors": [
-    "The Beatles Abbey Road: 검색·모바일 검색 요청이 모두 메인 페이지로 리다이렉트됨(해외 서버 차단으로 보임) — 상품 발견 불가",
-    "비틀즈 애비로드: 검색·모바일 검색 요청이 모두 메인 페이지로 리다이렉트됨(해외 서버 차단으로 보임) — 상품 발견 불가",
-    "백예린 선물: 검색·모바일 검색 요청이 모두 메인 페이지로 리다이렉트됨(해외 서버 차단으로 보임) — 상품 발견 불가",
-    "백예린 Every letter I sent you.: 검색·모바일 검색 요청이 모두 메인 페이지로 리다이렉트됨(해외 서버 차단으로 보임) — 상품 발견 불가"
-   ],
-   "reason": "The Beatles Abbey Road: 검색·모바일 검색 요청이 모두 메인 페이지로 리다이렉트됨(해외 서버 차단으로 보임) — 상품 발견 불가"
+   "errors": [],
+   "reason": "1시간 회차에만 조회"
   },
   "store:cdloft": {
    "label": "시디로프트",
    "tier": "hourly",
-   "state": "ok",
-   "searched": 20,
+   "state": "waiting",
+   "searched": 0,
    "failed": 0,
    "candidates": 0,
    "verified": 0,
    "verifyFailed": 0,
-   "errors": []
+   "errors": [],
+   "reason": "1시간 회차에만 조회"
   },
   "store:soriah": {
    "label": "소리아",
    "tier": "hourly",
-   "state": "ok",
-   "searched": 20,
+   "state": "waiting",
+   "searched": 0,
    "failed": 0,
-   "candidates": 1,
-   "verified": 1,
+   "candidates": 0,
+   "verified": 0,
    "verifyFailed": 0,
-   "errors": []
+   "errors": [],
+   "reason": "1시간 회차에만 조회"
   },
   "store:cd4love": {
    "label": "CD4LOVE",
    "tier": "hourly",
-   "state": "ok",
-   "searched": 20,
+   "state": "waiting",
+   "searched": 0,
    "failed": 0,
-   "candidates": 1,
-   "verified": 1,
+   "candidates": 0,
+   "verified": 0,
    "verifyFailed": 0,
-   "errors": []
+   "errors": [],
+   "reason": "1시간 회차에만 조회"
   },
   "store:mosaicseoul": {
    "label": "모자이크서울",
    "tier": "hourly",
-   "state": "ok",
-   "searched": 20,
+   "state": "waiting",
+   "searched": 0,
    "failed": 0,
-   "candidates": 3,
-   "verified": 1,
+   "candidates": 0,
+   "verified": 0,
    "verifyFailed": 0,
-   "errors": []
+   "errors": [],
+   "reason": "1시간 회차에만 조회"
   },
   "store:lpland": {
    "label": "엘피랜드",
    "tier": "hourly",
-   "state": "ok",
-   "searched": 20,
+   "state": "waiting",
+   "searched": 0,
    "failed": 0,
-   "candidates": 3,
+   "candidates": 0,
    "verified": 0,
    "verifyFailed": 0,
-   "errors": []
+   "errors": [],
+   "reason": "1시간 회차에만 조회"
   }
  },
- "requests": 226,
+ "requests": 39,
  "requestHosts": [
   "web.joongna.com",
-  "www.aladin.co.kr",
-  "www.yes24.com",
-  "cdloft.co.kr",
-  "soriah.co.kr",
-  "cd4love.co.kr",
-  "mosaicseoul.kr",
-  "lpland.co.kr"
+  "www.aladin.co.kr"
  ],
  "verified": {
-  "store:soriah:2963": {
-   "ok": true,
-   "status": "품절",
-   "price": 7000,
-   "shipping": 4000,
-   "isCD": true,
-   "evidence": [
-    "상품 페이지 productId=2963",
-    "품절 아이콘=T, 재고=0, 구매 버튼 있음",
-    "배송 비용 4,000원",
-    "형식 근거: 1CD"
-   ]
-  },
-  "store:cd4love:17": {
-   "ok": true,
-   "status": "품절",
-   "price": 15600,
-   "shipping": 3000,
-   "isCD": true,
-   "evidence": [
-    "상품 페이지 productId=17",
-    "품절 아이콘=T, 재고=0, 구매 버튼 있음",
-    "배송비 3,000원 (50,000원 이상 무료)",
-    "형식 근거: ﻿"
-   ]
-  },
   "aladin:used:406685386": {
    "ok": true,
    "status": "판매중",
@@ -300,19 +269,6 @@
     "카테고리 노트북/PC"
    ]
   },
-  "store:mosaicseoul:65178": {
-   "ok": true,
-   "status": "품절",
-   "price": 230600,
-   "shipping": null,
-   "isCD": false,
-   "evidence": [
-    "상품 페이지 productId=65178",
-    "품절 아이콘=T, 재고=0, 구매 버튼 있음",
-    "배송비 표기 없음",
-    "형식 근거: Ref : W60301-100Cover : Very Good Plus (VG+) Media : Very Good Plus (VG+) Genre : Hip-Hop18 US PRESSING / LIMITED EDITION, REISSUE"
-   ]
-  },
   "joongna:223467210": {
    "ok": true,
    "status": "판매중",
@@ -325,57 +281,15 @@
     "카테고리 노트북/PC"
    ]
   },
-  "aladin:new:359439": {
+  "aladin:new:209013939": {
    "ok": true,
-   "status": "품절",
-   "price": 13600,
-   "shipping": null,
-   "isCD": true,
-   "evidence": [
-    "상품 페이지 JSON-LD availability=OutOfStock",
-    "판매가 13600원",
-    "배송료: 2만원 미만 — 배송료 금액이 페이지에 없어 총액 미확인",
-    "알라딘 직접 판매",
-    "Disc 1장"
-   ]
-  },
-  "aladin:new:7729893": {
-   "ok": true,
-   "status": "품절",
-   "price": 19000,
-   "shipping": null,
-   "isCD": true,
-   "evidence": [
-    "상품 페이지 JSON-LD availability=OutOfStock",
-    "판매가 19000원",
-    "배송료: 2만원 미만 — 배송료 금액이 페이지에 없어 총액 미확인",
-    "알라딘 직접 판매",
-    "Disc 1장"
-   ]
-  },
-  "aladin:new:33675374": {
-   "ok": true,
-   "status": "품절",
-   "price": 21700,
+   "status": "판매중",
+   "price": 29600,
    "shipping": 0,
    "isCD": true,
    "evidence": [
-    "상품 페이지 JSON-LD availability=OutOfStock",
-    "판매가 21700원",
-    "배송료: 배송료 무료",
-    "알라딘 직접 판매",
-    "Disc 1장"
-   ]
-  },
-  "aladin:new:3712323": {
-   "ok": true,
-   "status": "품절",
-   "price": 25000,
-   "shipping": 0,
-   "isCD": true,
-   "evidence": [
-    "상품 페이지 JSON-LD availability=OutOfStock",
-    "판매가 25000원",
+    "상품 페이지 JSON-LD availability=InStock",
+    "판매가 29600원",
     "배송료: 배송료 무료",
     "알라딘 직접 판매",
     "Disc 1장"
@@ -409,118 +323,6 @@
     "Disc 1장"
    ]
   },
-  "aladin:new:209013939": {
-   "ok": true,
-   "status": "판매중",
-   "price": 29600,
-   "shipping": 0,
-   "isCD": true,
-   "evidence": [
-    "상품 페이지 JSON-LD availability=InStock",
-    "판매가 29600원",
-    "배송료: 배송료 무료",
-    "알라딘 직접 판매",
-    "Disc 1장"
-   ]
-  },
-  "aladin:new:279215663": {
-   "ok": true,
-   "status": "품절",
-   "price": 22300,
-   "shipping": 0,
-   "isCD": true,
-   "evidence": [
-    "상품 페이지 JSON-LD availability=OutOfStock",
-    "판매가 22300원",
-    "배송료: 배송료 무료",
-    "알라딘 직접 판매",
-    "Disc 1장"
-   ]
-  },
-  "aladin:new:344037425": {
-   "ok": true,
-   "status": "품절",
-   "price": 22300,
-   "shipping": 0,
-   "isCD": true,
-   "evidence": [
-    "상품 페이지 JSON-LD availability=OutOfStock",
-    "판매가 22300원",
-    "배송료: 배송료 무료",
-    "알라딘 직접 판매",
-    "Disc 1장"
-   ]
-  },
-  "aladin:new:222095862": {
-   "ok": true,
-   "status": "품절",
-   "price": 22300,
-   "shipping": 0,
-   "isCD": true,
-   "evidence": [
-    "상품 페이지 JSON-LD availability=OutOfStock",
-    "판매가 22300원",
-    "배송료: 배송료 무료",
-    "알라딘 직접 판매",
-    "Disc 2장"
-   ]
-  },
-  "aladin:new:344036095": {
-   "ok": true,
-   "status": "품절",
-   "price": 22300,
-   "shipping": 0,
-   "isCD": true,
-   "evidence": [
-    "상품 페이지 JSON-LD availability=OutOfStock",
-    "판매가 22300원",
-    "배송료: 배송료 무료",
-    "알라딘 직접 판매",
-    "Disc 2장"
-   ]
-  },
-  "aladin:new:411198": {
-   "ok": true,
-   "status": "품절",
-   "price": 9600,
-   "shipping": null,
-   "isCD": true,
-   "evidence": [
-    "상품 페이지 JSON-LD availability=OutOfStock",
-    "판매가 9600원",
-    "배송료: 2만원 미만 — 배송료 금액이 페이지에 없어 총액 미확인",
-    "알라딘 직접 판매",
-    "Disc 1장"
-   ]
-  },
-  "aladin:new:314077617": {
-   "ok": true,
-   "status": "품절",
-   "price": 13400,
-   "shipping": null,
-   "isCD": true,
-   "evidence": [
-    "상품 페이지 JSON-LD availability=OutOfStock",
-    "판매가 13400원",
-    "배송료: 2만원 미만 — 배송료 금액이 페이지에 없어 총액 미확인",
-    "알라딘 직접 판매",
-    "Disc 1장"
-   ]
-  },
-  "aladin:new:292208368": {
-   "ok": true,
-   "status": "품절",
-   "price": 15600,
-   "shipping": null,
-   "isCD": true,
-   "evidence": [
-    "상품 페이지 JSON-LD availability=OutOfStock",
-    "판매가 15600원",
-    "배송료: 2만원 미만 — 배송료 금액이 페이지에 없어 총액 미확인",
-    "알라딘 직접 판매",
-    "Disc 1장"
-   ]
-  },
   "aladin:new:711925": {
    "ok": true,
    "status": "판매중",
@@ -529,20 +331,6 @@
    "isCD": true,
    "evidence": [
     "상품 페이지 JSON-LD availability=InStock",
-    "판매가 16400원",
-    "배송료: 2만원 미만 — 배송료 금액이 페이지에 없어 총액 미확인",
-    "알라딘 직접 판매",
-    "Disc 1장"
-   ]
-  },
-  "aladin:new:703384": {
-   "ok": true,
-   "status": "품절",
-   "price": 16400,
-   "shipping": null,
-   "isCD": true,
-   "evidence": [
-    "상품 페이지 JSON-LD availability=OutOfStock",
     "판매가 16400원",
     "배송료: 2만원 미만 — 배송료 금액이 페이지에 없어 총액 미확인",
     "알라딘 직접 판매",
@@ -563,20 +351,6 @@
     "Disc 1장"
    ]
   },
-  "aladin:new:275241833": {
-   "ok": true,
-   "status": "품절",
-   "price": 26600,
-   "shipping": 0,
-   "isCD": true,
-   "evidence": [
-    "상품 페이지 JSON-LD availability=OutOfStock",
-    "판매가 26600원",
-    "배송료: 배송료 무료",
-    "알라딘 직접 판매",
-    "Disc 1장"
-   ]
-  },
   "aladin:new:303764908": {
    "ok": true,
    "status": "판매중",
@@ -586,104 +360,6 @@
    "evidence": [
     "상품 페이지 JSON-LD availability=InStock",
     "판매가 27500원",
-    "배송료: 배송료 무료",
-    "알라딘 직접 판매",
-    "Disc 1장"
-   ]
-  },
-  "aladin:new:354411": {
-   "ok": true,
-   "status": "품절",
-   "price": 11200,
-   "shipping": null,
-   "isCD": true,
-   "evidence": [
-    "상품 페이지 JSON-LD availability=OutOfStock",
-    "판매가 11200원",
-    "배송료: 2만원 미만 — 배송료 금액이 페이지에 없어 총액 미확인",
-    "알라딘 직접 판매",
-    "Disc 1장"
-   ]
-  },
-  "aladin:new:798802": {
-   "ok": true,
-   "status": "품절",
-   "price": 12700,
-   "shipping": null,
-   "isCD": true,
-   "evidence": [
-    "상품 페이지 JSON-LD availability=OutOfStock",
-    "판매가 12700원",
-    "배송료: 2만원 미만 — 배송료 금액이 페이지에 없어 총액 미확인",
-    "알라딘 직접 판매",
-    "Disc 1장"
-   ]
-  },
-  "aladin:new:707013": {
-   "ok": true,
-   "status": "품절",
-   "price": 16300,
-   "shipping": null,
-   "isCD": true,
-   "evidence": [
-    "상품 페이지 JSON-LD availability=OutOfStock",
-    "판매가 16300원",
-    "배송료: 2만원 미만 — 배송료 금액이 페이지에 없어 총액 미확인",
-    "알라딘 직접 판매",
-    "Disc 1장"
-   ]
-  },
-  "aladin:new:8446473": {
-   "ok": true,
-   "status": "품절",
-   "price": 16400,
-   "shipping": null,
-   "isCD": true,
-   "evidence": [
-    "상품 페이지 JSON-LD availability=OutOfStock",
-    "판매가 16400원",
-    "배송료: 2만원 미만 — 배송료 금액이 페이지에 없어 총액 미확인",
-    "알라딘 직접 판매",
-    "Disc 1장"
-   ]
-  },
-  "aladin:new:703771": {
-   "ok": true,
-   "status": "품절",
-   "price": 16400,
-   "shipping": null,
-   "isCD": true,
-   "evidence": [
-    "상품 페이지 JSON-LD availability=OutOfStock",
-    "판매가 16400원",
-    "배송료: 2만원 미만 — 배송료 금액이 페이지에 없어 총액 미확인",
-    "알라딘 직접 판매",
-    "Disc 1장"
-   ]
-  },
-  "aladin:new:317726876": {
-   "ok": true,
-   "status": "품절",
-   "price": 28600,
-   "shipping": 0,
-   "isCD": true,
-   "evidence": [
-    "상품 페이지 JSON-LD availability=OutOfStock",
-    "판매가 28600원",
-    "배송료: 배송료 무료",
-    "알라딘 직접 판매",
-    "Disc 1장"
-   ]
-  },
-  "aladin:new:706583": {
-   "ok": true,
-   "status": "품절",
-   "price": 38100,
-   "shipping": 0,
-   "isCD": true,
-   "evidence": [
-    "상품 페이지 JSON-LD availability=OutOfStock",
-    "판매가 38100원",
     "배송료: 배송료 무료",
     "알라딘 직접 판매",
     "Disc 1장"
